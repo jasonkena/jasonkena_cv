@@ -1,31 +1,16 @@
-# arasgungore-CV
+# jasonkena_cv
 
-My curriculum vitae (CV) written using LaTeX. In my CV, you may find my contact information, websites, education, experience, achievements, projects, and skills.
+My CV based heavily on [Aras Güngöre's wonderful template](https://github.com/arasgungore/arasgungore-CV) and inspired by [JSON Resume's](https://jsonresume.org/) ease of use.
 
-Please find attached my [CV](https://drive.google.com/file/d/1TGwMpZl6FDeQk1w_-EetbspCuzu16kCF/view?usp=sharing). 😜
+`render.py` uses `jinja2` to render `template.tex` with the data in `data.yaml`, generating `main.tex`.
 
-
-
-## Run on Terminal
+## Compile pdf
 
 ```sh
+python render.py
 pdflatex main.tex
 ```
-
-
-
-## Screenshots
-
-<p align="center">
-    <img alt="Screenshot" src="https://raw.githubusercontent.com/arasgungore/arasgungore-CV/main/jpg/CV_page_1.jpg" width="400">
-    <img alt="Screenshot" src="https://raw.githubusercontent.com/arasgungore/arasgungore-CV/main/jpg/CV_page_2.jpg" width="400">
-</p>
-
-
-
-## Author
-
-👤 **Aras Güngöre**
-
-* LinkedIn: [@arasgungore](https://www.linkedin.com/in/arasgungore)
-* GitHub: [@arasgungore](https://github.com/arasgungore)
+or
+```sh
+ls data.yaml template.tex | entr python render.py & latexmk -pvc -pdf main.tex
+```

@@ -1,0 +1,136 @@
+name: Jason Ken Adhinarta
+email: jason.adhinarta@bc.edu
+website_name: jasonkena.github.io
+website_url: https://jasonkena.github.io
+location: Chestnut Hill, MA
+
+education:
+  -
+    name: Boston College
+    location: Chestnut Hill, MA
+    degree: B.S. in Computer Science and Mathematics
+    start_date: Aug 2021
+    end_date: May 2025 [expected]
+    gpa: 3.97/4.00
+    misc: "Activities: Machine Intelligence Group, Boston College Competitive Programming Team"
+  -
+    name: Sekolah Pelita Harapan Lippo Village
+    location: Tangerang, Indonesia
+    degree: International Baccalaureate Bilingual Diploma
+    start_date: Aug 2018
+    end_date: May 2021
+    gpa: 43/45
+
+research:
+  -
+    name: EPFL CVLab
+    location: Lausanne, Switzerland
+    position: Project Student (advised by Dr.\,Jiancheng Yang and Prof.\,Pascal Fua)
+    start_date: May 2023
+    end_date: Present
+    misc:
+      - Developed point-cloud/volume-based baseline methods for rib segmentation and centerline extraction
+      - Implemented methods for heart reconstruction on multimodal data
+  -
+    name: Boston College Computer Vision Lab
+    location: Chestnut Hill, MA
+    position: Undergraduate Research Assistant (advised by Prof.\,Donglai Wei)
+    start_date: Sep 2021
+    end_date: Present
+    misc:
+      - Designed methods to tackle multimodal problems in connectomics—blood vessel tracking, dendritic spine segmentation, and vesicle detection—by utilizing deep learning techniques (PointNet++, U-Net3D, Cellpose)
+      - Maintained the SNEMI3D, RNR-EXM, and AxonEM challenge benchmarks on the Grand Challenge platform
+      - Created a Dask-powered framework to orchestrate data processing pipelines on large-scale datasets; ported 3D algorithms (3D connected components, euclidean distance transform, and TEASAR skeletonization) from the Seung Lab to be chunking-compatible
+      - Onboarded research interns onto the Boston College Linux Cluster and PyTorch Connectomics ecosystems
+  -
+    name: Emmerich Research Center
+    location: Jakarta, Indonesia
+    position: Research Intern (advised by Dr.\,Eden Steven)
+    start_date: Aug 2018
+    end_date: Aug 2021
+    misc:
+      - Researched the lifecycle of Black Soldier Flies by employing segmentation (YOLACT, Mask-RCNN) and tracking methods (Differentiable Particle Filters, Tracking-by-Animation)
+      - Used XGBoost-powered models to standardize palm oil fruit grading for industry partners; deployed GCP pipelines to automate annotation/training cycles
+      - Developed contamination detection methods to streamline synthetic leather production systems
+      - Rigged heat and optical control systems to study phosphorescent phenomena under cryogenic temperatures
+      - Co-designed an electronics programming curriculum targeted at highschool students; instructed at various workshops
+
+publications:
+  -
+    authors: Xiaomeng Han, Xiaotang Lu, Peter H. Li, Shuohong Wang, Richard Schalek, Yaron Meirovitch, Zudi Lin, \textbf{Jason K. Adhinarta}, Daniel Berger, Yuelong Wu, Tao Fang, Elif S. Meral, Shadnan Asraf, Hidde Ploegh, Hanspeter Pfister, Donglai Wei, Viren Jain, James S. Trimmer, Jeff W. Lichtman
+    name: Multiplexed Volumetric CLEM enabled by antibody derivatives provides new insights into the cytology of the mouse cerebellar cortex
+    url: "\\biorxiv{10.1101/2023.05.20.540091v2} [under review]"
+  -
+    authors: Shixuan Gu, \textbf{Jason K. Adhinarta}, Mikhail Bessmeltsev, Jiancheng Yang, Jessica Zhang, Daniel Berger, Jeff W. Lichtman, Hanspeter Pfister, Donglai Wei
+    name: "FreSeg: Frenet-Frame-based Part Segmentation for 3D Curvilinear Structures"
+    url: "[manuscript in preparation]"
+  -
+    authors: Liang Jin, Shixuan Gu, Donglai Wei, \textbf{Jason K. Adhinarta}, Kaiming Kuang, Yongjie J. Zhang, Hanspeter Pfister, Bingbing Ni, Jiancheng Yang, Ming Li
+    name: "RibSeg v2: A Large-scale Benchmark for Rib Labeling and Anatomical Centerline Extraction"
+    url: "\\arxiv{2210.09309} [under review]"
+    # venue: IEEE Transactions on Medical Imaging, 2023 [under review]
+  -
+    authors: \textbf{Jason K. Adhinarta}, Eric Jobiliong, Muhandis Shiddiq, Henri P. Uranus and Eden Steven
+    name: Light storage and thermal-assisted switching of SrAl\textsubscript{2}O\textsubscript{4}:Eu\textsuperscript{2+}, Dy\textsuperscript{3+}
+    venue: Journal of Nonlinear Optical Physics \& Materials, 2019
+    url: \doi{10.1142/S0218863519500425}
+
+patents:
+  -
+    authors: Edmund F. Anderson, Eden Steven, Ray A. O. Sinurat, \textbf{Jason K. Adhinarta}, Calvin, Alvius Tinambunan, Josavan Ezekhiel, Andrew D. Widjaja
+    name: A Robotic Method of Monitoring, Hydrating, Training, and Treating Bacterial or Fungal Infections of New-growth Fungal Cultures to Produce Densified Sheet-like Lateral Networks of Fungal Materials
+    url: \href{https://pdki-indonesia.dgip.go.id/detail/469b3735e17ef3b025c34af11710e9bfffe2de10284fb52ed77d4e03dd710c29%3Fnomor=P00202009416?type=patent&keyword=P00202009416}{PDKI:P00202009416} [pending]
+
+
+awards:
+  # Eagle Intern Fellowship Summer 2023, Undergraduate Research Fellowship Spring 2023
+  - name: Sophomore Scholar Award
+    venue_date: Boston College, 2023
+    description: Granted to the top 5\% of the sophomore class
+  -
+    name: Gabelli Presidential Scholarship
+    venue_date: Boston College, 2021
+    description: Competitive four-year full-tuition scholarship awarded to $\sim$15 students annually
+  -
+    name: Best Poster Presentation
+    venue_date: ISMOA 2019
+    description: Awarded at the \nth{12} International Symposium on Modern Optics and its Applications
+
+projects:
+  -
+    name: Moiré
+    github_url: https://github.com/jasonkena/moire
+    writeup_url: https://www.dropbox.com/s/i63dgelj6oateau/Jason_Ken_Adhinarta_Physics_IA.pdf
+    description: Modelled the angle dependence of Ohmic resistance in Moiré patterns induced by hexagonal lattices
+  -
+    name: Reversing Nearness
+    github_url: https://github.com/jasonkena/toroid
+    writeup_url: https://github.com/jasonkena/Toroid/blob/master/Essay/main.pdf
+    description: Proposed a gradient descent-based solution for Al Zimmermann's combinatorics optimization contest
+  -
+    name: SimpleMMO PVP Tool
+    github_url: https://github.com/jasonkena/smmo_pvp_tool
+    website_url: https://revogen.xyz/
+    description: Developed a web-based tool to allow SimpleMMO players to aggregate results of PVP API endpoint scraping
+
+
+skills:
+  -
+    category: Proficient
+    list: PyTorch, OpenCV, Dask, SLURM, Linux CLI, Arduino
+  -
+    category: Intermediate
+    list: Javascript, Docker, Flask, PostgreSQL, LabView, Igor Pro, \LaTeX/TikZ
+  -
+    category: Basic
+    list: C++, Coq, Haskell, AWS/GCP
+
+coursework:
+  -
+    category: Computer Science
+    list: Logic and Computation, Randomness and Computation, Computer Organization, Computer Systems # CS 2
+  -
+    category: Mathematics
+    list: Probability Theory, Differential Equations, Multivariable Calculus, Linear Algebra #, Intro to Abstract Mathematics, Calc 2
+  - category: Physics
+    list: Vibrations and Waves, Intro to Modern Physics

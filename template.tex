@@ -1,0 +1,261 @@
+% resume template adapted from Aras Güngöre
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{tikz}
+
+\hypersetup{
+    colorlinks = true,
+    allcolors = Brown,
+}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{hyphenat}
+\usepackage{fontawesome}
+\usepackage{ragged2e}
+\usepackage[super]{nth}
+
+\input{glyphtounicode}
+
+\newcommand*{\doi}[1]{\href{http://dx.doi.org/#1}{doi:#1}}
+\newcommand*{\arxiv}[1]{\href{http://arxiv.org/abs/#1}{arXiv:#1}}
+\newcommand*{\biorxiv}[1]{\href{http://biorxiv.org/content/#1}{bioRxiv:#1}}
+
+
+%---------- FONT OPTIONS ----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+\usepackage[T1]{fontenc}
+\usepackage[bitstream-charter]{mathdesign}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeSubheading}[5]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}
+        \ifx\relax#5\relax 
+          \vspace{-7pt}
+        \else
+          \linebreak\textit{\small#5}
+          \vspace{-3pt}
+        \fi
+}
+
+\newcommand{\awardHeading}[3]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small#1} & \small#2 \\
+    \end{tabular*}
+    \linebreak\textit{\small#3}
+    \vspace{-5pt}
+}
+
+\newcommand{\projectHeading}[3]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small#1} & \small#2 \\
+    \end{tabular*}
+      \linebreak\textit{\small#3}
+    \vspace{-5pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.10in, rightmargin=0.10in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+\justifying
+
+%---------- HEADING ----------
+
+\begin{center}
+  \textbf{\Huge \scshape [[ name ]]} \\ \vspace{3pt}
+    \small
+    \href{[[ website_url ]]}{[[ website_name ]]}
+   \hspace{0.05cm}$\cdot$\hspace{0.05cm}
+    \href{mailto:[[ email ]]}{ [[ email ]] }
+   \hspace{0.05cm}$\cdot$\hspace{0.05cm}
+    [[ location ]]
+\end{center}
+
+
+
+%----------- EDUCATION -----------
+
+\section{Education}
+  \vspace{3pt}
+  \resumeSubHeadingListStart
+  [% for school in education %]
+  \resumeSubheading{[[ school.name ]]}{[[ school.location ]]}{[[ school.degree ]];   \textbf{GPA: [[ school.gpa ]]}}{[[ school.start_date ]] \textbf{--} [[ school.end_date ]]}{[[school.misc]]}
+  [% endfor %]
+    
+  \resumeSubHeadingListEnd
+
+
+
+%----------- RESEARCH EXPERIENCE -----------
+
+\section{Research Experience}
+  \vspace{3pt}
+  \resumeSubHeadingListStart
+    [% for lab in research %]
+    \resumeSubheading
+    {[[ lab.name ]]}{[[ lab.location ]]}{[[ lab.position ]]}{[[ lab.start_date ]] \textbf{--} [[ lab.end_date ]]}{}
+      \resumeItemListStart
+      [% for detail in lab.misc %]
+        \resumeItem{[[detail]]}
+      [% endfor %]
+      \resumeItemListEnd
+    [% endfor %]
+  \resumeSubHeadingListEnd
+
+\section{Publications}
+\vspace{3pt}
+\resumeSubHeadingListStart
+    \small{\item{
+        [% for publication in publications %]
+        [[ publication.authors ]]. \textbf{[[ publication.name ]]}. 
+        \ifx\relax[[ publication.venue ]]\relax % Check if #5 is defined (empty)
+        \else
+          [[ publication.venue ]].        
+        \fi
+         [[ publication.url ]]
+        [% endfor %]
+    }}
+\resumeSubHeadingListEnd
+
+\section{Patents}
+\vspace{3pt}
+\resumeSubHeadingListStart
+    \small{\item{
+        [% for patent in patents %]
+        [[ patent.authors ]]. \textbf{[[ patent.name ]]}. [[ patent.url ]]
+        [% endfor %]
+    }}
+\resumeSubHeadingListEnd
+
+
+%----------- AWARDS & ACHIEVEMENTS -----------
+\section{Awards}
+  \vspace{3pt}
+  \resumeSubHeadingListStart
+    [% for award in awards %]
+    \awardHeading
+    {[[ award.name ]]}{[[ award.venue_date ]]}{[[ award.description ]]}
+    [% endfor %]
+  \resumeSubHeadingListEnd
+
+
+%----------- PROJECTS -----------
+
+\section{Selected Projects}
+    \vspace{3pt}
+    \resumeSubHeadingListStart
+    [% for project in projects %]
+    \projectHeading{[[ project.name ]]}{
+      [% if project.writeup_url is defined %]
+        \href{[[ project.writeup_url ]]}{Writeup}
+      [% endif %]
+      [% if project.website_url is defined %]
+      \href{[[ project.website_url ]]}{Website}
+      [% endif %]
+      \href{[[ project.github_url ]]}{GitHub}
+    }{[[ project.description ]]}
+    [% endfor %]
+    \resumeSubHeadingListEnd
+
+
+%----------- SKILLS -----------
+
+\section{Skills}
+  \vspace{3pt}
+  \resumeSubHeadingListStart
+    \small{\item{
+        [% for skill in skills %]
+        \textbf{[[ skill.category ]]:}{ [[ skill.list ]] } 
+        [% endfor %]
+    }}
+  \resumeSubHeadingListEnd
+
+
+
+%----------- RELEVANT COURSEWORK -----------
+
+\section{Coursework}
+  \vspace{3pt}
+  \resumeSubHeadingListStart
+    \small{\item{
+        [% for course in coursework %]
+        \textbf{[[ course.category ]]:}{ [[ course.list ]] } 
+        [% endfor %]
+    }}
+  \resumeSubHeadingListEnd
+
+\end{document}
