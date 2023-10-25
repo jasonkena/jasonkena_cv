@@ -67,8 +67,8 @@ publications:
   -
     authors: Liang Jin, Shixuan Gu, Donglai Wei, \textbf{Jason K. Adhinarta}, Kaiming Kuang, Yongjie J. Zhang, Hanspeter Pfister, Bingbing Ni, Jiancheng Yang, Ming Li
     name: "RibSeg v2: A Large-scale Benchmark for Rib Labeling and Anatomical Centerline Extraction"
-    url: "\\arxiv{2210.09309} [under review]"
-    # venue: IEEE Transactions on Medical Imaging, 2023 [under review]
+    venue: IEEE Transactions on Medical Imaging, 2023
+    url: "\\arxiv{2210.09309}"
   -
     authors: \textbf{Jason K. Adhinarta}, Eric Jobiliong, Muhandis Shiddiq, Henri P. Uranus and Eden Steven
     name: Light storage and thermal-assisted switching of SrAl\textsubscript{2}O\textsubscript{4}:Eu\textsuperscript{2+}, Dy\textsuperscript{3+}
