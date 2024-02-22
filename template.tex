@@ -180,12 +180,26 @@
     }}
 \resumeSubHeadingListEnd
 
+\section{Activities}
+  \vspace{3pt}
+  \resumeSubHeadingListStart
+    [% for activity in activities %]
+    \resumeSubheading
+    {[[ activity.name ]]}{[[ activity.location ]]}{[[ activity.position ]]}{[[ activity.start_date ]] \textbf{--} [[ activity.end_date ]]}{}
+      \resumeItemListStart
+      [% for detail in activity.misc %]
+        \resumeItem{[[detail]]}
+      [% endfor %]
+      \resumeItemListEnd
+    [% endfor %]
+  \resumeSubHeadingListEnd
+
 \section{Teaching Assistantship}
   \vspace{3pt}
   \resumeSubHeadingListStart
     [% for course in teaching %]
     \simpleHeading
-    {[[ course.name ]]}{[[ course.college_year ]]}{[[ course.description ]]}
+    {[[ course.name ]] \normalfont\textit{\small ([[ course.instructor ]])}}{[[ course.college_year ]]}{[[ course.description ]]}
     [% endfor %]
   \resumeSubHeadingListEnd
 
@@ -198,7 +212,7 @@
     [% endfor %]
   \resumeSubHeadingListEnd
 
-\section{Selected Projects}
+\section{Projects}
     \vspace{3pt}
     \resumeSubHeadingListStart
     [% for project in projects %]

@@ -10,38 +10,38 @@ education:
     location: Chestnut Hill, MA
     degree: B.S. in Computer Science and Mathematics
     start_date: Aug 2021
-    end_date: May 2025 [expected]
+    end_date: May 2025
     gpa: 3.97/4.00
-    misc: "Activities: Machine Intelligence Group, Boston College Competitive Programming Team"
-  -
-    name: Sekolah Pelita Harapan Lippo Village
-    location: Tangerang, Indonesia
-    degree: International Baccalaureate Bilingual Diploma
-    start_date: Aug 2018
-    end_date: May 2021
-    gpa: 43/45
+    # misc: "Activities: Machine Intelligence Group, Boston College Competitive Programming Team"
+  # -
+  #   name: Sekolah Pelita Harapan Lippo Village
+  #   location: Tangerang, Indonesia
+  #   degree: International Baccalaureate Bilingual Diploma
+  #   start_date: Aug 2018
+  #   end_date: May 2021
+  #   gpa: 43/45
 
 research:
   -
-    name: EPFL CVLab
-    location: Lausanne, Switzerland
-    position: Project Student (advised by Dr.\,Jiancheng Yang and Prof.\,Pascal Fua)
-    start_date: May 2023
-    end_date: Present
-    misc:
-      - Developed point-cloud/volume-based baseline methods for rib segmentation and centerline extraction
-      - Implemented methods for heart reconstruction on multimodal data
-  -
     name: Boston College Computer Vision Lab
     location: Chestnut Hill, MA
-    position: Undergraduate Research Assistant (advised by Prof.\,Donglai Wei)
+    position: Research Assistant (advised by Prof.\,Donglai Wei)
     start_date: Sep 2021
     end_date: Present
     misc:
       - Designed methods to tackle multimodal problems in connectomics—blood vessel tracking, dendritic spine segmentation, and vesicle detection—by utilizing deep learning techniques (PointNet++, U-Net3D, Cellpose)
-      - Maintained the SNEMI3D, RNR-EXM, and AxonEM challenge benchmarks on the Grand Challenge platform
+      - Maintained evaluation containers for SNEMI3D, RNR-EXM, and AxonEM benchmarks on the Grand Challenge platform
       - Created a Dask-powered framework to orchestrate data processing pipelines on large-scale datasets; ported 3D algorithms (3D connected components, euclidean distance transform, and TEASAR skeletonization) from the Seung Lab to be chunking-compatible
       - Onboarded research interns onto the Boston College Linux Cluster and PyTorch Connectomics ecosystems
+  -
+    name: EPFL CVLab
+    location: Lausanne, Switzerland
+    position: Research Intern (advised by Dr.\,Jiancheng Yang and Prof.\,Pascal Fua)
+    start_date: May 2023
+    end_date: Aug 2023
+    misc:
+      - Developed point-cloud/volume-based baseline methods for rib segmentation and centerline extraction
+      - Implemented methods for heart reconstruction on diverse multimodal datasets (CT/MRI)
   -
     name: Emmerich Research Center
     location: Jakarta, Indonesia
@@ -53,9 +53,13 @@ research:
       - Used XGBoost-powered models to standardize palm oil fruit grading for industry partners; deployed GCP pipelines to automate annotation/training cycles
       - Developed contamination detection methods to streamline synthetic leather production systems
       - Rigged heat and optical control systems to study phosphorescent phenomena under cryogenic temperatures
-      - Co-designed an electronics programming curriculum targeted at highschool students; instructed at various workshops
+      - Co-designed an electronics programming curriculum for an highschool extracurricular program # targeted at highschool students #; instructed at various workshops
 
 publications:
+  - 
+    authors: Anonymous authors
+    name: "TriSAM: Tri-Plane SAM for zero-shot cortical blood vessel segmentation in VEM images"
+    url: "[under review]"
   -
     authors: Xiaomeng Han, Xiaotang Lu, Peter H. Li, Shuohong Wang, Richard Schalek, Yaron Meirovitch, Zudi Lin, \textbf{Jason K. Adhinarta}, Daniel Berger, Yuelong Wu, Tao Fang, Elif S. Meral, Shadnan Asraf, Hidde Ploegh, Hanspeter Pfister, Donglai Wei, Viren Jain, James S. Trimmer, Jeff W. Lichtman
     name: Multiplexed Volumetric CLEM enabled by antibody derivatives provides new insights into the cytology of the mouse cerebellar cortex
@@ -68,7 +72,7 @@ publications:
     authors: Liang Jin, Shixuan Gu, Donglai Wei, \textbf{Jason K. Adhinarta}, Kaiming Kuang, Yongjie J. Zhang, Hanspeter Pfister, Bingbing Ni, Jiancheng Yang, Ming Li
     name: "RibSeg v2: A Large-scale Benchmark for Rib Labeling and Anatomical Centerline Extraction"
     venue: IEEE Transactions on Medical Imaging, 2023
-    url: "\\arxiv{2210.09309}"
+    url: \doi{10.1109/TMI.2023.3313627}
   -
     authors: \textbf{Jason K. Adhinarta}, Eric Jobiliong, Muhandis Shiddiq, Henri P. Uranus and Eden Steven
     name: Light storage and thermal-assisted switching of SrAl\textsubscript{2}O\textsubscript{4}:Eu\textsuperscript{2+}, Dy\textsuperscript{3+}
@@ -82,23 +86,63 @@ patents:
     url: \href{https://pdki-indonesia.dgip.go.id/detail/469b3735e17ef3b025c34af11710e9bfffe2de10284fb52ed77d4e03dd710c29%3Fnomor=P00202009416?type=patent&keyword=P00202009416}{PDKI:P00202009416} [pending]
 
 teaching:
+  - name: "CSCI 3397: Biomedical Image Analysis"
+    instructor: "Prof. Donglai Wei"
+    college_year: Spring 2024
   -
-    name: "MT4480: Math and Machine Learning \\textnormal{(Prof. Elisenda Grigsby)}"
-    college_year: Boston College, Spring 2023
-  
+    name: "MATH 4480: Math and Machine Learning"
+    instructor: "Prof. Elisenda Grigsby"
+    college_year: Spring 2023
+
+activities:
+  -
+    name: Boston College Machine Intelligence Group
+    location: Chestnut Hill, MA
+    position: President
+    start_date: Sep 2022
+    end_date: Present
+    misc:
+      - Equipped members with machine learning skills required for research/engineering, connecting them with computer science research labs on campus
+      - Organized biweekly workshops, introducing modern deep learning techniques (e.g., Segment Anything, contrastive learning, adversarial robustness) to students
+  -
+    name: Boston College Experimental Math and Machine Learning Lab
+    location: Chestnut Hill, MA
+    position: Member
+    start_date: March 2023
+    end_date: Present
+    misc:
+      - Presented on interesting theoretical and practical developments in deep learning (NN-decision tree equivalence, zero-order optimization, Sharpness-Aware Minimization)
+      - Engaged with faculty and graduate students to explore the intersection of mathematics and machine learning (gerry-mandering, symmetry in ReLU MLPs)
+  -
+    name: SPH Lippo Village Applied Science Academy
+    location: Tangerang, Indonesia
+    position: Mentor
+    start_date: Aug 2023
+    end_date: Present
+    misc:
+      - "Mentored two high school students on Python and PyTorch fundamentals, focusing on hands-on projects involving audio-processing for mosquito species identification and keyboard keystroke sniffing"
+  -
+    name: Boston College Competitive Programming Team
+    location: Chestnut Hill, MA
+    position: Competitor
+    start_date: Sep 2022
+    end_date: Dec 2023
+    misc:
+      - Represented Boston College at the 2022 and 2023 ICPC Northeast North America Regional Contests
 
 awards:
   # Eagle Intern Fellowship Summer 2023, Undergraduate Research Fellowship Spring 2023
-  - name: Sophomore Scholar Award
-    venue_date: Boston College, 2023
+  # URF Spring '23, Fall '23
+  - name: Boston College Sophomore Scholar Award
+    venue_date: Spring 2023
     description: Granted to the top 5\% of the sophomore class
   -
-    name: Gabelli Presidential Scholarship
-    venue_date: Boston College, 2021
+    name: Boston College Gabelli Presidential Scholarship
+    venue_date: Fall 2021
     description: Competitive four-year full-tuition scholarship awarded to $\sim$15 students annually
   -
-    name: Best Poster Presentation
-    venue_date: ISMOA 2019
+    name: ISMOA Best Poster Presentation
+    venue_date: "Summer 2019"
     description: Awarded at the \nth{12} International Symposium on Modern Optics and its Applications
 
 projects:
@@ -106,7 +150,7 @@ projects:
     name: Moiré
     github_url: https://github.com/jasonkena/moire
     writeup_url: https://www.dropbox.com/s/i63dgelj6oateau/Jason_Ken_Adhinarta_Physics_IA.pdf
-    description: Modelled the angle dependence of Ohmic resistance in Moiré patterns induced by hexagonal lattices
+    description: Modelled the angle dependence of electrical resistance in Moiré patterns induced by hexagonal lattices
   -
     name: Reversing Nearness
     github_url: https://github.com/jasonkena/toroid
@@ -122,7 +166,7 @@ projects:
 skills:
   -
     category: Proficient
-    list: PyTorch, OpenCV, Dask, SLURM, Linux CLI, Arduino
+    list: Python, Numpy/Scipy, PyTorch, OpenCV, Dask, SLURM, Linux CLI, Arduino
   -
     category: Intermediate
     list: Javascript, Docker, Flask, PostgreSQL, LabView, Igor Pro, \LaTeX/TikZ
@@ -133,9 +177,9 @@ skills:
 coursework:
   -
     category: Computer Science
-    list: Logic and Computation, Randomness and Computation, Computer Organization, Computer Systems # CS 2
+    list: Computability and Computational Complexity, Algorithms, Logic and Computation, Randomness and Computation, Computer Organization, Computer Systems # CS 2
   -
     category: Mathematics
-    list: Probability Theory, Differential Equations, Multivariable Calculus, Linear Algebra #, Intro to Abstract Mathematics, Calc 2
-  - category: Physics
-    list: Vibrations and Waves, Intro to Modern Physics
+    list: Real Analysis, Mathematical Statistics, Probability Theory, Differential Equations, Multivariable Calculus, Linear Algebra #, Intro to Abstract Mathematics, Calc 2
+  # - category: Physics
+  #   list: Vibrations and Waves, Intro to Modern Physics
