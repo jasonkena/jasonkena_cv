@@ -11,7 +11,7 @@ education:
     degree: B.S. in Computer Science and Mathematics
     start_date: Aug 2021
     end_date: May 2025
-    gpa: 3.97/4.00
+    gpa: 3.98/4.00
     # misc: "Activities: Machine Intelligence Group, Boston College Competitive Programming Team"
   # -
   #   name: Sekolah Pelita Harapan Lippo Village
@@ -61,22 +61,26 @@ publications:
     name: "TriSAM: Tri-Plane SAM for zero-shot cortical blood vessel segmentation in VEM images"
     url: "\\arxiv{2401.13961v1}"
   -
-    authors: Xiaomeng Han, Xiaotang Lu, Peter H. Li, Shuohong Wang, Richard Schalek, Yaron Meirovitch, Zudi Lin, \textbf{Jason K. Adhinarta}, Daniel Berger, Yuelong Wu, Tao Fang, Elif S. Meral, Shadnan Asraf, Hidde Ploegh, Hanspeter Pfister, Donglai Wei, Viren Jain, James S. Trimmer, Jeff W. Lichtman
-    name: Multiplexed Volumetric CLEM enabled by antibody derivatives provides new insights into the cytology of the mouse cerebellar cortex
-    url: "\\biorxiv{10.1101/2023.05.20.540091v2} [under review]"
-  -
     authors: Shixuan Gu, \textbf{Jason K. Adhinarta}, Mikhail Bessmeltsev, Jiancheng Yang, Jessica Zhang, Daniel Berger, Jeff W. Lichtman, Hanspeter Pfister, Donglai Wei
     name: "FreSeg: Frenet-Frame-based Part Segmentation for 3D Curvilinear Structures"
-    url: "[manuscript in preparation]"
+    url: "\\arxiv{2404.14435}"
+  - authors: Jiancheng Yang, Ekaterina Sedykh, \textbf{Jason K. Adhinarta}, Hieu Le, Pascal Fua
+    name: Generating Anatomically Accurate Heart Structures via Neural Implicit Fields
+    venue: MICCAI 2024
+  -
+    authors: Xiaomeng Han, Xiaotang Lu, Peter H. Li, Shuohong Wang, Richard Schalek, Yaron Meirovitch, Zudi Lin, \textbf{Jason K. Adhinarta}, Daniel Berger, Yuelong Wu, Tao Fang, Elif S. Meral, Shadnan Asraf, Hidde Ploegh, Hanspeter Pfister, Donglai Wei, Viren Jain, James S. Trimmer, Jeff W. Lichtman
+    name: Multiplexed Volumetric CLEM enabled by antibody derivatives provides new insights into the cytology of the mouse cerebellar cortex
+    venue: Nature Communications 2024
+    url: "\\biorxiv{10.1101/2023.05.20.540091v2}"
   -
     authors: Liang Jin, Shixuan Gu, Donglai Wei, \textbf{Jason K. Adhinarta}, Kaiming Kuang, Yongjie J. Zhang, Hanspeter Pfister, Bingbing Ni, Jiancheng Yang, Ming Li
     name: "RibSeg v2: A Large-scale Benchmark for Rib Labeling and Anatomical Centerline Extraction"
-    venue: IEEE Transactions on Medical Imaging, 2023
+    venue: TMI 2023
     url: \doi{10.1109/TMI.2023.3313627}
   -
     authors: \textbf{Jason K. Adhinarta}, Eric Jobiliong, Muhandis Shiddiq, Henri P. Uranus and Eden Steven
     name: Light storage and thermal-assisted switching of SrAl\textsubscript{2}O\textsubscript{4}:Eu\textsuperscript{2+}, Dy\textsuperscript{3+}
-    venue: Journal of Nonlinear Optical Physics \& Materials, 2019
+    venue: JNOPM 2019
     url: \doi{10.1142/S0218863519500425}
 
 patents:
@@ -131,36 +135,40 @@ activities:
       - Represented Boston College at the 2022 and 2023 ICPC Northeast North America Regional Contests
 
 awards:
-  # Eagle Intern Fellowship Summer 2023, Undergraduate Research Fellowship Spring 2023
+  - name: Phi Beta Kappa
+    venue_date: Spring 2024
+  - name: Boston College Dean's Scholar Award
+    venue_date: Spring 2024
+  # Eagle Intern Fellowship Summer 2023
   # URF Spring '23, Fall '23
   - name: Boston College Sophomore Scholar Award
     venue_date: Spring 2023
-    description: Granted to the top 5\% of the sophomore class
+    # description: Granted to the top 5\% of the sophomore class
   -
     name: Boston College Gabelli Presidential Scholarship
     venue_date: Fall 2021
-    description: Competitive four-year full-tuition scholarship awarded to $\sim$15 students annually
+    # description: Competitive four-year full-tuition scholarship awarded to $\sim$15 students annually
   -
     name: ISMOA Best Poster Presentation
     venue_date: "Summer 2019"
     description: Awarded at the \nth{12} International Symposium on Modern Optics and its Applications
 
-projects:
-  -
-    name: Moiré
-    github_url: https://github.com/jasonkena/moire
-    writeup_url: https://www.dropbox.com/s/i63dgelj6oateau/Jason_Ken_Adhinarta_Physics_IA.pdf
-    description: Modelled the angle dependence of electrical resistance in Moiré patterns induced by hexagonal lattices
-  -
-    name: Reversing Nearness
-    github_url: https://github.com/jasonkena/toroid
-    writeup_url: https://github.com/jasonkena/Toroid/blob/master/Essay/main.pdf
-    description: Proposed a gradient descent-based solution for Al Zimmermann's combinatorics optimization contest
-  -
-    name: SimpleMMO PVP Tool
-    github_url: https://github.com/jasonkena/smmo_pvp_tool
-    website_url: https://revogen.xyz/
-    description: Developed a web-based tool to allow SimpleMMO players to aggregate results of PVP API endpoint scraping
+# projects:
+#   -
+#     name: Moiré
+#     github_url: https://github.com/jasonkena/moire
+#     writeup_url: https://www.dropbox.com/s/i63dgelj6oateau/Jason_Ken_Adhinarta_Physics_IA.pdf
+#     description: Modelled the angle dependence of electrical resistance in Moiré patterns induced by hexagonal lattices
+#   -
+#     name: Reversing Nearness
+#     github_url: https://github.com/jasonkena/toroid
+#     writeup_url: https://github.com/jasonkena/Toroid/blob/master/Essay/main.pdf
+#     description: Proposed a gradient descent-based solution for Al Zimmermann's combinatorics optimization contest
+#   -
+#     name: SimpleMMO PVP Tool
+#     github_url: https://github.com/jasonkena/smmo_pvp_tool
+#     website_url: https://revogen.xyz/
+#     description: Developed a web-based tool to allow SimpleMMO players to aggregate results of PVP API endpoint scraping
 
 
 skills:
@@ -177,9 +185,9 @@ skills:
 coursework:
   -
     category: Computer Science
-    list: Computability and Computational Complexity, Algorithms, Logic and Computation, Randomness and Computation, Computer Organization, Computer Systems # CS 2
+    list: Large Scale Data Processing, Computability and Computational Complexity, Algorithms, Formal Methods # Computer Systems # CS 2 Computer Organization Logic and Computation, Randomness and Computation, Computer Organization, 
   -
     category: Mathematics
-    list: Real Analysis, Mathematical Statistics, Probability Theory, Differential Equations, Multivariable Calculus, Linear Algebra #, Intro to Abstract Mathematics, Calc 2
+    list: Advanced Data Analysis, Mathematical Statistics, Probability Theory, Real Analysis, Differential Equations # Multivariable Calculus, Linear Algebra #, Intro to Abstract Mathematics, Calc 2
   # - category: Physics
   #   list: Vibrations and Waves, Intro to Modern Physics

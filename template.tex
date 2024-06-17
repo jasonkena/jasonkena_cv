@@ -110,8 +110,8 @@
     \ifx\relax#3\relax 
     \else
       \linebreak\textit{\small#3}
-      \vspace{-5pt}
     \fi
+    \vspace{-5pt}
 }
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.10in, rightmargin=0.10in, label={}]}
@@ -132,6 +132,7 @@
     [[ location ]]
 \end{center}
 
+[% if education is defined %]
 \section{Education}
   \vspace{3pt}
   \resumeSubHeadingListStart
@@ -140,7 +141,9 @@
   [% endfor %]
     
   \resumeSubHeadingListEnd
+[% endif %]
 
+[% if research is defined %]
 \section{Research Experience}
   \vspace{3pt}
   \resumeSubHeadingListStart
@@ -154,7 +157,9 @@
       \resumeItemListEnd
     [% endfor %]
   \resumeSubHeadingListEnd
+[% endif %]
 
+[% if publications is defined %]
 \section{Publications}
 \vspace{3pt}
 \resumeSubHeadingListStart
@@ -169,7 +174,9 @@
         [% endfor %]
     }}
 \resumeSubHeadingListEnd
+[% endif %]
 
+[% if patents is defined %]
 \section{Patents}
 \vspace{3pt}
 \resumeSubHeadingListStart
@@ -179,7 +186,20 @@
         [% endfor %]
     }}
 \resumeSubHeadingListEnd
+[% endif %]
 
+[% if teaching is defined %]
+\section{Teaching Assistantship}
+  \vspace{3pt}
+  \resumeSubHeadingListStart
+    [% for course in teaching %]
+    \simpleHeading
+    {[[ course.name ]] \normalfont\textit{\small ([[ course.instructor ]])}}{[[ course.college_year ]]}{[[ course.description ]]}
+    [% endfor %]
+  \resumeSubHeadingListEnd
+[% endif %]
+
+[% if activities is defined %]
 \section{Activities}
   \vspace{3pt}
   \resumeSubHeadingListStart
@@ -193,16 +213,10 @@
       \resumeItemListEnd
     [% endfor %]
   \resumeSubHeadingListEnd
+[% endif %]
 
-\section{Teaching Assistantship}
-  \vspace{3pt}
-  \resumeSubHeadingListStart
-    [% for course in teaching %]
-    \simpleHeading
-    {[[ course.name ]] \normalfont\textit{\small ([[ course.instructor ]])}}{[[ course.college_year ]]}{[[ course.description ]]}
-    [% endfor %]
-  \resumeSubHeadingListEnd
 
+[% if awards is defined %]
 \section{Awards}
   \vspace{3pt}
   \resumeSubHeadingListStart
@@ -211,7 +225,9 @@
     {[[ award.name ]]}{[[ award.venue_date ]]}{[[ award.description ]]}
     [% endfor %]
   \resumeSubHeadingListEnd
+[% endif %]
 
+[% if projects is defined %]
 \section{Projects}
     \vspace{3pt}
     \resumeSubHeadingListStart
@@ -227,7 +243,9 @@
     }{[[ project.description ]]}
     [% endfor %]
     \resumeSubHeadingListEnd
+[% endif %]
 
+[% if skills is defined %]
 \section{Skills}
   \vspace{3pt}
   \resumeSubHeadingListStart
@@ -237,7 +255,9 @@
         [% endfor %]
     }}
   \resumeSubHeadingListEnd
+[% endif %]
 
+[% if coursework is defined %]
 \section{Coursework}
   \vspace{3pt}
   \resumeSubHeadingListStart
@@ -247,5 +267,7 @@
         [% endfor %]
     }}
   \resumeSubHeadingListEnd
+[% endif %]
+
 
 \end{document}
