@@ -59,7 +59,7 @@ publications:
   - 
     authors: Jia Wan, Wanhua Li, Atmadeep Banerjee, \textbf{Jason K. Adhinarta}, Evelina Sjostedt, Jingpeng Wu, Jeff Lichtman, Hanspeter Pfister, Donglai Wei
     name: "TriSAM: Tri-Plane SAM for zero-shot cortical blood vessel segmentation in VEM images"
-    url: "\\arxiv{2401.13961v1}"
+    url: "\\arxiv{2401.13961v3}"
   -
     authors: Shixuan Gu, \textbf{Jason K. Adhinarta}, Mikhail Bessmeltsev, Jiancheng Yang, Jessica Zhang, Daniel Berger, Jeff W. Lichtman, Hanspeter Pfister, Donglai Wei
     name: "FreSeg: Frenet-Frame-based Part Segmentation for 3D Curvilinear Structures"
@@ -71,7 +71,7 @@ publications:
     authors: Xiaomeng Han, Xiaotang Lu, Peter H. Li, Shuohong Wang, Richard Schalek, Yaron Meirovitch, Zudi Lin, \textbf{Jason K. Adhinarta}, Daniel Berger, Yuelong Wu, Tao Fang, Elif S. Meral, Shadnan Asraf, Hidde Ploegh, Hanspeter Pfister, Donglai Wei, Viren Jain, James S. Trimmer, Jeff W. Lichtman
     name: Multiplexed Volumetric CLEM enabled by antibody derivatives provides new insights into the cytology of the mouse cerebellar cortex
     venue: Nature Communications 2024
-    url: "\\biorxiv{10.1101/2023.05.20.540091v2}"
+    url: \doi{10.1038/s41467-024-50411-z}
   -
     authors: Liang Jin, Shixuan Gu, Donglai Wei, \textbf{Jason K. Adhinarta}, Kaiming Kuang, Yongjie J. Zhang, Hanspeter Pfister, Bingbing Ni, Jiancheng Yang, Ming Li
     name: "RibSeg v2: A Large-scale Benchmark for Rib Labeling and Anatomical Centerline Extraction"
