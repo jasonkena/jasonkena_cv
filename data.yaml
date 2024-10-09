@@ -4,7 +4,7 @@ website_name: jasonkena.github.io
 website_url: https://jasonkena.github.io
 location: Chestnut Hill, MA
 
-education:
+education_skip:
   -
     name: Boston College
     location: Chestnut Hill, MA
@@ -29,10 +29,12 @@ research:
     start_date: Sep 2021
     end_date: Present
     misc:
-      - Designed methods to tackle multimodal problems in connectomics—blood vessel tracking, dendritic spine segmentation, and vesicle detection—by utilizing deep learning techniques (PointNet++, U-Net3D, Cellpose)
-      - Maintained evaluation containers for SNEMI3D, RNR-EXM, and AxonEM benchmarks on the Grand Challenge platform
-      - Created a Dask-powered framework to orchestrate data processing pipelines on large-scale datasets; ported 3D algorithms (3D connected components, euclidean distance transform, and TEASAR skeletonization) from the Seung Lab to be chunking-compatible
-      - Onboarded research interns onto the Boston College Linux Cluster and PyTorch Connectomics ecosystems
+      - Designed methods to extract anatomical structures from vessels and dendrites imaged using electron microscopy
+      - Maintained sites for biomedical ML benchmarks to enable reproducible evaluation of techniques for the community
+      - Orchestrated data pipelines on the Boston College Linux cluster on terabyte-scale datasets
+      - Onboarded research interns onto the lab's computational infrastructure
+      - Collaborated with neuroscience researchers at the Harvard Visual Computing Group, the Harvard Lichtman Lab, the NYU Neuroinformatics lab, and Rafael Yuste's lab at Columbia University
+      - Published a paper in Nature Communications 2024, with manuscripts under review at IEEE J-BHI and TMI, top medical imaging venues
   -
     name: EPFL CVLab
     location: Lausanne, Switzerland
@@ -40,8 +42,9 @@ research:
     start_date: May 2023
     end_date: Aug 2023
     misc:
-      - Developed point-cloud/volume-based baseline methods for rib segmentation and centerline extraction
-      - Implemented methods for heart reconstruction on diverse multimodal datasets (CT/MRI)
+      - Developed methods to generate anatomically accurate heart structures from MRI data using neural fields
+      - Implemented methods to extract ribcages from CT scans, creating a large-scale rib segmentation benchmark
+      - Published papers in TMI 2023 and MICCAI 2024; top medical imaging venues
   -
     name: Emmerich Research Center
     location: Jakarta, Indonesia
@@ -49,13 +52,15 @@ research:
     start_date: Aug 2018
     end_date: Aug 2021
     misc:
-      - Researched the lifecycle of Black Soldier Flies by employing segmentation (YOLACT, Mask-RCNN) and tracking methods (Differentiable Particle Filters, Tracking-by-Animation)
-      - Used XGBoost-powered models to standardize palm oil fruit grading for industry partners; deployed GCP pipelines to automate annotation/training cycles
-      - Developed contamination detection methods to streamline synthetic leather production systems
-      - Rigged heat and optical control systems to study phosphorescent phenomena under cryogenic temperatures
-      - Co-designed an electronics programming curriculum for an highschool extracurricular program # targeted at highschool students #; instructed at various workshops
+      - Worked closely with food scientists, chemists, physicists, and electrical engineers on interdisciplinary problems
+      - Rigged heat and optical control systems to study phosphorescent phenomena of glow-in-the-dark crystals under cryogenic temperatures; published a first-author paper in JNOPM 2019, awarded Best Poster Presentation at ISMOA 2019
+      - Developed contamination detection methods to streamline synthetic leather production systems; Indonesian patent pending on a robotic method to treat infections in fungal cultures (submitted in 2020)
+      - Computationally modeled the Ohmic resistance of hexagonal lattices analagous to twisted bilayer graphene
+      - Trained larvae tracking systems as part of a greater project to optimize conversion of organic waste into protein
+      - Crafted a computer vision system to automate palm oil fruit quality control for industry partners
+      - Co-designed an Arduino-based electronics programming curriculum for Sekolah Pelangi Kasih, a local high school
 
-publications:
+publications_skip:
   - 
     authors: Jia Wan, Wanhua Li, Atmadeep Banerjee, \textbf{Jason K. Adhinarta}, Evelina Sjostedt, Jingpeng Wu, Jeff Lichtman, Hanspeter Pfister, Donglai Wei
     name: "TriSAM: Tri-Plane SAM for zero-shot cortical blood vessel segmentation in VEM images"
@@ -83,7 +88,7 @@ publications:
     venue: JNOPM 2019
     url: \doi{10.1142/S0218863519500425}
 
-patents:
+patents_skip:
   -
     authors: Edmund F. Anderson, Eden Steven, Ray A. O. Sinurat, \textbf{Jason K. Adhinarta}, Calvin, Alvius Tinambunan, Josavan Ezekhiel, Andrew D. Widjaja
     name: A Robotic Method of Monitoring, Hydrating, Training, and Treating Bacterial or Fungal Infections of New-growth Fungal Cultures to Produce Densified Sheet-like Lateral Networks of Fungal Materials
@@ -106,8 +111,9 @@ activities:
     start_date: Sep 2022
     end_date: Present
     misc:
-      - Equipped members with machine learning skills required for research/engineering, connecting them with computer science research labs on campus
-      - Organized biweekly workshops, introducing modern deep learning techniques (e.g., Segment Anything, contrastive learning, adversarial robustness) to students
+      - Organized weekly seminars for an undergraduate audience, inviting speakers from industry and academia
+      - Equipped members with concrete engineering skills, promoting collaboration with CS/math research labs on campus
+      - Developed workshops on landmark ML methods in collaboration with Boston College Computer Science Society
   -
     name: Boston College Experimental Math and Machine Learning Lab
     location: Chestnut Hill, MA
@@ -115,8 +121,9 @@ activities:
     start_date: March 2023
     end_date: Present
     misc:
-      - Presented on interesting theoretical and practical developments in deep learning (NN-decision tree equivalence, zero-order optimization, Sharpness-Aware Minimization)
-      - Engaged with faculty and graduate students to explore the intersection of mathematics and machine learning (gerry-mandering, symmetry in ReLU MLPs)
+      - Presented on interesting theoretical and practical developments in deep learning to a mathematically inclined audience
+      - Engaged with faculty and graduate students to explore the intersection of mathematics and machine learning
+      - Received funding from a Teaching-Advising-Mentoring grant Summer 2024 to develop tutorial materials on CLI tools
   -
     name: SPH Lippo Village Applied Science Academy
     location: Tangerang, Indonesia
@@ -124,7 +131,7 @@ activities:
     start_date: Aug 2023
     end_date: Present
     misc:
-      - "Mentored two high school students on Python and PyTorch fundamentals, focusing on hands-on projects involving audio-processing for mosquito species identification and keyboard keystroke sniffing"
+      - Remotely mentored three high school students with varying experience levels on the Python deep learning ecosystem, with an emphasis on hands-on projects such as audio-processing for mosquito species identification, keyboard keystroke sniffing attacks, and remote-controlled-car navigation using novel view synthesis
   -
     name: Boston College Competitive Programming Team
     location: Chestnut Hill, MA
@@ -134,7 +141,7 @@ activities:
     misc:
       - Represented Boston College at the 2022 and 2023 ICPC Northeast North America Regional Contests
 
-awards:
+awards_skip:
   - name: Phi Beta Kappa
     venue_date: Spring 2024
   - name: Boston College Dean's Scholar Award
@@ -171,7 +178,7 @@ awards:
 #     description: Developed a web-based tool to allow SimpleMMO players to aggregate results of PVP API endpoint scraping
 
 
-skills:
+skills_skip:
   -
     category: Proficient
     list: Python, Numpy/Scipy, PyTorch, OpenCV, Dask, SLURM, Linux CLI, Arduino
@@ -182,7 +189,7 @@ skills:
     category: Basic
     list: C++, Coq, Haskell, AWS/GCP
 
-coursework:
+coursework_skip:
   -
     category: Computer Science
     list: Large Scale Data Processing, Computability and Computational Complexity, Algorithms, Formal Methods # Computer Systems # CS 2 Computer Organization Logic and Computation, Randomness and Computation, Computer Organization, 
