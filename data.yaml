@@ -67,6 +67,7 @@ publications:
   - authors: Jiancheng Yang, Ekaterina Sedykh, \textbf{Jason K. Adhinarta}, Hieu Le, Pascal Fua
     name: Generating Anatomically Accurate Heart Structures via Neural Implicit Fields
     venue: MICCAI 2024
+    url: \doi{10.1007/978-3-031-72378-0\_25}
   -
     authors: Xiaomeng Han, Xiaotang Lu, Peter H. Li, Shuohong Wang, Richard Schalek, Yaron Meirovitch, Zudi Lin, \textbf{Jason K. Adhinarta}, Daniel Berger, Yuelong Wu, Tao Fang, Elif S. Meral, Shadnan Asraf, Hidde Ploegh, Hanspeter Pfister, Donglai Wei, Viren Jain, James S. Trimmer, Jeff W. Lichtman
     name: Multiplexed Volumetric CLEM enabled by antibody derivatives provides new insights into the cytology of the mouse cerebellar cortex
