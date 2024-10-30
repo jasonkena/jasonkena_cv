@@ -34,7 +34,6 @@ research:
       - Orchestrated data pipelines on the Boston College Linux cluster on terabyte-scale datasets
       - Onboarded research interns onto the lab's computational infrastructure
       - Collaborated with neuroscience researchers at the Harvard Visual Computing Group, the Harvard Lichtman Lab, the NYU Neuroinformatics lab, and Rafael Yuste's lab at Columbia University
-      - Published a paper in Nature Communications 2024, with manuscripts under review at IEEE J-BHI and TMI, top medical imaging venues
   -
     name: EPFL CVLab
     location: Lausanne, Switzerland
@@ -44,7 +43,6 @@ research:
     misc:
       - Developed methods to generate anatomically accurate heart structures from MRI data using neural fields
       - Implemented methods to extract ribcages from CT scans, creating a large-scale rib segmentation benchmark
-      - Published papers in TMI 2023 and MICCAI 2024; top medical imaging venues
   -
     name: Emmerich Research Center
     location: Jakarta, Indonesia
@@ -53,25 +51,28 @@ research:
     end_date: Aug 2021
     misc:
       - Worked closely with food scientists, chemists, physicists, and electrical engineers on interdisciplinary problems
-      - Rigged heat and optical control systems to study phosphorescent phenomena of glow-in-the-dark crystals under cryogenic temperatures; published a first-author paper in JNOPM 2019, awarded Best Poster Presentation at ISMOA 2019
-      - Developed contamination detection methods to streamline synthetic leather production systems; Indonesian patent pending on a robotic method to treat infections in fungal cultures (submitted in 2020)
+      - Rigged heat and optical control systems to study phosphorescent phenomena of glow-in-the-dark crystals under cryogenic temperatures
+      - Developed contamination detection methods to streamline synthetic leather production systems
       - Computationally modeled the Ohmic resistance of hexagonal lattices analagous to twisted bilayer graphene
       - Trained larvae tracking systems as part of a greater project to optimize conversion of organic waste into protein
       - Crafted a computer vision system to automate palm oil fruit quality control for industry partners
       - Co-designed an Arduino-based electronics programming curriculum for Sekolah Pelangi Kasih, a local high school
 
-publications_skip:
+publications:
   - 
     authors: Jia Wan, Wanhua Li, Atmadeep Banerjee, \textbf{Jason K. Adhinarta}, Evelina Sjostedt, Jingpeng Wu, Jeff Lichtman, Hanspeter Pfister, Donglai Wei
     name: "TriSAM: Tri-Plane SAM for zero-shot cortical blood vessel segmentation in VEM images"
     url: "\\arxiv{2401.13961v3}"
+    venue: Under review at IEEE Journal of Biomedical and Health Informatics
   -
     authors: Shixuan Gu, \textbf{Jason K. Adhinarta}, Mikhail Bessmeltsev, Jiancheng Yang, Jessica Zhang, Daniel Berger, Jeff W. Lichtman, Hanspeter Pfister, Donglai Wei
     name: "FreSeg: Frenet-Frame-based Part Segmentation for 3D Curvilinear Structures"
     url: "\\arxiv{2404.14435}"
-  - authors: Jiancheng Yang, Ekaterina Sedykh, \textbf{Jason K. Adhinarta}, Hieu Le, Pascal Fua
+    venue: Under review at IEEE Transactions on Medical Imaging
+  - 
+    authors: Jiancheng Yang, Ekaterina Sedykh, \textbf{Jason K. Adhinarta}, Hieu Le, Pascal Fua
     name: Generating Anatomically Accurate Heart Structures via Neural Implicit Fields
-    venue: MICCAI 2024
+    venue: Medical Image Computing and Computer-Assisted Intervention 2024
   -
     authors: Xiaomeng Han, Xiaotang Lu, Peter H. Li, Shuohong Wang, Richard Schalek, Yaron Meirovitch, Zudi Lin, \textbf{Jason K. Adhinarta}, Daniel Berger, Yuelong Wu, Tao Fang, Elif S. Meral, Shadnan Asraf, Hidde Ploegh, Hanspeter Pfister, Donglai Wei, Viren Jain, James S. Trimmer, Jeff W. Lichtman
     name: Multiplexed Volumetric CLEM enabled by antibody derivatives provides new insights into the cytology of the mouse cerebellar cortex
@@ -80,7 +81,7 @@ publications_skip:
   -
     authors: Liang Jin, Shixuan Gu, Donglai Wei, \textbf{Jason K. Adhinarta}, Kaiming Kuang, Yongjie J. Zhang, Hanspeter Pfister, Bingbing Ni, Jiancheng Yang, Ming Li
     name: "RibSeg v2: A Large-scale Benchmark for Rib Labeling and Anatomical Centerline Extraction"
-    venue: TMI 2023
+    venue: IEEE Transactions on Medical Imaging 2023
     url: \doi{10.1109/TMI.2023.3313627}
   -
     authors: \textbf{Jason K. Adhinarta}, Eric Jobiliong, Muhandis Shiddiq, Henri P. Uranus and Eden Steven
@@ -88,7 +89,7 @@ publications_skip:
     venue: JNOPM 2019
     url: \doi{10.1142/S0218863519500425}
 
-patents_skip:
+patents:
   -
     authors: Edmund F. Anderson, Eden Steven, Ray A. O. Sinurat, \textbf{Jason K. Adhinarta}, Calvin, Alvius Tinambunan, Josavan Ezekhiel, Andrew D. Widjaja
     name: A Robotic Method of Monitoring, Hydrating, Training, and Treating Bacterial or Fungal Infections of New-growth Fungal Cultures to Produce Densified Sheet-like Lateral Networks of Fungal Materials
@@ -111,7 +112,7 @@ activities:
     start_date: Sep 2022
     end_date: Present
     misc:
-      - Organized weekly seminars for an undergraduate audience, inviting speakers from industry and academia
+      - Organized weekly seminars for an undergraduate audience, hosting industry experts from Meta, Google, Red Hat
       - Equipped members with concrete engineering skills, promoting collaboration with CS/math research labs on campus
       - Developed workshops on landmark ML methods in collaboration with Boston College Computer Science Society
   -
@@ -141,7 +142,7 @@ activities:
     misc:
       - Represented Boston College at the 2022 and 2023 ICPC Northeast North America Regional Contests
 
-awards_skip:
+awards:
   - name: Phi Beta Kappa
     venue_date: Spring 2024
   - name: Boston College Dean's Scholar Award
@@ -189,12 +190,12 @@ skills_skip:
     category: Basic
     list: C++, Coq, Haskell, AWS/GCP
 
-coursework_skip:
+coursework:
   -
     category: Computer Science
-    list: Large Scale Data Processing, Computability and Computational Complexity, Algorithms, Formal Methods # Computer Systems # CS 2 Computer Organization Logic and Computation, Randomness and Computation, Computer Organization, 
+    list: Large Scale Data Processing, Computability and Computational Complexity, Algorithms, Formal Methods, Honors Thesis # Computer Systems # CS 2 Computer Organization Logic and Computation, Randomness and Computation, Computer Organization, 
   -
     category: Mathematics
-    list: Advanced Data Analysis, Mathematical Statistics, Probability Theory, Real Analysis, Differential Equations # Multivariable Calculus, Linear Algebra #, Intro to Abstract Mathematics, Calc 2
+    list: Advanced Data Analysis, Mathematical Statistics, Probability Theory, Abstract Algebra, Real Analysis, Complex Analysis, Differential Equations # Multivariable Calculus, Linear Algebra #, Intro to Abstract Mathematics, Calc 2
   # - category: Physics
   #   list: Vibrations and Waves, Intro to Modern Physics
