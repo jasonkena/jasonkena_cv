@@ -29,6 +29,7 @@ research:
     start_date: Sep 2021
     end_date: Present
     misc:
+      # SUPIR image super-resolution
       - Designed methods to tackle multimodal problems in connectomics—blood vessel tracking, dendritic spine segmentation, and vesicle detection—by utilizing deep learning techniques (PointNet++, U-Net3D, Cellpose)
       - Maintained evaluation containers for SNEMI3D, RNR-EXM, and AxonEM benchmarks on the Grand Challenge platform
       - Created a Dask-powered framework to orchestrate data processing pipelines on large-scale datasets; ported 3D algorithms (3D connected components, euclidean distance transform, and TEASAR skeletonization) from the Seung Lab to be chunking-compatible
