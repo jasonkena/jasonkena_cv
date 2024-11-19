@@ -68,9 +68,9 @@ publications:
     name: "WormND: A Benchmark for Extracting Whole-Brain Neural Dynamics of \\textit{C. elegans} at the Neuron Resolution"
     venue: Manuscript in preparation
   - 
-    authors: Jia Wan, Wanhua Li, Atmadeep Banerjee, \textbf{Jason K. Adhinarta}, Evelina Sjostedt, Jingpeng Wu, Jeff Lichtman, Hanspeter Pfister, Donglai Wei
+    authors: Jia Wan, Wanhua Li, \textbf{Jason K. Adhinarta}, Atmadeep Banerjee, Evelina Sjostedt, Jingpeng Wu, Jeff Lichtman, Hanspeter Pfister, Donglai Wei
     name: "TriSAM: Tri-Plane SAM for zero-shot cortical blood vessel segmentation in VEM images"
-    url: "\\arxiv{2401.13961v3}"
+    url: "\\arxiv{2401.13961v4}"
     venue: Under review at IEEE Journal of Biomedical and Health Informatics
   -
     authors: Shixuan Gu, \textbf{Jason K. Adhinarta}, Mikhail Bessmeltsev, Jiancheng Yang, Jessica Zhang, Wenjie Yin, Daniel Berger, Jeff W. Lichtman, Hanspeter Pfister, Donglai Wei
