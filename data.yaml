@@ -29,11 +29,15 @@ research:
     start_date: Sep 2021
     end_date: Present
     misc:
-      # SUPIR image super-resolution
-      - Designed methods to tackle multimodal problems in connectomics—blood vessel tracking, dendritic spine segmentation, and vesicle detection—by utilizing deep learning techniques (PointNet++, U-Net3D, Cellpose)
+#       # SUPIR image super-resolution
+#       - Created a Dask-powered framework to orchestrate data processing pipelines on large-scale datasets; ported 3D algorithms (3D connected components, euclidean distance transform, and TEASAR skeletonization) from the Seung Lab to be chunking-compatible
+#       - Designed methods to tackle multimodal problems in connectomics—blood vessel tracking, dendritic spine segmentation, and vesicle detection—by utilizing deep learning techniques (PointNet++, U-Net3D, Cellpose)
+      - Designed methods to extract anatomical structures from vessels and dendrites imaged using electron microscopy
       - Maintained evaluation containers for SNEMI3D, RNR-EXM, and AxonEM benchmarks on the Grand Challenge platform
-      - Created a Dask-powered framework to orchestrate data processing pipelines on large-scale datasets; ported 3D algorithms (3D connected components, euclidean distance transform, and TEASAR skeletonization) from the Seung Lab to be chunking-compatible
+      # - Maintained sites for biomedical ML benchmarks to enable reproducible evaluation of techniques for the community
+      - Orchestrated data pipelines for processing terabyte-scale datasets using Dask, SLURM, and Princeton Seung Lab's suite
       - Onboarded research interns onto the Boston College Linux Cluster and PyTorch Connectomics ecosystems
+      - Collaborated with neuroscientists and computer vision experts at Harvard Visual Computing Group, Harvard Lichtman Lab, NYU Neuroinformatics lab, UMass Chan Yemini Lab, and Rafael Yuste's lab at Columbia
   -
     name: EPFL CVLab
     location: Lausanne, Switzerland
@@ -41,8 +45,8 @@ research:
     start_date: May 2023
     end_date: Aug 2023
     misc:
-      - Developed point-cloud/volume-based baseline methods for rib segmentation and centerline extraction
-      - Implemented methods for heart reconstruction on diverse multimodal datasets (CT/MRI)
+      - Developed methods to generate anatomically accurate heart structures from MRI data using neural fields, part of a larger project to create realistic augmented reality cardiac intervention simulations for medical training
+      - Implemented methods to extract ribcages from CT scans, creating a large-scale rib segmentation benchmark
   -
     name: Emmerich Research Center
     location: Jakarta, Indonesia
@@ -50,24 +54,33 @@ research:
     start_date: Aug 2018
     end_date: Aug 2021
     misc:
-      - Researched the lifecycle of Black Soldier Flies by employing segmentation (YOLACT, Mask-RCNN) and tracking methods (Differentiable Particle Filters, Tracking-by-Animation)
-      - Used XGBoost-powered models to standardize palm oil fruit grading for industry partners; deployed GCP pipelines to automate annotation/training cycles
+      - Worked closely with food scientists, chemists, physicists, and electrical engineers on interdisciplinary problems
+      - Rigged optical control systems to study phosphorescence of glow-in-the-dark crystals under cryogenic temperatures
       - Developed contamination detection methods to streamline synthetic leather production systems
-      - Rigged heat and optical control systems to study phosphorescent phenomena under cryogenic temperatures
-      - Co-designed an electronics programming curriculum for an highschool extracurricular program # targeted at highschool students #; instructed at various workshops
+      - Computationally modeled the Ohmic resistance of hexagonal lattices analagous to twisted bilayer graphene
+      - Trained larvae tracking systems as part of a greater project to optimize conversion of organic waste into protein
+      - Crafted a computer vision system to automate palm oil fruit quality control for industry partners
+      - Co-designed an Arduino-based electronics programming curriculum for Sekolah Pelangi Kasih, a local high school
 
 publications:
+  - 
+    authors: \textbf{Jason K. Adhinarta}*, Jizheng Dong*, Tianxiao He*, Junxiang Huang*, Daniel Sprague*, Jia Wan, Hyun Jee Lee, Zikai Yu, Hang Lu, Eviatar Yemini, Saul Kato, Erdem Varol, Donglai Wei
+    name: "WormND: A Benchmark for Extracting Whole-Brain Neural Dynamics of \\textit{C. elegans} at the Neuron Resolution"
+    venue: Manuscript in preparation
   - 
     authors: Jia Wan, Wanhua Li, Atmadeep Banerjee, \textbf{Jason K. Adhinarta}, Evelina Sjostedt, Jingpeng Wu, Jeff Lichtman, Hanspeter Pfister, Donglai Wei
     name: "TriSAM: Tri-Plane SAM for zero-shot cortical blood vessel segmentation in VEM images"
     url: "\\arxiv{2401.13961v3}"
+    venue: Under review at IEEE Journal of Biomedical and Health Informatics
   -
-    authors: Shixuan Gu, \textbf{Jason K. Adhinarta}, Mikhail Bessmeltsev, Jiancheng Yang, Jessica Zhang, Daniel Berger, Jeff W. Lichtman, Hanspeter Pfister, Donglai Wei
-    name: "FreSeg: Frenet-Frame-based Part Segmentation for 3D Curvilinear Structures"
+    authors: Shixuan Gu, \textbf{Jason K. Adhinarta}, Mikhail Bessmeltsev, Jiancheng Yang, Jessica Zhang, Wenjie Yin, Daniel Berger, Jeff W. Lichtman, Hanspeter Pfister, Donglai Wei
+    name: "Frenet-Serret Frame-based Decomposition for Part Segmentation of 3D Curvilinear Structures"
     url: "\\arxiv{2404.14435}"
-  - authors: Jiancheng Yang, Ekaterina Sedykh, \textbf{Jason K. Adhinarta}, Hieu Le, Pascal Fua
+    venue: Under review at IEEE Transactions on Medical Imaging
+  - 
+    authors: Jiancheng Yang, Ekaterina Sedykh, \textbf{Jason K. Adhinarta}, Hieu Le, Pascal Fua
     name: Generating Anatomically Accurate Heart Structures via Neural Implicit Fields
-    venue: MICCAI 2024
+    venue: Medical Image Computing and Computer-Assisted Intervention 2024
     url: \doi{10.1007/978-3-031-72378-0\_25}
   -
     authors: Xiaomeng Han, Xiaotang Lu, Peter H. Li, Shuohong Wang, Richard Schalek, Yaron Meirovitch, Zudi Lin, \textbf{Jason K. Adhinarta}, Daniel Berger, Yuelong Wu, Tao Fang, Elif S. Meral, Shadnan Asraf, Hidde Ploegh, Hanspeter Pfister, Donglai Wei, Viren Jain, James S. Trimmer, Jeff W. Lichtman
@@ -77,19 +90,19 @@ publications:
   -
     authors: Liang Jin, Shixuan Gu, Donglai Wei, \textbf{Jason K. Adhinarta}, Kaiming Kuang, Yongjie J. Zhang, Hanspeter Pfister, Bingbing Ni, Jiancheng Yang, Ming Li
     name: "RibSeg v2: A Large-scale Benchmark for Rib Labeling and Anatomical Centerline Extraction"
-    venue: TMI 2023
+    venue: IEEE Transactions on Medical Imaging 2023
     url: \doi{10.1109/TMI.2023.3313627}
   -
     authors: \textbf{Jason K. Adhinarta}, Eric Jobiliong, Muhandis Shiddiq, Henri P. Uranus and Eden Steven
     name: Light storage and thermal-assisted switching of SrAl\textsubscript{2}O\textsubscript{4}:Eu\textsuperscript{2+}, Dy\textsuperscript{3+}
-    venue: JNOPM 2019
+    venue: "Journal of Nonlinear Optical Physics \\& Materials 2019"
     url: \doi{10.1142/S0218863519500425}
 
 patents:
   -
     authors: Edmund F. Anderson, Eden Steven, Ray A. O. Sinurat, \textbf{Jason K. Adhinarta}, Calvin, Alvius Tinambunan, Josavan Ezekhiel, Andrew D. Widjaja
     name: A Robotic Method of Monitoring, Hydrating, Training, and Treating Bacterial or Fungal Infections of New-growth Fungal Cultures to Produce Densified Sheet-like Lateral Networks of Fungal Materials
-    url: \href{https://pdki-indonesia.dgip.go.id/detail/469b3735e17ef3b025c34af11710e9bfffe2de10284fb52ed77d4e03dd710c29%3Fnomor=P00202009416?type=patent&keyword=P00202009416}{PDKI:P00202009416} [pending]
+    url: \href{https://pdki-indonesia.dgip.go.id/detail/469b3735e17ef3b025c34af11710e9bfffe2de10284fb52ed77d4e03dd710c29%3Fnomor=P00202009416?type=patent&keyword=P00202009416}{PDKI:P00202009416}. Patent pending, submitted in 2020.
 
 teaching:
   - name: "CSCI 3397: Biomedical Image Analysis"
@@ -108,17 +121,19 @@ activities:
     start_date: Sep 2022
     end_date: Present
     misc:
-      - Equipped members with machine learning skills required for research/engineering, connecting them with computer science research labs on campus
-      - Organized biweekly workshops, introducing modern deep learning techniques (e.g., Segment Anything, contrastive learning, adversarial robustness) to students
+      - Organized weekly seminars for an undergraduate audience, hosting industry experts from Meta, Google, Red Hat
+      - Equipped members with concrete engineering skills, promoting collaboration with CS/math research labs on campus
+      - Developed workshops on landmark ML methods in collaboration with Boston College Computer Science Society
   -
     name: Boston College Experimental Math and Machine Learning Lab
     location: Chestnut Hill, MA
     position: Member
-    start_date: March 2023
+    start_date: Mar 2023
     end_date: Present
     misc:
-      - Presented on interesting theoretical and practical developments in deep learning (NN-decision tree equivalence, zero-order optimization, Sharpness-Aware Minimization)
-      - Engaged with faculty and graduate students to explore the intersection of mathematics and machine learning (gerry-mandering, symmetry in ReLU MLPs)
+      - Presented on interesting theoretical and practical developments in deep learning to a mathematically inclined audience
+      - Engaged with faculty and graduate students to explore the intersection of mathematics and machine learning
+      - Received funding from a Teaching-Advising-Mentoring grant Summer 2024 to develop tutorial materials on CLI tools
   -
     name: SPH Lippo Village Applied Science Academy
     location: Tangerang, Indonesia
@@ -126,7 +141,24 @@ activities:
     start_date: Aug 2023
     end_date: Present
     misc:
-      - "Mentored two high school students on Python and PyTorch fundamentals, focusing on hands-on projects involving audio-processing for mosquito species identification and keyboard keystroke sniffing"
+      - Remotely mentored three high school students with varying experience levels on the Python deep learning ecosystem, with an emphasis on hands-on projects such as audio-processing for mosquito species identification, keyboard keystroke sniffing attacks, and remote-controlled-car navigation using novel view synthesis
+  - 
+    name: Citylife Presbyterian Church
+    location: Boston, MA
+    position: Community Group Co-leader
+    start_date: Aug 2024
+    end_date: Present
+    misc:
+      - Facilitated weekly student-led meetings involving praise, prayer, and sermon discussions at Boston College
+  -
+    name: Brighton High School, Haley House, The City
+    location: Boston, MA
+    position: Volunteer
+    start_date: May 2022
+    end_date: May 2023
+    misc:
+      - "Summer 2022: Served as a teaching assistant at Brighton High School for math classes; aided in sorting and distribution of clothing donations at Haley House; interviewed families of COVID victims for The City, a NYC-based news organization, wrote obituaries for publication"
+      - "Fall 2022 - Spring 2023: Co-ran the Threads campaign at Boston College, organizing a clothing drive and panel discussion with activists from St. Francis House, Cradles to Crayons, and Haley House to raise awareness on clothing insecurity"
   -
     name: Boston College Competitive Programming Team
     location: Chestnut Hill, MA
@@ -139,17 +171,21 @@ activities:
 awards:
   - name: Phi Beta Kappa
     venue_date: Spring 2024
+    description: Nominated as a junior, based on academic engagement, intellectual curiosity, and leadership capacity
   - name: Boston College Dean's Scholar Award
     venue_date: Spring 2024
-  # Eagle Intern Fellowship Summer 2023
-  # URF Spring '23, Fall '23
+    description: Granted to the top 5\% of the junior class based on academic performance and co-curricular leadership
+  - name: Boston College Eagle Intern Fellowship
+    venue_date: Summer 2023
+    description: "\\$4,800 stipend awarded for full-time research internship"
+
   - name: Boston College Sophomore Scholar Award
     venue_date: Spring 2023
-    # description: Granted to the top 5\% of the sophomore class
+    description: Granted to the top 5\% of the sophomore class based on academic excellence
   -
     name: Boston College Gabelli Presidential Scholarship
     venue_date: Fall 2021
-    # description: Competitive four-year full-tuition scholarship awarded to $\sim$15 students annually
+    description: Competitive four-year full-tuition scholarship awarded to $\sim$15 students annually
   -
     name: ISMOA Best Poster Presentation
     venue_date: "Summer 2019"
@@ -173,7 +209,7 @@ awards:
 #     description: Developed a web-based tool to allow SimpleMMO players to aggregate results of PVP API endpoint scraping
 
 
-skills:
+skills_skip:
   -
     category: Proficient
     list: Python, Numpy/Scipy, PyTorch, OpenCV, Dask, SLURM, Linux CLI, Arduino
@@ -184,12 +220,12 @@ skills:
     category: Basic
     list: C++, Coq, Haskell, AWS/GCP
 
-coursework:
+coursework_skip:
   -
     category: Computer Science
-    list: Large Scale Data Processing, Computability and Computational Complexity, Algorithms, Formal Methods # Computer Systems # CS 2 Computer Organization Logic and Computation, Randomness and Computation, Computer Organization, 
+    list: Large Scale Data Processing, Computability and Computational Complexity, Algorithms, Formal Methods, Honors Thesis # Computer Systems # CS 2 Computer Organization Logic and Computation, Randomness and Computation, Computer Organization, 
   -
     category: Mathematics
-    list: Advanced Data Analysis, Mathematical Statistics, Probability Theory, Real Analysis, Differential Equations # Multivariable Calculus, Linear Algebra #, Intro to Abstract Mathematics, Calc 2
+    list: Advanced Data Analysis, Mathematical Statistics, Probability Theory, Abstract Algebra, Real Analysis, Complex Analysis, Differential Equations # Multivariable Calculus, Linear Algebra #, Intro to Abstract Mathematics, Calc 2
   # - category: Physics
   #   list: Vibrations and Waves, Intro to Modern Physics
