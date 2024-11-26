@@ -137,7 +137,7 @@
   \vspace{3pt}
   \resumeSubHeadingListStart
   [% for school in education %]
-  \resumeSubheading{[[ school.name ]]}{[[ school.location ]]}{[[ school.degree ]];   \textbf{GPA: [[ school.gpa ]]}}{[[ school.start_date ]] \textbf{--} [[ school.end_date ]]}{[[school.misc]]}
+  \resumeSubheading{[[ school.name ]]}{[[ school.location ]]}{[[ school.degree ]]}{[[ school.start_date ]] \textbf{--} [[ school.end_date ]]}{[[school.misc]]}
   [% endfor %]
     
   \resumeSubHeadingListEnd
@@ -163,14 +163,18 @@
 \section{Publications}
 \vspace{3pt}
 \resumeSubHeadingListStart
+\item \textit{\small{* indicates equal contribution}}\vspace{-5pt}
     \small{\item{
         [% for publication in publications %]
-        [[ publication.authors ]]. \textbf{[[ publication.name ]]}. 
-        \ifx\relax[[ publication.venue ]]\relax % Check if #5 is defined (empty)
-        \else
-          [[ publication.venue ]].        
-        \fi
-         [[ publication.url ]]
+        \samepage{
+          \hypertarget{[[ publication.tag ]]}{[[ '['+publication.tag_alpha + ']' ]]}
+          [[ publication.authors ]]. \textbf{[[ publication.name ]]}. 
+          \ifx\relax[[ publication.venue ]]\relax % Check if #5 is defined (empty)
+          \else
+            [[ publication.venue ]].        
+          \fi
+           [[ publication.url ]]
+         }
         [% endfor %]
     }}
 \resumeSubHeadingListEnd
@@ -182,7 +186,10 @@
 \resumeSubHeadingListStart
     \small{\item{
         [% for patent in patents %]
-        [[ patent.authors ]]. \textbf{[[ patent.name ]]}. [[ patent.url ]]
+        \samepage{
+          \hypertarget{[[ patent.tag ]]}{[[ '[' + 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'[loop.index0 + publications|length] + ']' ]]}
+          [[ patent.authors ]]. \textbf{[[ patent.name ]]}. [[ patent.url ]]
+        }
         [% endfor %]
     }}
 \resumeSubHeadingListEnd
