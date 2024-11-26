@@ -37,7 +37,7 @@ research:
       # - Maintained sites for biomedical ML benchmarks to enable reproducible evaluation of techniques for the community
       - Orchestrated data pipelines for processing terabyte-scale datasets using Dask, SLURM, and Princeton Seung Lab's suite
       - Onboarded research interns onto the Boston College Linux Cluster and PyTorch Connectomics ecosystems
-      - Collaborated with neuroscientists and computer vision experts at Harvard Visual Computing Group, Harvard Lichtman Lab, NYU Neuroinformatics lab, UMass Chan Yemini Lab, and Rafael Yuste's lab at Columbia
+      - Collaborated with neuroscientists and computer vision experts at Harvard Visual Computing Group, Harvard Lichtman Lab, NYU Neuroinformatics lab, UMass Chan Yemini Lab, and Rafael Yuste's lab at Columbia University
   -
     name: EPFL CVLab
     location: Lausanne, Switzerland
@@ -66,7 +66,7 @@ publications:
   - 
     authors: \textbf{Jason K. Adhinarta}*, Jizheng Dong*, Tianxiao He*, Junxiang Huang*, Daniel Sprague*, Jia Wan, Hyun Jee Lee, Zikai Yu, Hang Lu, Eviatar Yemini, Saul Kato, Erdem Varol, Donglai Wei
     name: "WormND: A Benchmark for Extracting Whole-Brain Neural Dynamics of \\textit{C. elegans} at the Neuron Resolution"
-    venue: Manuscript in preparation
+    venue: Manuscript under revision
   - 
     authors: Jia Wan, Wanhua Li, \textbf{Jason K. Adhinarta}, Atmadeep Banerjee, Evelina Sjostedt, Jingpeng Wu, Jeff Lichtman, Hanspeter Pfister, Donglai Wei
     name: "TriSAM: Tri-Plane SAM for zero-shot cortical blood vessel segmentation in VEM images"
