@@ -36,7 +36,8 @@ def preprocess(data):
         for j in range(len(data["research"][i]["misc"])):
             try:
                 data["research"][i]["misc"][j] = replace_refs(
-                    data["research"][i]["misc"][j], lambda x: f"[{tags[x]}]"
+                    data["research"][i]["misc"][j],
+                    lambda x: f"\\hypertarget{{{x}_back}}{{[{tags[x]}]}}",
                 )
             except Exception as e:
                 print(data["research"][i]["misc"][j])

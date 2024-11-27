@@ -167,7 +167,9 @@
     \small{\item{
         [% for publication in publications %]
         \samepage{
-          \hypertarget{[[ publication.tag ]]}{[[ '['+publication.tag_alpha + ']' ]]}
+          \hypertarget{[[ publication.tag ]]}{
+            \hyperlink{[[ publication.tag + '_back' ]]}{[[ '['+publication.tag_alpha + ']' ]]}
+          }
           [[ publication.authors ]]. \textbf{[[ publication.name ]]}. 
           \ifx\relax[[ publication.venue ]]\relax % Check if #5 is defined (empty)
           \else
@@ -187,7 +189,9 @@
     \small{\item{
         [% for patent in patents %]
         \samepage{
-          \hypertarget{[[ patent.tag ]]}{[[ '[' + 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'[loop.index0 + publications|length] + ']' ]]}
+          \hypertarget{[[ patent.tag ]]}{
+            \hyperlink{[[ patent.tag + '_back' ]]}{[[ '['+patent.tag_alpha + ']' ]]}
+          }
           [[ patent.authors ]]. \textbf{[[ patent.name ]]}. [[ patent.url ]]
         }
         [% endfor %]
