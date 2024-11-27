@@ -7,13 +7,20 @@ def replace_refs(input_string, func):
     # Regex to match REF_{id}
     pattern = r"REF_(\w+)"
 
+    ids = re.findall(pattern, input_string)
+
     # Function to replace each match
     def replacer(match):
         id = match.group(1)  # Extract the id
         return rf"\hyperlink{{{id}}}{{{func(id)}}}"
 
     # Substitute all matches in the string
-    return re.sub(pattern, replacer, input_string)
+    substituted = re.sub(pattern, replacer, input_string)
+
+    for id in ids:
+        substituted = rf"\hypertarget{{{id}_back}}{{{substituted}}}"
+
+    return substituted
 
 
 def preprocess(data):
@@ -37,12 +44,13 @@ def preprocess(data):
             try:
                 data["research"][i]["misc"][j] = replace_refs(
                     data["research"][i]["misc"][j],
-                    lambda x: f"\\hypertarget{{{x}_back}}{{[{tags[x]}]}}",
+                    lambda x: f"[{tags[x]}]",
                 )
             except Exception as e:
                 print(data["research"][i]["misc"][j])
                 print(e)
-                breakpoint()
+                raise e
+                # breakpoint()
 
     return data
 
