@@ -43,7 +43,7 @@ research:
     start_date: May 2023
     end_date: Aug 2023
     misc:
-      - "Orchestrated pipelines integrating the STU-Net \\textbf{medical image segmentation foudation model} with our \\textbf{geometrically-constrained neural implicit fields} to generate anatomically accurate heart structures from our aggregated dataset of 140 \\textbf{MRI scans}. Contributed to the Heart Augmented Reality Training System, in collaboration with Swiss medical imaging company ADIS and the Cardiology Division of Lausanne University Hospital REF_imheart"
+      - "Orchestrated pipelines integrating the STU-Net \\textbf{medical image segmentation foundation model} with our \\textbf{geometrically-constrained neural implicit fields} to generate anatomically accurate heart structures from our aggregated dataset of 140 \\textbf{MRI scans}. Contributed to the Heart Augmented Reality Training System, in collaboration with Swiss medical imaging company ADIS and the Cardiology Division of Lausanne University Hospital REF_imheart"
       - "Evaluated \\textbf{voxel/point-cloud segmentation} models (PointNet/PointNet++, DGCNN, PointCNN, nnU-Net) and \\textbf{centerline extraction} techniques (Kimimaro, L1-Medial Skeletonization) on our proposed dataset of 660 \\textbf{CT scans} and 15,466 individually annotated ribs. Implemented a Docker compatability wrapper for the L1-Medial Skeletonization codebase from 2016. Ongoing work to incorporate the \\textbf{mesh representations of ribcages} integrated into the \\textbf{MedShapeNet2.0} dataset. In collaboration with radiologists at Huadong Hospital, China and Shixuan Gu at Harvard Visual Computing Group REF_ribseg"
   - name: Emmerich Research Center
     location: Jakarta, Indonesia

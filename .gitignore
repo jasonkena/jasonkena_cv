@@ -5,3 +5,10 @@ main.log
 main.out
 main.pdf
 main.tex
+stanford_sop.aux
+stanford_sop.fdb_latexmk
+stanford_sop.fls
+stanford_sop.log
+stanford_sop.out
+stanford_sop.pdf
+stanford_sop.tex
