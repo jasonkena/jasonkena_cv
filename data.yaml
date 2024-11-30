@@ -44,7 +44,7 @@ research:
     end_date: Aug 2023
     misc:
       - "Orchestrated pipelines integrating the STU-Net \\textbf{medical image segmentation foundation model} with our \\textbf{geometrically-constrained neural implicit fields} to generate anatomically accurate heart structures from our aggregated dataset of 140 \\textbf{MRI scans}. Contributed to the Heart Augmented Reality Training System, in collaboration with Swiss medical imaging company ADIS and the Cardiology Division of Lausanne University Hospital REF_imheart"
-      - "Evaluated \\textbf{voxel/point-cloud segmentation} models (PointNet/PointNet++, DGCNN, PointCNN, nnU-Net) and \\textbf{centerline extraction} techniques (Kimimaro, L1-Medial Skeletonization) on our proposed dataset of 660 \\textbf{CT scans} and 15,466 individually annotated ribs. Implemented a Docker compatability wrapper for the L1-Medial Skeletonization codebase from 2016. Ongoing work to incorporate the \\textbf{mesh representations of ribcages} integrated into the \\textbf{MedShapeNet2.0} dataset. In collaboration with radiologists at Huadong Hospital, China and Shixuan Gu at Harvard Visual Computing Group REF_ribseg"
+      - "Evaluated \\textbf{voxel/point-cloud segmentation} models (PointNet/PointNet++, DGCNN, PointCNN, nnU-Net) and \\textbf{centerline extraction} techniques (Kimimaro, L1-Medial Skeletonization) on our proposed dataset of 660 \\textbf{CT scans} and 15,466 individually annotated ribs. Implemented a Docker compatability wrapper for the L1-Medial Skeletonization codebase from 2016. Ongoing work to incorporate the \\textbf{mesh representations of ribcages} into the \\textbf{MedShapeNet2.0} dataset. In collaboration with radiologists at Huadong Hospital, China and Shixuan Gu at Harvard Visual Computing Group REF_ribseg"
   - name: Emmerich Research Center
     location: Jakarta, Indonesia
     position: Research Intern (advised by Dr.\,Eden Steven)
@@ -108,7 +108,8 @@ patents:
   - tag: mycelium
     authors: Edmund F. Anderson, Eden Steven, Ray A. O. Sinurat, \textbf{Jason K. Adhinarta}, Calvin, Alvius Tinambunan, Josavan Ezekhiel, Andrew D. Widjaja
     name: A Robotic Method of Monitoring, Hydrating, Training, and Treating Bacterial or Fungal Infections of New-growth Fungal Cultures to Produce Densified Sheet-like Lateral Networks of Fungal Materials
-    url: \href{https://pdki-indonesia.dgip.go.id/detail/469b3735e17ef3b025c34af11710e9bfffe2de10284fb52ed77d4e03dd710c29%3Fnomor=P00202009416?type=patent&keyword=P00202009416}{PDKI:P00202009416}. Patent pending, submitted to Indonesian patent registry in 2020
+    url: \href{https://jasonkena.github.io/static/patent.pdf}{PDKI:P00202009416}. Patent pending, submitted to Indonesian patent registry in 2020
+    # url: \href{https://pdki-indonesia.dgip.go.id/detail/469b3735e17ef3b025c34af11710e9bfffe2de10284fb52ed77d4e03dd710c29%3Fnomor=P00202009416?type=patent&keyword=P00202009416}{PDKI:P00202009416}. Patent pending, submitted to Indonesian patent registry in 2020
 
 teaching:
   - name: "CSCI 3397: Biomedical Image Analysis"
