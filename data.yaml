@@ -106,7 +106,7 @@ publications:
 
 patents:
   - tag: mycelium
-    authors: Edmund F. Anderson, Eden Steven, Ray A. O. Sinurat, \textbf{Jason K. Adhinarta}, Calvin, Alvius Tinambunan, Josavan Ezekhiel, Andrew D. Widjaja
+    authors: Eden Steven, Ray A. O. Sinurat, Alvius Tinambunan, Edmund F. Anderson, Calvin, Andrew D. Widjaja, Josavan Ezekhiel, \textbf{Jason K. Adhinarta}
     name: A Robotic Method of Monitoring, Hydrating, Training, and Treating Bacterial or Fungal Infections of New-growth Fungal Cultures to Produce Densified Sheet-like Lateral Networks of Fungal Materials
     url: \href{https://jasonkena.github.io/static/patent.pdf}{PDKI:P00202009416}. Patent pending, submitted to Indonesian patent registry in 2020
     # url: \href{https://pdki-indonesia.dgip.go.id/detail/469b3735e17ef3b025c34af11710e9bfffe2de10284fb52ed77d4e03dd710c29%3Fnomor=P00202009416?type=patent&keyword=P00202009416}{PDKI:P00202009416}. Patent pending, submitted to Indonesian patent registry in 2020
