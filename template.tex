@@ -29,6 +29,7 @@
 \newcommand*{\doi}[1]{\href{http://dx.doi.org/#1}{doi:#1}}
 \newcommand*{\arxiv}[1]{\href{http://arxiv.org/abs/#1}{arXiv:#1}}
 \newcommand*{\biorxiv}[1]{\href{http://biorxiv.org/content/#1}{bioRxiv:#1}}
+\newcommand*{\pubmed}[1]{\href{http://www.ncbi.nlm.nih.gov/pubmed/#1}{PMID:#1}}
 
 
 %---------- FONT OPTIONS ----------
@@ -161,10 +162,9 @@
 [% endif %]
 
 [% if publications is defined %]
-\section{Publications}
+\section{Publications \textit{\small{(* indicates equal contribution)}}}
 \vspace{3pt}
 \resumeSubHeadingListStart
-\item \textit{\small{* indicates equal contribution}}\vspace{-5pt}
     \small{\item{
         [% for publication in publications %]
         \samepage{
