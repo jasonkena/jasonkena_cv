@@ -1,0 +1,270 @@
+% resume template adapted from Aras Güngöre
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{verbatim}
+\usepackage{enumitem}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks = true,
+    allcolors = Brown,
+}
+
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{hyphenat}
+\usepackage{fontawesome}
+\usepackage{ragged2e}
+\usepackage[super]{nth}
+
+\input{glyphtounicode}
+
+\newcommand*{\doi}[1]{\href{http://dx.doi.org/#1}{doi:#1}}
+\newcommand*{\arxiv}[1]{\href{http://arxiv.org/abs/#1}{arXiv:#1}}
+\newcommand*{\biorxiv}[1]{\href{http://biorxiv.org/content/#1}{bioRxiv:#1}}
+\newcommand*{\pubmed}[1]{\href{http://www.ncbi.nlm.nih.gov/pubmed/#1}{PMID:#1}}
+
+
+%---------- FONT OPTIONS ----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+\usepackage[T1]{fontenc}
+\usepackage[bitstream-charter]{mathdesign}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeSubheading}[5]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}
+        \ifx\relax#5\relax 
+          \vspace{-7pt}
+        \else
+          \linebreak\textit{\small#5}
+          \vspace{-3pt}
+        \fi
+}
+
+\newcommand{\simpleHeading}[3]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small#1} & \small#2 \\
+    \end{tabular*}
+    \ifx\relax#3\relax 
+    \else
+      \linebreak\textit{\small#3}
+    \fi
+    \vspace{-5pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.10in, rightmargin=0.10in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+\justifying
+
+\begin{center}
+  \textbf{\Huge \scshape Jason Ken Adhinarta} \\ \vspace{3pt}
+    \small
+    \href{https://jasonkena.github.io}{jasonkena.github.io}
+   \hspace{0.05cm}$\cdot$\hspace{0.05cm}
+    \href{mailto:jason.adhinarta@bc.edu}{ jason.adhinarta@bc.edu }
+   \hspace{0.05cm}$\cdot$\hspace{0.05cm}
+    Chestnut Hill, MA
+\end{center}
+
+\section{Publications \textit{\small{(* indicates equal contribution)}}}
+\vspace{3pt}
+\resumeSubHeadingListStart
+    \small{\item{
+        
+        \samepage{
+          \hypertarget{hydra}{
+            [A]
+          }
+          \textbf{Jason K. Adhinarta}*, Yutian Fan*, Michael Lin*, Richard Ren*, Micaela Roth*, Ayal Yakobe*, Shulin Zhang*, Rafael Yuste, Donglai Wei. \textbf{VesicleEM: A Comprehensive Vesicle Analysis Toolbox for Volumetric Electron Microscopy}. 
+          \ifx\relaxManuscript in preparation\relax % Check if #5 is defined (empty)
+          \else
+            Manuscript in preparation.        
+          \fi
+           
+         }
+        
+        \samepage{
+          \hypertarget{hydra_bio}{
+            [B]
+          }
+          Shulin Zhang, Netanel Ofer, Wataru Yamomoto, Richard Schalek, Yuelong Wu, Christoph Dupre, \textbf{Jason K. Adhinarta}, Yutian Fan, Michael Lin, Micaela Roth, Ben Cox, Celina Juliano, Donglai Wei, Jeff Lichtman, Rafael Yuste. \textbf{Connectomic analysis of the \textit{Hydra vulgaris} endoderm: cell types and vesicles}. 
+          \ifx\relaxManuscript in preparation\relax % Check if #5 is defined (empty)
+          \else
+            Manuscript in preparation.        
+          \fi
+           
+         }
+        
+        \samepage{
+          \hypertarget{wormnd}{
+            [C]
+          }
+          \textbf{Jason K. Adhinarta}*, Jizheng Dong*, Tianxiao He*, Junxiang Huang*, Daniel Sprague*, Jia Wan, Hyun Jee Lee, Zikai Yu, Hang Lu, Eviatar Yemini, Saul Kato, Erdem Varol, Donglai Wei. \textbf{WormND: A Benchmark for Extracting Whole-Brain Neural Dynamics of \textit{C. elegans} at the Neuron Resolution}. 
+          \ifx\relaxManuscript under revision\relax % Check if #5 is defined (empty)
+          \else
+            Manuscript under revision.        
+          \fi
+           
+         }
+        
+        \samepage{
+          \hypertarget{freseg}{
+            [D]
+          }
+          Shixuan Gu, \textbf{Jason K. Adhinarta}, Mikhail Bessmeltsev, Jiancheng Yang, Jessica Zhang, Wenjie Yin, Daniel Berger, Jeff W. Lichtman, Hanspeter Pfister, Donglai Wei. \textbf{Frenet-Serret Frame-based Decomposition for Part Segmentation of 3D Curvilinear Structures}. 
+          \ifx\relaxUnder review at IEEE Transactions on Medical Imaging\relax % Check if #5 is defined (empty)
+          \else
+            Under review at IEEE Transactions on Medical Imaging.        
+          \fi
+           \arxiv{2404.14435}
+         }
+        
+        \samepage{
+          \hypertarget{trisam}{
+            [E]
+          }
+          Jia Wan, Wanhua Li, \textbf{Jason K. Adhinarta}, Atmadeep Banerjee, Evelina Sjostedt, Jingpeng Wu, Jeff Lichtman, Hanspeter Pfister, Donglai Wei. \textbf{TriSAM: Tri-Plane SAM for zero-shot cortical blood vessel segmentation in VEM images}. 
+          \ifx\relaxUnder review at IEEE Journal of Biomedical and Health Informatics\relax % Check if #5 is defined (empty)
+          \else
+            Under review at IEEE Journal of Biomedical and Health Informatics.        
+          \fi
+           \arxiv{2401.13961v4}
+         }
+        
+        \samepage{
+          \hypertarget{xiaomeng}{
+            [F]
+          }
+          Xiaomeng Han, Xiaotang Lu, Peter H. Li, Shuohong Wang, Richard Schalek, Yaron Meirovitch, Zudi Lin, \textbf{Jason K. Adhinarta}, Daniel Berger, Yuelong Wu, Tao Fang, Elif S. Meral, Shadnan Asraf, Hidde Ploegh, Hanspeter Pfister, Donglai Wei, Viren Jain, James S. Trimmer, Jeff W. Lichtman. \textbf{Multiplexed Volumetric CLEM enabled by antibody derivatives provides new insights into the cytology of the mouse cerebellar cortex}. 
+          \ifx\relaxNature Communications 2024\relax % Check if #5 is defined (empty)
+          \else
+            Nature Communications 2024.        
+          \fi
+           \doi{10.1038/s41467-024-50411-z} \pubmed{39103318}
+         }
+        
+        \samepage{
+          \hypertarget{imheart}{
+            [G]
+          }
+          Jiancheng Yang, Ekaterina Sedykh, \textbf{Jason K. Adhinarta}, Hieu Le, Pascal Fua. \textbf{Generating Anatomically Accurate Heart Structures via Neural Implicit Fields}. 
+          \ifx\relaxMedical Image Computing and Computer-Assisted Intervention 2024\relax % Check if #5 is defined (empty)
+          \else
+            Medical Image Computing and Computer-Assisted Intervention 2024.        
+          \fi
+           \doi{10.1007/978-3-031-72378-0\_25}
+         }
+        
+        \samepage{
+          \hypertarget{ribseg}{
+            [H]
+          }
+          Liang Jin, Shixuan Gu, Donglai Wei, \textbf{Jason K. Adhinarta}, Kaiming Kuang, Yongjie J. Zhang, Hanspeter Pfister, Bingbing Ni, Jiancheng Yang, Ming Li. \textbf{RibSeg v2: A Large-scale Benchmark for Rib Labeling and Anatomical Centerline Extraction}. 
+          \ifx\relaxIEEE Transactions on Medical Imaging 2023\relax % Check if #5 is defined (empty)
+          \else
+            IEEE Transactions on Medical Imaging 2023.        
+          \fi
+           \doi{10.1109/TMI.2023.3313627} \pubmed{37695967}
+         }
+        
+        \samepage{
+          \hypertarget{phosphor}{
+            [I]
+          }
+          \textbf{Jason K. Adhinarta}, Eric Jobiliong, Muhandis Shiddiq, Henri P. Uranus and Eden Steven. \textbf{Light storage and thermal-assisted switching of SrAl\textsubscript{2}O\textsubscript{4}:Eu\textsuperscript{2+}, Dy\textsuperscript{3+}}. 
+          \ifx\relaxJournal of Nonlinear Optical Physics \& Materials 2019\relax % Check if #5 is defined (empty)
+          \else
+            Journal of Nonlinear Optical Physics \& Materials 2019.        
+          \fi
+           \doi{10.1142/S0218863519500425}
+         }
+        
+    }}
+\resumeSubHeadingListEnd
+
+
+
+\section{Patents}
+\vspace{3pt}
+\resumeSubHeadingListStart
+    \small{\item{
+        
+        \samepage{
+          \hypertarget{mycelium}{
+            [J]
+          }
+          Eden Steven, Ray A. O. Sinurat, Alvius Tinambunan, Edmund F. Anderson, Calvin, Andrew D. Widjaja, Josavan Ezekhiel, \textbf{Jason K. Adhinarta}. \textbf{A Robotic Method of Monitoring, Hydrating, Training, and Treating Bacterial or Fungal Infections of New-growth Fungal Cultures to Produce Densified Sheet-like Lateral Networks of Fungal Materials}. \href{https://jasonkena.github.io/static/patent.pdf}{PDKI:P00202009416}. Patent pending, submitted to Indonesian patent registry in 2020
+        }
+        
+    }}
+\resumeSubHeadingListEnd
+
+
+\end{document}
