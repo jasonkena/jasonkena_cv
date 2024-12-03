@@ -64,11 +64,11 @@ publications:
   - tag: hydra
     authors: \textbf{Jason K. Adhinarta}*, Yutian Fan*, Michael Lin*, Richard Ren*, Micaela Roth*, Ayal Yakobe*, Shulin Zhang*, Rafael Yuste, Donglai Wei
     name: "VesicleEM: A Comprehensive Vesicle Analysis Toolbox for Volumetric Electron Microscopy"
-    venue: Manuscript in preparation
+    venue: Manuscript in preparation; planned submission to PLOS Computational Biology
   - tag: hydra_bio
     authors: Shulin Zhang, Netanel Ofer, Wataru Yamomoto, Richard Schalek, Yuelong Wu, Christoph Dupre, \textbf{Jason K. Adhinarta}, Yutian Fan, Michael Lin, Micaela Roth, Ben Cox, Celina Juliano, Donglai Wei, Jeff Lichtman, Rafael Yuste
     name: "Connectomic analysis of the \\textit{Hydra vulgaris} endoderm: cell types and vesicles"
-    venue: Manuscript in preparation
+    venue: Manuscript in preparation; planned submission to Current Biology
   - tag: wormnd
     authors: \textbf{Jason K. Adhinarta}*, Jizheng Dong*, Tianxiao He*, Junxiang Huang*, Daniel Sprague*, Jia Wan, Hyun Jee Lee, Zikai Yu, Hang Lu, Eviatar Yemini, Saul Kato, Erdem Varol, Donglai Wei
     name: "WormND: A Benchmark for Extracting Whole-Brain Neural Dynamics of \\textit{C. elegans} at the Neuron Resolution"
