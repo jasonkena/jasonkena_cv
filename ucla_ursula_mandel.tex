@@ -1,0 +1,208 @@
+% resume template adapted from Aras Güngöre
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{verbatim}
+\usepackage{enumitem}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks = true,
+    allcolors = Brown,
+}
+
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{hyphenat}
+\usepackage{fontawesome}
+\usepackage{ragged2e}
+\usepackage[super]{nth}
+\usepackage{expl3}
+
+
+
+\ExplSyntaxOn
+% Define the custom command
+\NewDocumentCommand{\customcommand}{mm}{
+    \int_zero:N \l_tmpa_int % Reset the counter
+    % Parse the input lists
+    \seq_set_split:Nnn \l_tmpa_seq { , } { #1 } % First list
+    \seq_set_split:Nnn \l_tmpb_seq { , } { #2 } % Second list
+
+    % Ensure both lists have the same length
+    \int_compare:nNnTF {\seq_count:N \l_tmpa_seq} = {\seq_count:N \l_tmpb_seq}
+        {
+            % If lengths match, generate hyperlinks
+          [\seq_mapthread_function:NNN \l_tmpa_seq \l_tmpb_seq \__customcommand_generate_hyperlink:nn]
+        }
+        {
+            % If lengths don't match, throw an error
+            \textbf{Error: Lists must have the same length!}
+        }
+}
+
+\cs_new_protected:Nn \__customcommand_generate_hyperlink:nn {
+    \int_incr:N \l_tmpa_int % Increment the counter
+    \hyperlink{#1}{#2}%
+    % Add a comma and space unless this is the last item
+    \int_compare:nNnT {\l_tmpa_int} < {\seq_count:N \l_tmpa_seq}
+        {,~}
+}
+
+\ExplSyntaxOff
+
+
+\input{glyphtounicode}
+
+\newcommand*{\doi}[1]{\href{http://dx.doi.org/#1}{doi:#1}}
+\newcommand*{\arxiv}[1]{\href{http://arxiv.org/abs/#1}{arXiv:#1}}
+\newcommand*{\biorxiv}[1]{\href{http://biorxiv.org/content/#1}{bioRxiv:#1}}
+\newcommand*{\pubmed}[1]{\href{http://www.ncbi.nlm.nih.gov/pubmed/#1}{PMID:#1}}
+
+
+%---------- FONT OPTIONS ----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+\usepackage[T1]{fontenc}
+\usepackage[bitstream-charter]{mathdesign}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+% \addtolength{\oddsidemargin}{-0.5in}
+% \addtolength{\evensidemargin}{-0.5in}
+% \addtolength{\textwidth}{1in}
+% \addtolength{\topmargin}{-.5in}
+% \addtolength{\textheight}{1.0in}
+\addtolength{\oddsidemargin}{-0.25in}
+\addtolength{\evensidemargin}{-0.25in}
+\addtolength{\textwidth}{0.5in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+
+\newcommand{\dualsectionold}[2]{%
+  \noindent
+    \parbox[b]{0.5\textwidth}{\raggedright\scshape\large #1}%
+    \hfill
+    \parbox[b]{0.5\textwidth}{\raggedleft\scshape\large #2}%
+}
+\newcommand{\dualsectionhline}{%
+  \vspace{2pt}\color{black}\titlerule\vspace{-5pt}
+}
+  
+\newcommand{\dualsection}[2]{%
+  \dualsectionold{#1}{#2}%
+  \vspace{-5pt}\dualsectionhline
+}
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeSubheading}[5]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}
+        \ifx\relax#5\relax 
+          \vspace{-7pt}
+        \else
+          \linebreak\textit{\small#5}
+          \vspace{-3pt}
+        \fi
+}
+
+\newcommand{\simpleHeading}[3]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small#1} & \small#2 \\
+    \end{tabular*}
+    \ifx\relax#3\relax 
+    \else
+      \linebreak\textit{\small#3}
+    \fi
+    \vspace{-5pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.10in, rightmargin=0.10in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+\justifying
+
+\begin{center}
+  \textbf{\Huge \scshape Dr.\ Ursula Mandel Statement} \\ \vspace{3pt}
+    \small
+    \href{https://jasonkena.github.io}{jasonkena.github.io}
+   \hspace{0.05cm}$\cdot$\hspace{0.05cm}
+    \href{mailto:jason.adhinarta@bc.edu}{ jason.adhinarta@bc.edu }
+   \hspace{0.05cm}$\cdot$\hspace{0.05cm}
+    Chestnut Hill, MA
+\end{center}
+
+
+\dualsection{Jason Ken Adhinarta}{University of California Los Angeles}
+\vspace{2pt}\color{black}\titlerule%\vspace{-5pt}
+
+
+I am applying for a \textbf{PhD in Computer Science at UCLA}, with the goal of developing robust \textbf{computer vision} models for \textbf{medical applications}.
+
+My journey with biomedical image analysis began with my first research project at the Boston College Computer Vision Lab. I collaborated with Shixuan Gu, a master’s student at Carnegie Mellon University at the time, who hypothesized that the Frenet-Serret formulas from differential geometry could be used to \textbf{improve the detection of aneurysms and synaptic connections} by “straightening” blood vessel and dendrite geometries before they are fed into machine learning models. After I implemented and ran experiments for dendritic spine segmentation, we hastily prepared a manuscript detailing how enforcing this equivariance allowed our point cloud models to maintain high performance with \textbf{significantly less data and fewer augmentations on our datasets}. Despite my eagerness to land my first deep learning publication, our submission was rejected.
+
+Taking feedback from the rebuttal to heart, I evaluated the performance of modern point cloud architectures, implemented 5-fold cross-validation across our benchmarks, and manually inspected our annotations for the 4,476 dendritic spines we had. I performed detailed analyses studying how our transform induced cross-domain generalization—allowing models trained on the dendrites in the mouse somatosensory cortex to demonstrate strong \textbf{zero-shot performance on structures in the mouse visual cortex and human frontal lobe}. We are currently undergoing revisions for our submission to \textit{IEEE Transactions on Medical Imaging}. While I hope to do work that accelerates scientific progress, this project taught me that proper science is “slow,” requiring meticulous attention to detail and the humility to recognize mistakes.
+
+In biomedical imaging, the quality of training data is crucial. This sensitivity is particularly evident in connectomics, where errors in neuron geometry can take expert neuroscientists countless hours to correct. At Boston College, I addressed this challenge by \textbf{developing benchmarks for segmentation and image registration tasks in electron microscopy}, collaborating with neuroscience labs at Harvard University. I led the creation of Dockerized evaluation containers for the \textit{SNEMI3D}, \textit{AxonEM}, and \textit{RNR-EXM} benchmarks on the GrandChallenge platform. Optimizing these evaluation pipelines to run under tight memory constraints allowed 327 teams worldwide to obtain accurate performance metrics on hidden test sets. This work, though unglamorous, underscored the importance of \textbf{building accessible tools and datasets that promote open science and facilitate standardized validation of research methodologies}.
+
+Many biomedical imaging tasks, such as ribcage and heart structure prediction, face challenges due to limited access to CT and MRI data. Modern transformer-based architectures, like those behind ChatGPT, thrive on massive datasets---often unavailable in medical settings. During my internship at the CVLab at EPFL, I tackled this problem by incorporating geometric priors to train anatomically accurate models with less data. Working with radiologists at Huadong Hospital, China, \textbf{we developed the \textit{RibSegV2} dataset, comprising 660 CT scans with 15,466 individually annotated ribs for rib labeling and anatomical centerline extraction}. Under the guidance of Dr.\ Jiancheng Yang, I trained and evaluated five different segmentation architectures using voxel and point-cloud representations, forming the backbone of our empirical results. This collaboration resulted in a co-authored paper published in \textit{IEEE Transactions on Medical Imaging 2023}. We hope these methods will \textbf{help clinicians identify rib fractures and estimate lung volume} more effectively.
+
+Through these experiences, I developed a strong foundation in computer vision, and a commitment to research that addresses clinical challenges. At UCLA, I hope to continue this work in developing robust, data-efficient models under the guidance of medical vision experts.
+
+\end{document}

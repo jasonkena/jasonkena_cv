@@ -1,0 +1,202 @@
+% resume template adapted from Aras Güngöre
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{verbatim}
+\usepackage{enumitem}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks = true,
+    allcolors = Brown,
+}
+
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{hyphenat}
+\usepackage{fontawesome}
+\usepackage{ragged2e}
+\usepackage[super]{nth}
+\usepackage{expl3}
+
+
+
+\ExplSyntaxOn
+% Define the custom command
+\NewDocumentCommand{\customcommand}{mm}{
+    \int_zero:N \l_tmpa_int % Reset the counter
+    % Parse the input lists
+    \seq_set_split:Nnn \l_tmpa_seq { , } { #1 } % First list
+    \seq_set_split:Nnn \l_tmpb_seq { , } { #2 } % Second list
+
+    % Ensure both lists have the same length
+    \int_compare:nNnTF {\seq_count:N \l_tmpa_seq} = {\seq_count:N \l_tmpb_seq}
+        {
+            % If lengths match, generate hyperlinks
+          [\seq_mapthread_function:NNN \l_tmpa_seq \l_tmpb_seq \__customcommand_generate_hyperlink:nn]
+        }
+        {
+            % If lengths don't match, throw an error
+            \textbf{Error: Lists must have the same length!}
+        }
+}
+
+\cs_new_protected:Nn \__customcommand_generate_hyperlink:nn {
+    \int_incr:N \l_tmpa_int % Increment the counter
+    \hyperlink{#1}{#2}%
+    % Add a comma and space unless this is the last item
+    \int_compare:nNnT {\l_tmpa_int} < {\seq_count:N \l_tmpa_seq}
+        {,~}
+}
+
+\ExplSyntaxOff
+
+
+\input{glyphtounicode}
+
+\newcommand*{\doi}[1]{\href{http://dx.doi.org/#1}{doi:#1}}
+\newcommand*{\arxiv}[1]{\href{http://arxiv.org/abs/#1}{arXiv:#1}}
+\newcommand*{\biorxiv}[1]{\href{http://biorxiv.org/content/#1}{bioRxiv:#1}}
+\newcommand*{\pubmed}[1]{\href{http://www.ncbi.nlm.nih.gov/pubmed/#1}{PMID:#1}}
+
+
+%---------- FONT OPTIONS ----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+\usepackage[T1]{fontenc}
+\usepackage[bitstream-charter]{mathdesign}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+% \addtolength{\oddsidemargin}{-0.5in}
+% \addtolength{\evensidemargin}{-0.5in}
+% \addtolength{\textwidth}{1in}
+% \addtolength{\topmargin}{-.5in}
+% \addtolength{\textheight}{1.0in}
+\addtolength{\oddsidemargin}{-0.25in}
+\addtolength{\evensidemargin}{-0.25in}
+\addtolength{\textwidth}{0.5in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+
+\newcommand{\dualsectionold}[2]{%
+  \noindent
+    \parbox[b]{0.5\textwidth}{\raggedright\scshape\large #1}%
+    \hfill
+    \parbox[b]{0.5\textwidth}{\raggedleft\scshape\large #2}%
+}
+\newcommand{\dualsectionhline}{%
+  \vspace{2pt}\color{black}\titlerule\vspace{-5pt}
+}
+  
+\newcommand{\dualsection}[2]{%
+  \dualsectionold{#1}{#2}%
+  \vspace{-5pt}\dualsectionhline
+}
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeSubheading}[5]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}
+        \ifx\relax#5\relax 
+          \vspace{-7pt}
+        \else
+          \linebreak\textit{\small#5}
+          \vspace{-3pt}
+        \fi
+}
+
+\newcommand{\simpleHeading}[3]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small#1} & \small#2 \\
+    \end{tabular*}
+    \ifx\relax#3\relax 
+    \else
+      \linebreak\textit{\small#3}
+    \fi
+    \vspace{-5pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.10in, rightmargin=0.10in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+\justifying
+
+\begin{center}
+  \textbf{\Huge \scshape Personal Experience} \\ \vspace{3pt}
+    \small
+    \href{https://jasonkena.github.io}{jasonkena.github.io}
+   \hspace{0.05cm}$\cdot$\hspace{0.05cm}
+    \href{mailto:jason.adhinarta@bc.edu}{ jason.adhinarta@bc.edu }
+   \hspace{0.05cm}$\cdot$\hspace{0.05cm}
+    Chestnut Hill, MA
+\end{center}
+
+
+\dualsection{Jason Ken Adhinarta}{University of Maryland}
+\vspace{2pt}\color{black}\titlerule%\vspace{-5pt}
+
+
+Since Fall 2023, I have been \textbf{remotely advising highschool students} at Sekolah Pelita Harapan in Tangerang, Indonesia through the Applied Science Academy. This year, I am supporting a sophomore passionate about autonomous vehicles. It was through the same program that I found my passion for computer vision, and I am humbled to now support his growth in robotics. Months ago, we brainstormed building a remote-controlled car with a mounted camera for spatial navigation using neural radiance fields. Recently, he set up the controls and began feeding footage into Nerfstudio.
+
+Engaging with these students has reinforced my dedication to making education accessible---a commitment shaped by my own experiences as a \textbf{first-generation American}. I am grateful for the full-tuition scholarship and need-based aid that made my undergraduate studies possible, and I have taken on research or teaching roles every semester at Boston College to cover the remaining costs. \textbf{I aspire to become a professor}, melding research and teaching to support others facing similar barriers.
+
+A PhD in Computer Science at UMD is a step toward this goal. Complementing my research, I look forward to contributing through teaching, whether by inspiring highschool students through the \textbf{TRAILS AI Summer Academy} or by serving as a TA for \textbf{CMSC 426: Computer Vision.}
+
+\end{document}
