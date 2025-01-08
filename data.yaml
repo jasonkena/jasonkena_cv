@@ -71,18 +71,19 @@ publications:
     venue: Manuscript in preparation; planned submission to Current Biology
   - tag: wormnd
     authors: \textbf{Jason K. Adhinarta}*, Jizheng Dong*, Tianxiao He*, Junxiang Huang*, Daniel Sprague*, Jia Wan, Hyun Jee Lee, Zikai Yu, Hang Lu, Eviatar Yemini, Saul Kato, Erdem Varol, Donglai Wei
-    name: "WormND: A Benchmark for Extracting Whole-Brain Neural Dynamics of \\textit{C. elegans} at the Neuron Resolution"
-    venue: Manuscript under revision
+    name: "WormID-Benchmark: Extracting Whole-Brain Neural Dynamics of \\textit{C. elegans} at the Neuron Resolution"
+    # venue: Manuscript under revision
+    url: "\\biorxiv{10.1101/2025.01.06.631621v2}"
   - tag: freseg
     authors: Shixuan Gu, \textbf{Jason K. Adhinarta}, Mikhail Bessmeltsev, Jiancheng Yang, Jessica Zhang, Wenjie Yin, Daniel Berger, Jeff W. Lichtman, Hanspeter Pfister, Donglai Wei
     name: "Frenet-Serret Frame-based Decomposition for Part Segmentation of 3D Curvilinear Structures"
     url: "\\arxiv{2404.14435}"
-    venue: Manuscript under revision
+    # venue: Manuscript under revision
   - tag: trisam
     authors: Jia Wan, Wanhua Li, \textbf{Jason K. Adhinarta}, Atmadeep Banerjee, Evelina Sjostedt, Jingpeng Wu, Jeff Lichtman, Hanspeter Pfister, Donglai Wei
     name: "TriSAM: Tri-Plane SAM for zero-shot cortical blood vessel segmentation in VEM images"
     url: "\\arxiv{2401.13961v4}"
-    venue: Manuscript under revision
+    # venue: Manuscript under revision
   - tag: xiaomeng
     authors: Xiaomeng Han, Xiaotang Lu, Peter H. Li, Shuohong Wang, Richard Schalek, Yaron Meirovitch, Zudi Lin, \textbf{Jason K. Adhinarta}, Daniel Berger, Yuelong Wu, Tao Fang, Elif S. Meral, Shadnan Asraf, Hidde Ploegh, Hanspeter Pfister, Donglai Wei, Viren Jain, James S. Trimmer, Jeff W. Lichtman
     name: Multiplexed Volumetric CLEM enabled by antibody derivatives provides new insights into the cytology of the mouse cerebellar cortex
