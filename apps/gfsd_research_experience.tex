@@ -1,0 +1,206 @@
+% resume template adapted from Aras Güngöre
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{verbatim}
+\usepackage{enumitem}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks = true,
+    allcolors = Brown,
+}
+
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{hyphenat}
+\usepackage{fontawesome}
+\usepackage{ragged2e}
+% fix linespacing
+\usepackage{microtype}
+\renewcommand{\baselinestretch}{0.95}
+\usepackage[super]{nth}
+
+\input{glyphtounicode}
+
+\newcommand*{\doi}[1]{\href{http://dx.doi.org/#1}{doi:#1}}
+\newcommand*{\arxiv}[1]{\href{http://arxiv.org/abs/#1}{arXiv:#1}}
+\newcommand*{\biorxiv}[1]{\href{http://biorxiv.org/content/#1}{bioRxiv:#1}}
+\newcommand*{\pubmed}[1]{\href{http://www.ncbi.nlm.nih.gov/pubmed/#1}{PMID:#1}}
+
+
+%---------- FONT OPTIONS ----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+\usepackage[T1]{fontenc}
+\usepackage[bitstream-charter]{mathdesign}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeSubheading}[5]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}
+        \ifx\relax#5\relax 
+          \vspace{-7pt}
+        \else
+          \linebreak\textit{\small#5}
+          \vspace{-3pt}
+        \fi
+}
+
+\newcommand{\simpleHeading}[3]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small#1} & \small#2 \\
+    \end{tabular*}
+    \ifx\relax#3\relax 
+    \else
+      \linebreak\textit{\small#3}
+    \fi
+    \vspace{-5pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.10in, rightmargin=0.10in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+\justifying
+
+\begin{center}
+  \textbf{\Huge \scshape Jason Ken Adhinarta} \\ \vspace{3pt}
+    \small
+    \href{https://jasonkena.github.io}{jasonkena.github.io}
+   \hspace{0.05cm}$\cdot$\hspace{0.05cm}
+    \href{mailto:jason.adhinarta@bc.edu}{ jason.adhinarta@bc.edu }
+   \hspace{0.05cm}$\cdot$\hspace{0.05cm}
+    Chestnut Hill, MA
+\end{center}
+
+
+\section{Research Experience}
+  \vspace{3pt}
+  \resumeSubHeadingListStart
+    
+    \resumeSubheading
+    {Boston College Computer Vision Lab}{Chestnut Hill, MA}{Research Assistant (advised by Prof.\,Donglai Wei)}{Sep 2021 \textbf{--} Present}{}
+      \resumeItemListStart
+      
+        \resumeItem{\textit{Ongoing}: Crafted object-centric constraints for \textbf{terabyte-scale superpixel agglomeration} methods for \textbf{PyTorch Connectomics} using the SegCLR (\textbf{segmentation-guided contrastive learning}) pretrained model, in an attempt to build an open source competitor to Google's Flood Filling Networks. In collaboration with Zengyu Yang}
+      
+        \resumeItem{\hypertarget{hydra_bio_back}{\hypertarget{hydra_back}{\textit{Ongoing}: Clustered vesicles in \textit{Hydra vulgaris} samples using PyroVED \textbf{translation/rotation equivariant autoencoders}, characterizing neurons using spatial distribution of vesicles. Part of larger work to build a toolbox for \textbf{vesicle analysis} for electron microscopy. In collaboration with Shulin Zhang from Prof.\,Rafael Yuste's lab at Columbia University {[A]} {[B]}}}}
+      
+        \resumeItem{\hypertarget{wormnd_back}{\textit{Ongoing}: Adapted \textbf{cell tracking models} (3DeeCellTracker and Ultrack) to extract \textbf{whole-brain neural dynamics} from \textbf{calcium imaging} of 118 NeuroPAL-strain roundworms across 5 labs. Work done in collaboration with Daniel Sprague from the UCSF Foundations of Cognition Lab, Prof.\,Erdem Varol at the NYU Neuroinformatics Lab, and Prof.\,Eviatar Yemini at UMass Chan Medical School {[C]}}}
+      
+        \resumeItem{\hypertarget{freseg_back}{Benchmarked PointNet++, RandLA-Net, and PointTransformer \textbf{point-cloud segmentation architectures} on our dataset of 4,476 spines sourced from electron microscopy of 70 dendrites, demonstrating \textbf{zero-shot cross-species generalization} of our proposed Frenet-Serret \textbf{equivariant geometric transform} on the mouse visual cortex ($94.1\%$ Dice) and human frontal lobe ($81.8\%$ Dice). Also wrote extensive pipelines for morphology processing and mesh visualization. Part of a project to improve \textbf{segmentation on tree-like structures}; locating synapses in neurons and aneurysms in blood vessels. Collaborated with Shixuan Gu at the Harvard Visual Computing Group {[D]}}}
+      
+        \resumeItem{\hypertarget{trisam_back}{Analyzed \textbf{blood vessel morphologies} in mouse, human, and macaque cortical samples using Kimimaro \textbf{centerline extraction}. Evaluated the performance of the U-Net3D baseline model on the largest electron microscopy blood vessel dataset to date. Part of a project to develop a \textbf{zero-shot 3D segmentation method} using \textbf{Segment Anything Model}. In collaboration with Prof.\,Jia Wan from Harbin Institute of Technology, China, the Harvard Visual Computing Group, and the Harvard Lichtman Lab {[E]}}}
+      
+        \resumeItem{\hypertarget{xiaomeng_back}{Finetuned Cellpose, a \textbf{{foundation model for cell segmentation}}, to automatically detect \textasciitilde{}5 million neuronal vesicles in 20 volumes. Work done with Dr.\,Xiaomeng Han from Prof.\,Jeff Lichtman’s lab at Harvard to develop a novel microscopy technique incorporating fluorescent markers to facilitate \textbf{identification of cell types and functions}. {[F]}}}
+      
+        \resumeItem{Prototyped methods to correct deformed \textbf{spinal vertebrae mesh predictions} using Probreg \textbf{point-cloud registration} for Dr.\,Zongwei Zhou at JHU}
+      
+        \resumeItem{Maintained \textbf{Docker evaluation containers} for the ISBI 2013 SNEMI3D neuron segmentation challenge, MICCAI 2021 AxonEM axon segmentation challenge, and the ISBI 2023 RNR-EXM expansion microscopy image registration challenge on the \textbf{Grand Challenge} platform, to simplify benchmark evaluation for 320+ participants}
+      
+        \resumeItem{Developed the ChunkPipeline package to perform distributed volumetric computations on the \textbf{Boston College Linux Cluster}, contributed bugfixes to the Princeton Seung Lab's suite of tools for connectomics, onboarded research interns onto the PyTorch Connectomics ecosystem}
+      
+      \resumeItemListEnd
+      \filbreak
+    
+    \resumeSubheading
+    {EPFL CVLab}{Lausanne, Switzerland}{Research Intern (advised by Dr.\,Jiancheng Yang and Prof.\,Pascal Fua)}{May 2023 \textbf{--} Aug 2023}{}
+      \resumeItemListStart
+      
+        \resumeItem{\hypertarget{imheart_back}{Orchestrated pipelines integrating the STU-Net \textbf{medical image segmentation foundation model} with our \textbf{geometrically-constrained neural implicit fields} to generate anatomically accurate heart structures from our aggregated dataset of 140 \textbf{MRI scans}. Contributed to the Heart Augmented Reality Training System, in collaboration with Swiss medical imaging company ADIS and the Cardiology Division of Lausanne University Hospital {[G]}}}
+      
+        \resumeItem{\hypertarget{ribseg_back}{Evaluated \textbf{voxel/point-cloud segmentation} models (PointNet/PointNet++, DGCNN, PointCNN, nnU-Net) and \textbf{centerline extraction} techniques (Kimimaro, L1-Medial Skeletonization) on our proposed dataset of 660 \textbf{CT scans} and 15,466 individually annotated ribs. Implemented a Docker compatability wrapper for the L1-Medial Skeletonization codebase from 2016. Ongoing work to incorporate the \textbf{mesh representations of ribcages} into the \textbf{MedShapeNet2.0} dataset. In collaboration with radiologists at Huadong Hospital, China and Shixuan Gu at Harvard Visual Computing Group {[H]}}}
+      
+      \resumeItemListEnd
+      \filbreak
+    
+    \resumeSubheading
+    {Emmerich Research Center}{Jakarta, Indonesia}{Research Intern (advised by Dr.\,Eden Steven)}{Aug 2018 \textbf{--} Aug 2021}{}
+      \resumeItemListStart
+      
+        \resumeItem{\hypertarget{phosphor_back}{Studied the \textbf{temperature-dependent excitation} curves of SrAl\textsubscript{2}O\textsubscript{4}:Eu\textsuperscript{2+}, Dy\textsuperscript{3+} glow-in-the-dark crystals. Built vacuum-sealed optical probes operating at cryogenic temperatures. In collaboration with Dr.\,Muhandis Shiddiq from Indonesia's National Research and Innovation Agency and Prof.\,Henri Uranus from Universitas Pelita Harapan {[I]}}}
+      
+        \resumeItem{\hypertarget{mycelium_back}{Developed an \textbf{OpenCV-based contamination detection system} featuring perspective normalization, shadow removal, and blob detection, to control a CNC-sprayer for disinfection of fungal cultures. Delivered a proof-of-concept robot for MycoWorks, a California-based startup producing \textbf{plant-based synthetic leather} {[J]}}}
+      
+        \resumeItem{Trained the YOLACT \textbf{instance segmentation} model to track Black Soldier Fly larvae. Wired an Arduino-controlled linear-slider system for recording larvae behavior in arrays of petri dishes. Set up CVAT data annotation pipelines. An effort to \textbf{optimize larvae feed and rearing conditions for waste-processing} in collaboration with Hermetia Bio Sciences}
+      
+        \resumeItem{Automated palm oil \textbf{fruit quality assurance} using OpenCV and XGBoost tree models. Deployed training pipelines on Google Cloud Platform. In collaboration with manufacturing company PT.\,Sawit Asahan Tetap Utuh}
+      
+        \resumeItem{Finetuned the YOLACT segmentation model on the TACO waste dataset, integrated with a 3-DOF robotic arm with a gradient-descent-based \textbf{inverse kinematics} solver. Presented at Indonesia Science Expo 2019}
+      
+        \resumeItem{Computationally modeled angle-dependent Ohmic resistance of stacked hexagonal lattices analogous to twisted bilayer graphene using \textbf{CUDA-accelerated sparse linear solvers}, attempting to understand magic angle superconductivity}
+      
+        \resumeItem{Co-designed a 23-week long \textbf{Arduino-based electronics programming curriculum} for Sekolah Pelangi Kasih's afterschool program. Co-instructed the electronics portion of Sekolah Pelita Harapan's 2019 Summer Science Academy}
+      
+      \resumeItemListEnd
+      \filbreak
+    
+  \resumeSubHeadingListEnd
+
+
+
+
+\end{document}

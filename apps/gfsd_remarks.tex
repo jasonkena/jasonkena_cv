@@ -1,0 +1,226 @@
+% resume template adapted from Aras Güngöre
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{verbatim}
+\usepackage{enumitem}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks = true,
+    allcolors = Brown,
+}
+
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{hyphenat}
+\usepackage{fontawesome}
+\usepackage{ragged2e}
+% fix linespacing
+\usepackage{microtype}
+\renewcommand{\baselinestretch}{0.95}
+\usepackage[super]{nth}
+
+\input{glyphtounicode}
+
+\newcommand*{\doi}[1]{\href{http://dx.doi.org/#1}{doi:#1}}
+\newcommand*{\arxiv}[1]{\href{http://arxiv.org/abs/#1}{arXiv:#1}}
+\newcommand*{\biorxiv}[1]{\href{http://biorxiv.org/content/#1}{bioRxiv:#1}}
+\newcommand*{\pubmed}[1]{\href{http://www.ncbi.nlm.nih.gov/pubmed/#1}{PMID:#1}}
+
+
+%---------- FONT OPTIONS ----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+\usepackage[T1]{fontenc}
+\usepackage[bitstream-charter]{mathdesign}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeSubheading}[5]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}
+        \ifx\relax#5\relax 
+          \vspace{-7pt}
+        \else
+          \linebreak\textit{\small#5}
+          \vspace{-3pt}
+        \fi
+}
+
+\newcommand{\simpleHeading}[3]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small#1} & \small#2 \\
+    \end{tabular*}
+    \ifx\relax#3\relax 
+    \else
+      \linebreak\textit{\small#3}
+    \fi
+    \vspace{-5pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.10in, rightmargin=0.10in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+\justifying
+
+\begin{center}
+  \textbf{\Huge \scshape Jason Ken Adhinarta} \\ \vspace{3pt}
+    \small
+    \href{https://jasonkena.github.io}{jasonkena.github.io}
+   \hspace{0.05cm}$\cdot$\hspace{0.05cm}
+    \href{mailto:jason.adhinarta@bc.edu}{ jason.adhinarta@bc.edu }
+   \hspace{0.05cm}$\cdot$\hspace{0.05cm}
+    Chestnut Hill, MA
+\end{center}
+
+
+
+\section{Teaching Assistantship}
+  \vspace{3pt}
+  \resumeSubHeadingListStart
+    
+    \simpleHeading
+    {CSCI 3397: Biomedical Image Analysis \normalfont\textit{\small (Prof.\,Donglai Wei)}}{Spring 2024}{}
+    
+    \simpleHeading
+    {MATH 4480: Math and Machine Learning \normalfont\textit{\small (Prof.\,Elisenda Grigsby)}}{Spring 2023}{}
+    
+  \resumeSubHeadingListEnd
+
+
+
+\section{Activities}
+  \vspace{3pt}
+  \resumeSubHeadingListStart
+    
+    \resumeSubheading
+    {Boston College Machine Intelligence Group}{Chestnut Hill, MA}{President}{Sep 2022 \textbf{--} Present}{}
+      \resumeItemListStart
+      
+        \resumeItem{\textbf{Organized weekly seminars} for an undergraduate audience, hosting industry experts from Meta, Google, Red Hat}
+      
+        \resumeItem{Equipped members with concrete engineering skills, connecting students with CS/math labs on campus}
+      
+        \resumeItem{Developed workshops on landmark ML methods in collaboration with Boston College Computer Science Society}
+      
+      \resumeItemListEnd
+    
+    \resumeSubheading
+    {Boston College Experimental Math and Machine Learning Lab}{Chestnut Hill, MA}{Member}{Mar 2023 \textbf{--} Present}{}
+      \resumeItemListStart
+      
+        \resumeItem{Engaged with faculty and graduate students to explore the intersection of mathematics and machine learning}
+      
+        \resumeItem{Gave a talk titled ``\textbf{A Whirlwind Tour of Deep Learning}'' Summer 2023, covering universal function approximation, loss landscape visualization, Sharpness Aware Minimization, Rich Sutton's Bitter Lesson, and everything in between}
+      
+        \resumeItem{Held a \textbf{tutorial on CLI tools} for the lab's biweekly seminar series Fall 2024, illustrated using a toy project minimizing repulsion forces for electrons on a sphere, received funding from a \textbf{Teaching-Advising-Mentoring grant} Summer 2024}
+      
+      \resumeItemListEnd
+    
+    \resumeSubheading
+    {Applied Science Academy at Sekolah Pelita Harapan Lippo Village}{Tangerang, Indonesia}{Mentor}{Aug 2023 \textbf{--} Present}{}
+      \resumeItemListStart
+      
+        \resumeItem{\textbf{Remotely mentored} and \textbf{designed lesson plans} for 3 high school students with varying experience levels with the Python deep learning ecosystem, to broaden their skillsets and \textbf{diversify educational and career opportunities}}
+      
+        \resumeItem{\textit{Ongoing}: Guiding a sophomore in building a \textbf{remote-controlled car} using a Raspberry Pi and a camera module, feeding images into \textbf{Nerfstudio} to generate novel views for navigation, with a Flask server for remote control}
+      
+        \resumeItem{\textit{Ongoing}: Assisting a junior in using a \textbf{U-Net architecture} to demonstrate how audio recordings can be used to reconstruct typing inputs, in a project to raise awareness on \textbf{audio-based keystroke sniffing attacks}}
+      
+        \resumeItem{Helped a junior develop a CNN to \textbf{classify mosquito species using audio recordings} from the HumBugDB dataset}
+      
+      \resumeItemListEnd
+    
+    \resumeSubheading
+    {Citylife Presbyterian Church}{Boston, MA}{Community Group Co-leader}{Aug 2024 \textbf{--} Present}{}
+      \resumeItemListStart
+      
+        \resumeItem{Facilitated weekly student-led meetings involving praise, prayer, and sermon discussions at Boston College}
+      
+      \resumeItemListEnd
+    
+    \resumeSubheading
+    {Brighton High School, Haley House, The City}{Boston, MA}{Volunteer}{May 2022 \textbf{--} May 2023}{}
+      \resumeItemListStart
+      
+        \resumeItem{Summer 2022: Served as a \textbf{teaching assistant} at Brighton High School for math classes; aided in \textbf{sorting and distribution of clothing donations} at Haley House; interviewed families of COVID victims for The City, a NYC-based news organization, \textbf{wrote an obituary} for publication}
+      
+        \resumeItem{Fall 2022 -- Spring 2023: Co-ran the Threads campaign at Boston College, organizing a \textbf{clothing drive} and panel discussion with activists from St. Francis House, Cradles to Crayons, and Haley House to raise awareness on \textbf{clothing insecurity}}
+      
+      \resumeItemListEnd
+    
+    \resumeSubheading
+    {Boston College Competitive Programming Team}{Chestnut Hill, MA}{Competitor}{Sep 2022 \textbf{--} Dec 2023}{}
+      \resumeItemListStart
+      
+        \resumeItem{Represented Boston College at the 2022 and 2023 ICPC Northeast North America Regional Contests}
+      
+      \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+
+
+\end{document}
