@@ -73,7 +73,7 @@ publications:
     authors: \textbf{Jason K. Adhinarta}*, Jizheng Dong*, Tianxiao He*, Junxiang Huang*, Daniel Sprague*, Jia Wan, Hyun Jee Lee, Zikai Yu, Hang Lu, Eviatar Yemini, Saul Kato, Erdem Varol, Donglai Wei
     name: "WormID-Benchmark: Extracting Whole-Brain Neural Dynamics of \\textit{C. elegans} at the Neuron Resolution"
     # venue: Manuscript under revision
-    url: "\\biorxiv{10.1101/2025.01.06.631621v2}"
+    url: "\\biorxiv{10.1101/2025.01.06.631621v3}"
   - tag: freseg
     authors: Shixuan Gu, \textbf{Jason K. Adhinarta}, Mikhail Bessmeltsev, Jiancheng Yang, Jessica Zhang, Wenjie Yin, Daniel Berger, Jeff W. Lichtman, Hanspeter Pfister, Donglai Wei
     name: "Frenet-Serret Frame-based Decomposition for Part Segmentation of 3D Curvilinear Structures"
