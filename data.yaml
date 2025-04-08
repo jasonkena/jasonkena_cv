@@ -1,10 +1,15 @@
 name: Jason Ken Adhinarta
-email: jason.adhinarta@bc.edu
+email: adhinart@bc.edu
 website_name: jasonkena.github.io
 website_url: https://jasonkena.github.io
 location: Chestnut Hill, MA
 
 education:
+  - name: Massachusetts Institute of Technology
+    location: Cambridge, MA
+    degree: "Ph.D. in Electrical Engineering and Computer Science"
+    start_date: Sep 2025
+    end_date: Present
   - name: Boston College
     location: Chestnut Hill, MA
     degree: "B.S. in Computer Science, B.S. in Mathematics (Cum.\\ GPA: 3.98/4.00)"
@@ -28,13 +33,13 @@ research:
     end_date: Present
     misc:
       #       # SUPIR image super-resolution
-      - "\\textit{Ongoing}: Crafted object-centric constraints for \\textbf{terabyte-scale superpixel agglomeration} methods for \\textbf{PyTorch Connectomics} using the SegCLR (\\textbf{segmentation-guided contrastive learning}) pretrained model, in an attempt to build an open source competitor to Google's Flood Filling Networks. In collaboration with Zengyu Yang"
+      # - "\\textit{Ongoing}: Crafted object-centric constraints for \\textbf{terabyte-scale superpixel agglomeration} methods for \\textbf{PyTorch Connectomics} using the SegCLR (\\textbf{segmentation-guided contrastive learning}) pretrained model, in an attempt to build an open source competitor to Google's Flood Filling Networks. In collaboration with Zengyu Yang"
       - "\\textit{Ongoing}: Clustered vesicles in \\textit{Hydra vulgaris} samples using PyroVED \\textbf{translation/rotation equivariant autoencoders}, characterizing neurons using spatial distribution of vesicles. Part of larger work to build a toolbox for \\textbf{vesicle analysis} for electron microscopy. In collaboration with Shulin Zhang from Prof.\\,Rafael Yuste's lab at Columbia University REF_hydra REF_hydra_bio"
       - "\\textit{Ongoing}: Adapted \\textbf{cell tracking models} (3DeeCellTracker and Ultrack) to extract \\textbf{whole-brain neural dynamics} from \\textbf{calcium imaging} of 118 NeuroPAL-strain roundworms across 5 labs. Work done in collaboration with Daniel Sprague from the UCSF Foundations of Cognition Lab, Prof.\\,Erdem Varol at the NYU Neuroinformatics Lab, and Prof.\\,Eviatar Yemini at UMass Chan Medical School REF_wormnd"
       - "Benchmarked PointNet++, RandLA-Net, and PointTransformer \\textbf{point-cloud segmentation architectures} on our dataset of 4,476 spines sourced from electron microscopy of 70 dendrites, demonstrating \\textbf{zero-shot cross-species generalization} of our proposed Frenet-Serret \\textbf{equivariant geometric transform} on the mouse visual cortex ($94.1\\%$ Dice) and human frontal lobe ($81.8\\%$ Dice). Also wrote extensive pipelines for morphology processing and mesh visualization. Part of a project to improve \\textbf{segmentation on tree-like structures}; locating synapses in neurons and aneurysms in blood vessels. Collaborated with Shixuan Gu at the Harvard Visual Computing Group REF_freseg"
       - "Analyzed \\textbf{blood vessel morphologies} in mouse, human, and macaque cortical samples using Kimimaro \\textbf{centerline extraction}. Evaluated the performance of the U-Net3D baseline model on the largest electron microscopy blood vessel dataset to date. Part of a project to develop a \\textbf{zero-shot 3D segmentation method} using \\textbf{Segment Anything Model}. In collaboration with Prof.\\,Jia Wan from Harbin Institute of Technology, China, the Harvard Visual Computing Group, and the Harvard Lichtman Lab REF_trisam"
       - "Finetuned Cellpose, a \\textbf{{foundation model for cell segmentation}}, to automatically detect \\textasciitilde{}5 million neuronal vesicles in 20 volumes. Work done with Dr.\\,Xiaomeng Han from Prof.\\,Jeff Lichtman’s lab at Harvard to develop a novel microscopy technique incorporating fluorescent markers to facilitate \\textbf{identification of cell types and functions}. REF_xiaomeng"
-      - "Prototyped methods to correct deformed \\textbf{spinal vertebrae mesh predictions} using Probreg \\textbf{point-cloud registration} for Dr.\\,Zongwei Zhou at JHU"
+      # - "Prototyped methods to correct deformed \\textbf{spinal vertebrae mesh predictions} using Probreg \\textbf{point-cloud registration} for Dr.\\,Zongwei Zhou at JHU"
       - "Maintained \\textbf{Docker evaluation containers} for the ISBI 2013 SNEMI3D neuron segmentation challenge, MICCAI 2021 AxonEM axon segmentation challenge, and the ISBI 2023 RNR-EXM expansion microscopy image registration challenge on the \\textbf{Grand Challenge} platform, to simplify benchmark evaluation for 320+ participants"
       - "Developed the ChunkPipeline package to perform distributed volumetric computations on the \\textbf{Boston College Linux Cluster}, contributed bugfixes to the Princeton Seung Lab's suite of tools for connectomics, onboarded research interns onto the PyTorch Connectomics ecosystem"
   - name: EPFL CVLab
@@ -113,14 +118,14 @@ patents:
     # url: \href{https://pdki-indonesia.dgip.go.id/detail/469b3735e17ef3b025c34af11710e9bfffe2de10284fb52ed77d4e03dd710c29%3Fnomor=P00202009416?type=patent&keyword=P00202009416}{PDKI:P00202009416}. Patent pending, submitted to Indonesian patent registry in 2020
 
 teaching:
-  - name: "CSCI 3397: Biomedical Image Analysis"
-    instructor: "Prof.\\,Donglai Wei"
+  - name: "CSCI 3397: Biomedical Image Analysis, \\textnormal{Boston College}"
+    # instructor: "Prof.\\,Donglai Wei"
     college_year: Spring 2024
-  - name: "MATH 4480: Math and Machine Learning"
-    instructor: "Prof.\\,Elisenda Grigsby"
+  - name: "MATH 4480: Math and Machine Learning, \\textnormal{Boston College}"
+    # instructor: "Prof.\\,Elisenda Grigsby"
     college_year: Spring 2023
 
-activities:
+activities_skip:
   - name: Boston College Machine Intelligence Group
     location: Chestnut Hill, MA
     position: President
@@ -173,28 +178,31 @@ activities:
       - Represented Boston College at the 2022 and 2023 ICPC Northeast North America Regional Contests
 
 awards:
-  - name: Boston College Order of the Cross and Crown
+  - name: David and Randi Fett Fellowship, \textnormal{MIT}
+    venue_date: Fall 2025
+  - name: Honorable Mention, \textnormal{NSF Graduate Research Fellowship Program}
     venue_date: Spring 2025
-    description: Awarded to the top 3\% of the senior class based on academic performance, service, and leadership
-  - name: Phi Beta Kappa
+  - name: Order of the Cross and Crown, \textnormal{Boston College}
+    venue_date: Spring 2025
+    # description: Awarded to the top 3\% of the senior class based on academic performance, service, and leadership
+  - name: Junior Inductee, \textnormal{Phi Beta Kappa}
     venue_date: Spring 2024
-    description: Nominated as a junior, based on academic engagement, intellectual curiosity, and leadership capacity
-  - name: Boston College Dean's Scholar Award
+    # description: Nominated as a junior, based on academic engagement, intellectual curiosity, and leadership capacity
+  - name: Dean's Scholar Award, \textnormal{Boston College}
     venue_date: Spring 2024
-    description: Granted to the top 5\% of the junior class based on academic performance and co-curricular leadership
-  - name: Boston College Eagle Intern Fellowship
+    # description: Granted to the top 5\% of the junior class based on academic performance and co-curricular leadership
+  - name: Eagle Intern Fellowship, \textnormal{Boston College}
     venue_date: Summer 2023
-    description: "\\$4,800 stipend awarded for a full-time research internship at EPFL CVLab in Lausanne, Switzerland"
-
-  - name: Boston College Sophomore Scholar Award
+    # description: "\\$4,800 stipend awarded for a full-time research internship at EPFL CVLab in Lausanne, Switzerland"
+  - name: Sophomore Scholar Award, \textnormal{Boston College}
     venue_date: Spring 2023
-    description: Granted to the top 5\% of the sophomore class based on academic excellence
-  - name: Boston College Gabelli Presidential Scholarship
+    # description: Granted to the top 5\% of the sophomore class based on academic excellence
+  - name: Gabelli Presidential Scholarship, \textnormal{Boston College}
     venue_date: Fall 2021
-    description: Competitive four-year full-tuition scholarship awarded to $\sim$15 students annually
-  - name: ISMOA Best Poster Presentation
+    # description: Competitive four-year full-tuition scholarship awarded to $\sim$15 students annually
+  - name: Best Poster Presentation, \textnormal{\nth{12} International Symposium on Modern Optics and its Applications}
     venue_date: "Summer 2019"
-    description: Awarded at the \nth{12} International Symposium on Modern Optics and its Applications
+    # description: Awarded at the \nth{12} International Symposium on Modern Optics and its Applications
 
 # projects:
 #   -

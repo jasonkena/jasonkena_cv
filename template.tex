@@ -208,8 +208,11 @@
   \vspace{3pt}
   \resumeSubHeadingListStart
     [% for course in teaching %]
-    \simpleHeading
-    {[[ course.name ]] \normalfont\textit{\small ([[ course.instructor ]])}}{[[ course.college_year ]]}{[[ course.description ]]}
+      [% if course.instructor is defined %]
+        \simpleHeading{[[ course.name ]] \normalfont\textit{\small ([[ course.instructor ]])}}{[[ course.college_year ]]}{[[ course.description ]]}
+      [% else %]
+        \simpleHeading{[[ course.name ]]}{[[ course.college_year ]]}{[[ course.description ]]}
+      [% endif %]
     [% endfor %]
   \resumeSubHeadingListEnd
 [% endif %]
