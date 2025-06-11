@@ -87,7 +87,7 @@ publications:
   - tag: trisam
     authors: Jia Wan, Wanhua Li, \textbf{Jason K. Adhinarta}, Atmadeep Banerjee, Evelina Sjostedt, Jingpeng Wu, Jeff Lichtman, Hanspeter Pfister, Donglai Wei
     name: "TriSAM: Tri-Plane SAM for zero-shot cortical blood vessel segmentation in VEM images"
-    url: "\\arxiv{2401.13961v4}"
+    url: "\\doi{10.1109/JBHI.2025.3577625}"
     venue: IEEE Journal of Biomedical and Health Informatics 2025
   - tag: xiaomeng
     authors: Xiaomeng Han, Xiaotang Lu, Peter H. Li, Shuohong Wang, Richard Schalek, Yaron Meirovitch, Zudi Lin, \textbf{Jason K. Adhinarta}, Daniel Berger, Yuelong Wu, Tao Fang, Elif S. Meral, Shadnan Asraf, Hidde Ploegh, Hanspeter Pfister, Donglai Wei, Viren Jain, James S. Trimmer, Jeff W. Lichtman
