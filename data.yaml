@@ -178,10 +178,10 @@ activities_skip:
       - Represented Boston College at the 2022 and 2023 ICPC Northeast North America Regional Contests
 
 awards:
+  - name: NSF Graduate Research Fellowship
+    venue_date: Fall 2025
   - name: David and Randi Fett Fellowship, \textnormal{MIT}
     venue_date: Fall 2025
-  - name: Honorable Mention, \textnormal{NSF Graduate Research Fellowship Program}
-    venue_date: Spring 2025
   - name: Matthew Copithorne Scholarship, \textnormal{Boston College}
     venue_date: Spring 2025
   - name: "John J.\\ Neuhauser Award, \\textnormal{Boston College}"
@@ -205,7 +205,7 @@ awards:
     venue_date: Fall 2021
     # description: Competitive four-year full-tuition scholarship awarded to $\sim$15 students annually
   - name: Best Poster Presentation, \textnormal{\nth{12} International Symposium on Modern Optics and its Applications}
-    venue_date: "Summer 2019"
+    venue_date: Summer 2019
     # description: Awarded at the \nth{12} International Symposium on Modern Optics and its Applications
 
 # projects:
