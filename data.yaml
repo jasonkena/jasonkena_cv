@@ -82,7 +82,7 @@ publications:
   - tag: freseg
     authors: Shixuan Gu, \textbf{Jason K. Adhinarta}, Mikhail Bessmeltsev, Jiancheng Yang, Jessica Zhang, Wenjie Yin, Daniel Berger, Jeff W. Lichtman, Hanspeter Pfister, Donglai Wei
     name: "Frenet-Serret Frame-based Decomposition for Part Segmentation of 3D Curvilinear Structures"
-    url: "\\arxiv{2404.14435}"
+    url: \doi{10.1109/TMI.2025.3589543}
     venue: IEEE Transactions on Medical Imaging 2025
   - tag: trisam
     authors: Jia Wan, Wanhua Li, \textbf{Jason K. Adhinarta}, Atmadeep Banerjee, Evelina Sjostedt, Jingpeng Wu, Jeff Lichtman, Hanspeter Pfister, Donglai Wei
