@@ -2,14 +2,18 @@ name: Jason Ken Adhinarta
 email: adhinart@mit.edu
 website_name: jasonkena.github.io
 website_url: https://jasonkena.github.io
-location: Chestnut Hill, MA
+location: Cambridge, MA
+baselinestretch: 0.94
+# baselinestretch: 1
+
+interests: My research focuses on developing \textbf{multimodal representation learning} and \textbf{geometric deep learning} methods to enable scalable analyses of \textbf{biomedical imaging} data, with particular applications in neuroscience and clinical diagnostic settings.
 
 education:
   - name: Massachusetts Institute of Technology
     location: Cambridge, MA
     degree: "Ph.D. in Electrical Engineering and Computer Science"
     start_date: Sep 2025
-    end_date: Present
+    end_date: May 2031
   - name: Boston College
     location: Chestnut Hill, MA
     degree: "B.S. in Computer Science, B.S. in Mathematics \\textnormal{|} GPA: 3.98/4.00"
@@ -25,6 +29,13 @@ education:
   #   gpa: 43/45
 
 research:
+  - name: Medical Vision Group
+    location: Cambridge, MA
+    position: Graduate Research Assistant (advised by Prof.\,Polina Golland)
+    start_date: Sep 2025
+    end_date: Present
+    misc:
+    - Investigating multimodal contrastive learning methods for X-ray-report pairs, leveraging anatomical priors
   # reference tags using REF_NAME, this is handled in render.py
   - name: Boston College Computer Vision Lab
     location: Chestnut Hill, MA
@@ -34,7 +45,8 @@ research:
     misc:
       #       # SUPIR image super-resolution
       # - "\\textit{Ongoing}: Crafted object-centric constraints for \\textbf{terabyte-scale superpixel agglomeration} methods for \\textbf{PyTorch Connectomics} using the SegCLR (\\textbf{segmentation-guided contrastive learning}) pretrained model, in an attempt to build an open source competitor to Google's Flood Filling Networks. In collaboration with Zengyu Yang"
-      - "\\textit{Ongoing}: Clustered vesicles in \\textit{Hydra vulgaris} samples using PyroVED \\textbf{translation/rotation equivariant autoencoders}, characterizing neurons using spatial distribution of vesicles. Part of larger work to build a toolbox for \\textbf{vesicle analysis} for electron microscopy. In collaboration with Shulin Zhang from Prof.\\,Rafael Yuste's lab at Columbia University REF_hydra REF_hydra_bio"
+      - "Developed segmentation and signal-processing pipelines based on \\textbf{PyTorch Connectomics} and \\textbf{Segment Anything for Microscopy} to study gene regulation dynamics; done with the Spatial Biodynamics Lab at University of Michigan REF_cytotape"
+      - "Clustered vesicles in \\textit{Hydra vulgaris} samples using PyroVED \\textbf{translation/rotation equivariant autoencoders}, characterizing neurons using spatial distribution of vesicles. Part of larger work to build a toolbox for \\textbf{vesicle analysis} for electron microscopy. In collaboration with Shulin Zhang from Prof.\\,Rafael Yuste's lab at Columbia University REF_hydra REF_hydra_bio"
       - "Adapted \\textbf{cell tracking models} (3DeeCellTracker and Ultrack) to extract \\textbf{whole-brain neural dynamics} from \\textbf{calcium imaging} of 118 NeuroPAL-strain roundworms across 5 labs. Work done in collaboration with Daniel Sprague from the UCSF Foundations of Cognition Lab, Prof.\\,Erdem Varol at the NYU Neuroinformatics Lab, and Prof.\\,Eviatar Yemini at UMass Chan Medical School REF_wormnd"
       - "Benchmarked PointNet++, RandLA-Net, and PointTransformer \\textbf{point-cloud segmentation architectures} on our dataset of 4,476 spines sourced from electron microscopy of 70 dendrites, demonstrating \\textbf{zero-shot cross-species generalization} of our proposed Frenet-Serret \\textbf{equivariant geometric transform} on the mouse visual cortex ($94.1\\%$ Dice) and human frontal lobe ($81.8\\%$ Dice). Also wrote extensive pipelines for morphology processing and mesh visualization. Part of a project to improve \\textbf{segmentation on tree-like structures}; locating synapses in neurons and aneurysms in blood vessels. Collaborated with Shixuan Gu at the Harvard Visual Computing Group REF_freseg"
       - "Analyzed \\textbf{blood vessel morphologies} in mouse, human, and macaque cortical samples using Kimimaro \\textbf{centerline extraction}. Evaluated the performance of the U-Net3D baseline model on the largest electron microscopy blood vessel dataset to date. Part of a project to develop a \\textbf{zero-shot 3D segmentation method} using \\textbf{Segment Anything Model}. In collaboration with Prof.\\,Jia Wan from Harbin Institute of Technology, China, the Harvard Visual Computing Group, and the Harvard Lichtman Lab REF_trisam"
@@ -50,30 +62,35 @@ research:
     misc:
       - "Orchestrated pipelines integrating the STU-Net \\textbf{medical image segmentation foundation model} with our \\textbf{geometrically-constrained neural implicit fields} to generate anatomically accurate heart structures from our aggregated dataset of 140 \\textbf{MRI scans}. Contributed to the Heart Augmented Reality Training System, in collaboration with Swiss medical imaging company ADIS and the Cardiology Division of Lausanne University Hospital REF_imheart"
       - "Evaluated \\textbf{voxel/point-cloud segmentation} models (PointNet/PointNet++, DGCNN, PointCNN, nnU-Net) and \\textbf{centerline extraction} techniques (Kimimaro, L1-Medial Skeletonization) on our proposed dataset of 660 \\textbf{CT scans} and 15,466 individually annotated ribs. Implemented a Docker compatability wrapper for the L1-Medial Skeletonization codebase from 2016. Ongoing work to incorporate the \\textbf{mesh representations of ribcages} into the \\textbf{MedShapeNet2.0} dataset. In collaboration with radiologists at Huadong Hospital, China and Shixuan Gu at Harvard Visual Computing Group REF_ribseg"
-  - name: Emmerich Research Center
-    location: Jakarta, Indonesia
-    position: Research Intern (advised by Dr.\,Eden Steven)
-    start_date: Aug 2018
-    end_date: Aug 2021
-    misc:
-      # - Worked closely with food scientists, chemists, physicists, and electrical engineers on interdisciplinary problems
-      - Studied the \textbf{temperature-dependent excitation} curves of SrAl\textsubscript{2}O\textsubscript{4}:Eu\textsuperscript{2+}, Dy\textsuperscript{3+} glow-in-the-dark crystals. Built vacuum-sealed optical probes operating at cryogenic temperatures. In collaboration with Dr.\,Muhandis Shiddiq from Indonesia's National Research and Innovation Agency and Prof.\,Henri Uranus from Universitas Pelita Harapan REF_phosphor #, used PID controllers to stabilize sample temperatures.
-      - "Developed an \\textbf{OpenCV-based contamination detection system} featuring perspective normalization, shadow removal, and blob detection, to control a CNC-sprayer for disinfection of fungal cultures. Delivered a proof-of-concept robot for MycoWorks, a California-based startup producing \\textbf{plant-based synthetic leather} REF_mycelium"
-      # - "Trained the YOLACT \\textbf{instance segmentation} model to track Black Soldier Fly larvae. Wired an Arduino-controlled linear-slider system for recording larvae behavior in arrays of petri dishes. Set up CVAT data annotation pipelines. An effort to \\textbf{optimize larvae feed and rearing conditions for waste-processing} in collaboration with Hermetia Bio Sciences"
-      # - "Automated palm oil \\textbf{fruit quality assurance} using OpenCV and XGBoost tree models. Deployed training pipelines on Google Cloud Platform. In collaboration with manufacturing company PT.\\,Sawit Asahan Tetap Utuh"
-      # - "Finetuned the YOLACT segmentation model on the TACO waste dataset, integrated with a 3-DOF robotic arm with a gradient-descent-based \\textbf{inverse kinematics} solver. Presented at Indonesia Science Expo 2019"
-      # - "Computationally modeled angle-dependent Ohmic resistance of stacked hexagonal lattices analogous to twisted bilayer graphene using \\textbf{CUDA-accelerated sparse linear solvers}, attempting to understand magic angle superconductivity"
-      # # - "Wrote a gradient-descent-based solution to Al Zimmerman's discrete combinatorics optimization contest \\textit{Reversing Nearness} in \\textbf{PyTorch}, maintaining a loss within $13\\%$ of state-of-the-art solutions"
-      # - Co-designed a 23-week long \textbf{Arduino-based electronics programming curriculum} for Sekolah Pelangi Kasih's afterschool program. Co-instructed the electronics portion of Sekolah Pelita Harapan's 2019 Summer Science Academy
+  # - name: Emmerich Research Center
+  #   location: Jakarta, Indonesia
+  #   position: Research Intern (advised by Dr.\,Eden Steven)
+  #   start_date: Aug 2018
+  #   end_date: Aug 2021
+  #   misc:
+  #     # - Worked closely with food scientists, chemists, physicists, and electrical engineers on interdisciplinary problems
+  #     - Studied the \textbf{temperature-dependent excitation} curves of SrAl\textsubscript{2}O\textsubscript{4}:Eu\textsuperscript{2+}, Dy\textsuperscript{3+} glow-in-the-dark crystals. Built vacuum-sealed optical probes operating at cryogenic temperatures. In collaboration with Dr.\,Muhandis Shiddiq from Indonesia's National Research and Innovation Agency and Prof.\,Henri Uranus from Universitas Pelita Harapan REF_phosphor #, used PID controllers to stabilize sample temperatures.
+  #     - "Developed an \\textbf{OpenCV-based contamination detection system} featuring perspective normalization, shadow removal, and blob detection, to control a CNC-sprayer for disinfection of fungal cultures. Delivered a proof-of-concept robot for MycoWorks, a California-based startup producing \\textbf{plant-based synthetic leather} REF_mycelium"
+  #     # - "Trained the YOLACT \\textbf{instance segmentation} model to track Black Soldier Fly larvae. Wired an Arduino-controlled linear-slider system for recording larvae behavior in arrays of petri dishes. Set up CVAT data annotation pipelines. An effort to \\textbf{optimize larvae feed and rearing conditions for waste-processing} in collaboration with Hermetia Bio Sciences"
+  #     # - "Automated palm oil \\textbf{fruit quality assurance} using OpenCV and XGBoost tree models. Deployed training pipelines on Google Cloud Platform. In collaboration with manufacturing company PT.\\,Sawit Asahan Tetap Utuh"
+  #     # - "Finetuned the YOLACT segmentation model on the TACO waste dataset, integrated with a 3-DOF robotic arm with a gradient-descent-based \\textbf{inverse kinematics} solver. Presented at Indonesia Science Expo 2019"
+  #     # - "Computationally modeled angle-dependent Ohmic resistance of stacked hexagonal lattices analogous to twisted bilayer graphene using \\textbf{CUDA-accelerated sparse linear solvers}, attempting to understand magic angle superconductivity"
+  #     # # - "Wrote a gradient-descent-based solution to Al Zimmerman's discrete combinatorics optimization contest \\textit{Reversing Nearness} in \\textbf{PyTorch}, maintaining a loss within $13\\%$ of state-of-the-art solutions"
+  #     # - Co-designed a 23-week long \textbf{Arduino-based electronics programming curriculum} for Sekolah Pelangi Kasih's afterschool program. Co-instructed the electronics portion of Sekolah Pelita Harapan's 2019 Summer Science Academy
 publications:
+  - tag: cytotape
+    authors: Lirong Zheng*, Dongqing Shi*, Yixiao Yan*, Bingxin Zhou, Jormay Lim, Yongjie Hou, Bobae An, \textbf{Jason K. Adhinarta}, Michael Lin, BumJin Ko, William C. Joesten, Mehul Gautam, Emily G. Klyder, Boxuan Chang, Sethuramasundaram Pitchiaya, Denise J. Cai, Edward S. Boyden, Donglai Wei, Pietro Liò, Changyang Linghu
+    name: "Scalable and multiplexed continuous recording of gene regulation dynamics over 2 weeks"
+    venue: Manuscript under review
   - tag: hydra
-    authors: \textbf{Jason K. Adhinarta}*, Yutian Fan*, Michael Lin*, Richard Ren*, Micaela Roth*, Ayal Yakobe*, Shulin Zhang*, Rafael Yuste, Donglai Wei
-    name: "VesicleEM: A Comprehensive Vesicle Analysis Toolbox for Volumetric Electron Microscopy"
-    venue: Manuscript in preparation; planned submission to PLOS Computational Biology
+    authors: \textbf{Jason K. Adhinarta}*, Yutian Fan*, Adam Gohain*, Michael Lin*, Paige Nurkin*, Richard Ren*, Micaela Roth*, Shulin Zhang*, Ayal Yakobe, Rafael Yuste, Donglai Wei
+    name: "VesiclePy: A Machine Learning Vesicle Analysis Toolbox for Volume Electron Microscopy"
+    venue: Manuscript under review
+    url: "\\biorxiv{10.1101/2025.09.08.674799v1}"
   - tag: hydra_bio
-    authors: Shulin Zhang, Netanel Ofer, Wataru Yamomoto, Richard Schalek, Yuelong Wu, Christoph Dupre, \textbf{Jason K. Adhinarta}, Yutian Fan, Michael Lin, Micaela Roth, Ben Cox, Celina Juliano, Donglai Wei, Jeff Lichtman, Rafael Yuste
-    name: "Connectomic analysis of the \\textit{Hydra vulgaris} endoderm: cell types and vesicles"
-    venue: Manuscript in preparation; planned submission to Current Biology
+    authors: Shulin Zhang, Netanel Ofer, Wataru Yamomoto, Paige Nurkin, Richard Schalek, Yuelong Wu, Christoph Dupre, Xueying Wang, Michael Lin, Micaela Roth, \textbf{Jason K. Adhinarta}, Adam Gohain, Yutian Fan, Donglai Wei, Jeff Lichtman, Rafael Yuste
+    name: "Ultrastructural reconstruction of the endodermal nerve net of \\textit{Hydra vulgaris}"
+    venue: Current Biology 2025
   - tag: wormnd
     authors: \textbf{Jason K. Adhinarta}*, Jizheng Dong*, Tianxiao He*, Junxiang Huang*, Daniel Sprague*, Jia Wan, Hyun Jee Lee, Zikai Yu, Hang Lu, Eviatar Yemini, Saul Kato, Erdem Varol, Donglai Wei
     name: "WormID-Benchmark: Extracting Whole-Brain Neural Dynamics of \\textit{C. elegans} at the Neuron Resolution"
@@ -100,22 +117,22 @@ publications:
     venue: Medical Image Computing and Computer-Assisted Intervention 2024
     url: \doi{10.1007/978-3-031-72378-0\_25}
   - tag: ribseg
-    authors: Liang Jin, Shixuan Gu, Donglai Wei, \textbf{Jason K. Adhinarta}, Kaiming Kuang, Yongjie J. Zhang, Hanspeter Pfister, Bingbing Ni, Jiancheng Yang, Ming Li
+    authors: Liang Jin*, Shixuan Gu*, Donglai Wei, \textbf{Jason K. Adhinarta}, Kaiming Kuang, Yongjie J. Zhang, Hanspeter Pfister, Bingbing Ni, Jiancheng Yang, Ming Li
     name: "RibSeg v2: A Large-scale Benchmark for Rib Labeling and Anatomical Centerline Extraction"
     venue: IEEE Transactions on Medical Imaging 2023
     url: \doi{10.1109/TMI.2023.3313627} \pubmed{37695967}
-  - tag: phosphor
-    authors: \textbf{Jason K. Adhinarta}, Eric Jobiliong, Muhandis Shiddiq, Henri P. Uranus and Eden Steven
-    name: Light storage and thermal-assisted switching of SrAl\textsubscript{2}O\textsubscript{4}:Eu\textsuperscript{2+}, Dy\textsuperscript{3+}
-    venue: "Journal of Nonlinear Optical Physics \\& Materials 2019"
-    url: \doi{10.1142/S0218863519500425}
+  # - tag: phosphor
+  #   authors: \textbf{Jason K. Adhinarta}, Eric Jobiliong, Muhandis Shiddiq, Henri P. Uranus and Eden Steven
+  #   name: Light storage and thermal-assisted switching of SrAl\textsubscript{2}O\textsubscript{4}:Eu\textsuperscript{2+}, Dy\textsuperscript{3+}
+  #   venue: "Journal of Nonlinear Optical Physics \\& Materials 2019"
+  #   url: \doi{10.1142/S0218863519500425}
 
-patents:
-  - tag: mycelium
-    authors: Eden Steven, Ray A. O. Sinurat, Alvius Tinambunan, Edmund F. Anderson, Calvin, Andrew D. Widjaja, Josavan Ezekhiel, \textbf{Jason K. Adhinarta}
-    name: A Robotic Method of Monitoring, Hydrating, Training, and Treating Bacterial or Fungal Infections of New-growth Fungal Cultures to Produce Densified Sheet-like Lateral Networks of Fungal Materials
-    url: \href{https://jasonkena.github.io/static/patent.pdf}{PDKI:P00202009416}. Patent pending, submitted to Indonesian patent registry in 2020
-    # url: \href{https://pdki-indonesia.dgip.go.id/detail/469b3735e17ef3b025c34af11710e9bfffe2de10284fb52ed77d4e03dd710c29%3Fnomor=P00202009416?type=patent&keyword=P00202009416}{PDKI:P00202009416}. Patent pending, submitted to Indonesian patent registry in 2020
+# patents:
+#   - tag: mycelium
+#     authors: Eden Steven, Ray A. O. Sinurat, Alvius Tinambunan, Edmund F. Anderson, Calvin, Andrew D. Widjaja, Josavan Ezekhiel, \textbf{Jason K. Adhinarta}
+#     name: A Robotic Method of Monitoring, Hydrating, Training, and Treating Bacterial or Fungal Infections of New-growth Fungal Cultures to Produce Densified Sheet-like Lateral Networks of Fungal Materials
+#     url: \href{https://jasonkena.github.io/static/patent.pdf}{PDKI:P00202009416}. Patent pending, submitted to Indonesian patent registry in 2020
+#     # url: \href{https://pdki-indonesia.dgip.go.id/detail/469b3735e17ef3b025c34af11710e9bfffe2de10284fb52ed77d4e03dd710c29%3Fnomor=P00202009416?type=patent&keyword=P00202009416}{PDKI:P00202009416}. Patent pending, submitted to Indonesian patent registry in 2020
 
 teaching:
   - name: "CSCI 3397: Biomedical Image Analysis, \\textnormal{Boston College}"
@@ -204,9 +221,9 @@ awards:
   - name: Gabelli Presidential Scholarship, \textnormal{Boston College}
     venue_date: Fall 2021
     # description: Competitive four-year full-tuition scholarship awarded to $\sim$15 students annually
-  - name: Best Poster Presentation, \textnormal{\nth{12} International Symposium on Modern Optics and its Applications}
-    venue_date: Summer 2019
-    # description: Awarded at the \nth{12} International Symposium on Modern Optics and its Applications
+  # - name: Best Poster Presentation, \textnormal{\nth{12} International Symposium on Modern Optics and its Applications}
+  #   venue_date: Summer 2019
+  #   # description: Awarded at the \nth{12} International Symposium on Modern Optics and its Applications
 
 # projects:
 #   -

@@ -33,23 +33,25 @@ def preprocess(data):
         tags[tag] = alphabet[len(tags)]
         data["publications"][i]["tag_alpha"] = tags[tag]
 
-    for i in range(len(data["patents"])):
-        tag = data["patents"][i]["tag"]
-        assert tag not in tags
-        tags[tag] = alphabet[len(tags)]
-        data["patents"][i]["tag_alpha"] = tags[tag]
+    if "patents" in data:
+        for i in range(len(data["patents"])):
+            tag = data["patents"][i]["tag"]
+            assert tag not in tags
+            tags[tag] = alphabet[len(tags)]
+            data["patents"][i]["tag_alpha"] = tags[tag]
 
     for i in range(len(data["research"])):
-        for j in range(len(data["research"][i]["misc"])):
-            try:
-                data["research"][i]["misc"][j] = replace_refs(
-                    data["research"][i]["misc"][j],
-                    lambda x: f"[{tags[x]}]",
-                )
-            except Exception as e:
-                print(data["research"][i]["misc"][j])
-                print(e)
-                raise e
+        if "misc" in data["research"][i]:
+            for j in range(len(data["research"][i]["misc"])):
+                try:
+                    data["research"][i]["misc"][j] = replace_refs(
+                        data["research"][i]["misc"][j],
+                        lambda x: f"[{tags[x]}]",
+                    )
+                except Exception as e:
+                    print(data["research"][i]["misc"][j])
+                    print(e)
+                    raise e
                 # breakpoint()
 
     return data

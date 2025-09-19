@@ -24,7 +24,7 @@
 \usepackage{ragged2e}
 % fix linespacing
 \usepackage{microtype}
-\renewcommand{\baselinestretch}{0.94}
+\renewcommand{\baselinestretch}{[[ baselinestretch ]]}
 \usepackage[super]{nth}
 
 \input{glyphtounicode}
@@ -136,6 +136,16 @@
     [[ location ]]
 \end{center}
 
+[% if interests is defined %]
+\section{Research Interests}
+  \vspace{3pt}
+  \resumeSubHeadingListStart
+    \small{\item{
+        [[ interests ]]
+    }}\vspace{-7pt}
+  \resumeSubHeadingListEnd
+[% endif %]
+
 [% if education is defined %]
 \section{Education}
   \vspace{3pt}
@@ -154,11 +164,13 @@
     [% for lab in research %]
     \resumeSubheading
     {[[ lab.name ]]}{[[ lab.location ]]}{[[ lab.position ]]}{[[ lab.start_date ]] \textbf{--} [[ lab.end_date ]]}{}
+      [% if lab.misc is defined %]
       \resumeItemListStart
       [% for detail in lab.misc %]
         \resumeItem{[[detail]]}
       [% endfor %]
       \resumeItemListEnd
+      [% endif %]
       \filbreak
     [% endfor %]
   \resumeSubHeadingListEnd
