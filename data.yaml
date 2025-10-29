@@ -88,8 +88,9 @@ publications:
     venue: Manuscript under review
     url: "\\biorxiv{10.1101/2025.09.08.674799v1}"
   - tag: hydra_bio
-    authors: Shulin Zhang, Netanel Ofer, Wataru Yamomoto, Paige Nurkin, Richard Schalek, Yuelong Wu, Christoph Dupre, Xueying Wang, Michael Lin, Micaela Roth, \textbf{Jason K. Adhinarta}, Adam Gohain, Yutian Fan, Donglai Wei, Jeff Lichtman, Rafael Yuste
+    authors: Shulin Zhang, Netanel Ofer, Christophe Dupre, Xueying Wang, Richard Schalek, Yuelong Wu, Michael Lin, Micaela Roth, \textbf{Jason K. Adhinarta}, Adam Gohain, Yutian Fan, Wenjie Yin, Donglai Wei, Jeff Lichtman, Rafael Yuste
     name: "Ultrastructural reconstruction of the endodermal nerve net of \\textit{Hydra vulgaris}"
+    url: "\\doi{10.1016/j.cub.2025.10.001}"
     venue: Current Biology 2025
   - tag: wormnd
     authors: \textbf{Jason K. Adhinarta}*, Jizheng Dong*, Tianxiao He*, Junxiang Huang*, Daniel Sprague*, Jia Wan, Hyun Jee Lee, Zikai Yu, Hang Lu, Eviatar Yemini, Saul Kato, Erdem Varol, Donglai Wei
@@ -168,6 +169,7 @@ activities_skip:
     end_date: Present
     misc:
       - \textbf{Remotely mentored} and \textbf{designed lesson plans} for 3 high school students with varying experience levels with the Python deep learning ecosystem, to broaden their skillsets and \textbf{diversify educational and career opportunities}
+      - "\\textit{Ongoing}: Guiding a junior in developing 4D interactive segmentation pipelines for C.\\ elegans neural activity extraction"
       - "\\textit{Ongoing}: Guiding a sophomore in building a \\textbf{remote-controlled car} using a Raspberry Pi and a camera module, feeding images into \\textbf{Nerfstudio} to generate novel views for navigation, with a Flask server for remote control"
       - "\\textit{Ongoing}: Assisting a junior in using a \\textbf{U-Net architecture} to demonstrate how audio recordings can be used to reconstruct typing inputs, in a project to raise awareness on \\textbf{audio-based keystroke sniffing attacks}"
       - Helped a junior develop a CNN to \textbf{classify mosquito species using audio recordings} from the HumBugDB dataset

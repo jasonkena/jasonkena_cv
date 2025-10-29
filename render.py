@@ -1,3 +1,12 @@
+#!/usr/bin/env uv run
+# /// script
+# requires-python = ">=3.8"
+# dependencies = [
+#     "pyyaml",
+#     "jinja2",
+# ]
+# ///
+
 import re
 import yaml
 import jinja2
