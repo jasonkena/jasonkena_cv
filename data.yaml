@@ -6,7 +6,7 @@ location: Cambridge, MA
 baselinestretch: 0.94
 # baselinestretch: 1
 
-interests: My research focuses on developing \textbf{multimodal representation learning} and \textbf{geometric deep learning} methods to enable scalable analyses of \textbf{biomedical imaging} data, with particular applications in neuroscience and clinical diagnostic settings.
+interests: My research focuses on developing \textbf{multimodal representation learning} and \textbf{geometric deep learning} methods to enable scalable analyses of \textbf{biomedical imaging} data and electronic health records, with particular applications in neuroscience and clinical diagnostic settings.
 
 education:
   - name: Massachusetts Institute of Technology
@@ -35,7 +35,7 @@ research:
     start_date: Sep 2025
     end_date: Present
     misc:
-    - Investigating multimodal contrastive learning methods for X-ray-report pairs, leveraging anatomical priors
+    - Investigating multimodal foundation models for \textbf{temporal disease progression modeling} for cardiac ICU patients, leveraging chest X-rays and EHR data; in collaboration with the Fetal-Neonatal Neuroimaging Developmental Science Center at Boston Children's Hospital
   # reference tags using REF_NAME, this is handled in render.py
   - name: Boston College Computer Vision Lab
     location: Chestnut Hill, MA
@@ -46,8 +46,8 @@ research:
       #       # SUPIR image super-resolution
       # - "\\textit{Ongoing}: Crafted object-centric constraints for \\textbf{terabyte-scale superpixel agglomeration} methods for \\textbf{PyTorch Connectomics} using the SegCLR (\\textbf{segmentation-guided contrastive learning}) pretrained model, in an attempt to build an open source competitor to Google's Flood Filling Networks. In collaboration with Zengyu Yang"
       - "Developed segmentation and signal-processing pipelines based on \\textbf{PyTorch Connectomics} and \\textbf{Segment Anything for Microscopy} to study gene regulation dynamics; done with the Spatial Biodynamics Lab at University of Michigan REF_cytotape"
-      - "Clustered vesicles in \\textit{Hydra vulgaris} samples using PyroVED \\textbf{translation/rotation equivariant autoencoders}, characterizing neurons using spatial distribution of vesicles. Part of larger work to build a toolbox for \\textbf{vesicle analysis} for electron microscopy. In collaboration with Shulin Zhang from Prof.\\,Rafael Yuste's lab at Columbia University REF_hydra REF_hydra_bio"
-      - "Adapted \\textbf{cell tracking models} (3DeeCellTracker and Ultrack) to extract \\textbf{whole-brain neural dynamics} from \\textbf{calcium imaging} of 118 NeuroPAL-strain roundworms across 5 labs. Work done in collaboration with Daniel Sprague from the UCSF Foundations of Cognition Lab, Prof.\\,Erdem Varol at the NYU Neuroinformatics Lab, and Prof.\\,Eviatar Yemini at UMass Chan Medical School REF_wormnd"
+      - "Clustered vesicles in \\textit{Hydra vulgaris} using PyroVED \\textbf{translation/rotation equivariant autoencoders}, characterizing neurons using spatial distribution of vesicles. Part of larger work to build a toolbox for \\textbf{vesicle analysis} for electron microscopy. In collaboration with Shulin Zhang from Prof.\\,Rafael Yuste's lab at Columbia University REF_hydra REF_hydra_bio"
+      - "Adapted \\textbf{cell tracking models} (3DeeCellTracker and Ultrack) to extract \\textbf{whole-brain neural dynamics} from \\textbf{calcium imaging} of 118 NeuroPAL-strain roundworms across 5 labs. Work done in collaboration with the UCSF Foundations of Cognition Lab, NYU Neuroinformatics Lab, and UMass Chan Medical School REF_wormnd"
       - "Benchmarked PointNet++, RandLA-Net, and PointTransformer \\textbf{point-cloud segmentation architectures} on our dataset of 4,476 spines sourced from electron microscopy of 70 dendrites, demonstrating \\textbf{zero-shot cross-species generalization} of our proposed Frenet-Serret \\textbf{equivariant geometric transform} on the mouse visual cortex ($94.1\\%$ Dice) and human frontal lobe ($81.8\\%$ Dice). Also wrote extensive pipelines for morphology processing and mesh visualization. Part of a project to improve \\textbf{segmentation on tree-like structures}; locating synapses in neurons and aneurysms in blood vessels. Collaborated with Shixuan Gu at the Harvard Visual Computing Group REF_freseg"
       - "Analyzed \\textbf{blood vessel morphologies} in mouse, human, and macaque cortical samples using Kimimaro \\textbf{centerline extraction}. Evaluated the performance of the U-Net3D baseline model on the largest electron microscopy blood vessel dataset to date. Part of a project to develop a \\textbf{zero-shot 3D segmentation method} using \\textbf{Segment Anything Model}. In collaboration with Prof.\\,Jia Wan from Harbin Institute of Technology, China, the Harvard Visual Computing Group, and the Harvard Lichtman Lab REF_trisam"
       - "Finetuned Cellpose, a \\textbf{{foundation model for cell segmentation}}, to automatically detect \\textasciitilde{}5 million neuronal vesicles in 20 volumes. Work done with Dr.\\,Xiaomeng Han from Prof.\\,Jeff Lichtman’s lab at Harvard to develop a novel microscopy technique incorporating fluorescent markers to facilitate \\textbf{identification of cell types and functions}. REF_xiaomeng"
