@@ -82,6 +82,7 @@ publications:
     authors: Lirong Zheng*, Dongqing Shi*, Yixiao Yan*, Bingxin Zhou, Jormay Lim, Yongjie Hou, Bobae An, \textbf{Jason K. Adhinarta}, Michael Lin, BumJin Ko, William C. Joesten, Mehul Gautam, Elie D. M. Huez, Eung Chang Kim, Emily G. Klyder, Boxuan Chang, Sethuramasundaram Pitchiaya, Michael T. Roberts, Denise J. Cai, Edward S. Boyden, Donglai Wei, Pietro Liò, Changyang Linghu
     name: "Scalable and multiplexed recorders of gene regulation dynamics across weeks"
     venue: Nature 2026
+    url: "\\doi{10.1038/s41586-026-10156-9}"
   - tag: hydra
     authors: \textbf{Jason K. Adhinarta}*, Yutian Fan*, Adam Gohain*, Michael Lin*, Paige Nurkin*, Richard Ren*, Micaela Roth*, Shulin Zhang*, Ayal Yakobe, Rafael Yuste, Donglai Wei
     name: "VesiclePy: A Machine Learning Vesicle Analysis Toolbox for Volume Electron Microscopy"
