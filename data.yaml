@@ -79,9 +79,9 @@ research:
   #     # - Co-designed a 23-week long \textbf{Arduino-based electronics programming curriculum} for Sekolah Pelangi Kasih's afterschool program. Co-instructed the electronics portion of Sekolah Pelita Harapan's 2019 Summer Science Academy
 publications:
   - tag: cytotape
-    authors: Lirong Zheng*, Dongqing Shi*, Yixiao Yan*, Bingxin Zhou, Jormay Lim, Yongjie Hou, Bobae An, \textbf{Jason K. Adhinarta}, Michael Lin, BumJin Ko, William C. Joesten, Mehul Gautam, Emily G. Klyder, Boxuan Chang, Sethuramasundaram Pitchiaya, Denise J. Cai, Edward S. Boyden, Donglai Wei, Pietro Liò, Changyang Linghu
-    name: "Scalable and multiplexed continuous recording of gene regulation dynamics over 2 weeks"
-    venue: Manuscript under review
+    authors: Lirong Zheng*, Dongqing Shi*, Yixiao Yan*, Bingxin Zhou, Jormay Lim, Yongjie Hou, Bobae An, \textbf{Jason K. Adhinarta}, Michael Lin, BumJin Ko, William C. Joesten, Mehul Gautam, Elie D. M. Huez, Eung Chang Kim, Emily G. Klyder, Boxuan Chang, Sethuramasundaram Pitchiaya, Michael T. Roberts, Denise J. Cai, Edward S. Boyden, Donglai Wei, Pietro Liò, Changyang Linghu
+    name: "Scalable and multiplexed recorders of gene regulation dynamics across weeks"
+    venue: Nature 2026
   - tag: hydra
     authors: \textbf{Jason K. Adhinarta}*, Yutian Fan*, Adam Gohain*, Michael Lin*, Paige Nurkin*, Richard Ren*, Micaela Roth*, Shulin Zhang*, Ayal Yakobe, Rafael Yuste, Donglai Wei
     name: "VesiclePy: A Machine Learning Vesicle Analysis Toolbox for Volume Electron Microscopy"
