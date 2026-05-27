@@ -152,6 +152,7 @@
   \resumeSubHeadingListStart
   [% for school in education %]
   \resumeSubheading{[[ school.name ]]}{[[ school.location ]]}{[[ school.degree ]]}{[[ school.start_date ]] \textbf{--} [[ school.end_date ]]}{[[school.misc]]}
+  \vspace{0.5pt}
   [% endfor %]
     
   \resumeSubHeadingListEnd
@@ -171,7 +172,7 @@
       [% endfor %]
       \resumeItemListEnd
       [% endif %]
-      \filbreak
+      % \filbreak this prevents page breaks I think
     [% endfor %]
   \resumeSubHeadingListEnd
 [% endif %]

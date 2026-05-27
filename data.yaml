@@ -6,14 +6,18 @@ location: Cambridge, MA
 baselinestretch: 0.94
 # baselinestretch: 1
 
-interests: My research focuses on developing \textbf{multimodal representation learning} and \textbf{geometric deep learning} methods to enable scalable analyses of \textbf{biomedical imaging} data and electronic health records, with particular applications in neuroscience and clinical diagnostic settings.
+interests: My research develops principled methods for aligning large language models using human and verifiable feedback, aiming to make them robust to \textbf{flawed reward signals} and efficient learners from \textbf{richer forms of feedback}. Previously, I worked on image analysis methods for reconstructing neural circuitry from microscopy.
+
+
+# My research focuses on developing \textbf{multimodal representation learning} and \textbf{geometric deep learning} methods to enable scalable analyses of \textbf{biomedical imaging} data and electronic health records, with particular applications in neuroscience and clinical diagnostic settings.
 
 education:
   - name: Massachusetts Institute of Technology
     location: Cambridge, MA
-    degree: "Ph.D. in Electrical Engineering and Computer Science"
+    degree: "Ph.D. in Electrical Engineering and Computer Science \\textnormal{|} GPA: 5.00/5.00"
     start_date: Sep 2025
-    end_date: May 2031
+    end_date: Present
+    # end_date: May 2031
   - name: Boston College
     location: Chestnut Hill, MA
     degree: "B.S. in Computer Science, B.S. in Mathematics \\textnormal{|} GPA: 3.98/4.00"
@@ -35,7 +39,9 @@ research:
     start_date: Sep 2025
     end_date: Present
     misc:
-    - Investigating multimodal foundation models for \textbf{temporal disease progression modeling} for cardiac ICU patients, leveraging chest X-rays and EHR data; in collaboration with the Fetal-Neonatal Neuroimaging Developmental Science Center at Boston Children's Hospital
+    # - "Derived \\textbf{Goodhart Bounds} that certify lower bounds on true winrate, mitigating \\textbf{reward overoptimization in RLHF} via KL and $\\chi^2$ divergences. "
+    - "Derived Goodhart Bounds that certify lower bounds on true winrate, mitigating \\textbf{reward overoptimization in reinforcement learning from human feedback} via KL and $\\chi^2$ divergences. Validated on OpenAI TL;DR and Anthropic HH human preference datasets. In collaboration with the MIT-IBM Watson AI Lab and Prof.\\,Yoon Kim"
+    # - Investigating multimodal foundation models for \textbf{temporal disease progression modeling} for cardiac ICU patients, leveraging chest X-rays and EHR data; in collaboration with the Fetal-Neonatal Neuroimaging Developmental Science Center at Boston Children's Hospital
   # reference tags using REF_NAME, this is handled in render.py
   - name: Boston College Computer Vision Lab
     location: Chestnut Hill, MA
@@ -48,9 +54,9 @@ research:
       - "Developed segmentation and signal-processing pipelines based on \\textbf{PyTorch Connectomics} and \\textbf{Segment Anything for Microscopy} to study gene regulation dynamics; done with the Spatial Biodynamics Lab at University of Michigan REF_cytotape"
       - "Clustered vesicles in \\textit{Hydra vulgaris} using PyroVED \\textbf{translation/rotation equivariant autoencoders}, characterizing neurons using spatial distribution of vesicles. Part of larger work to build a toolbox for \\textbf{vesicle analysis} for electron microscopy. In collaboration with Shulin Zhang from Prof.\\,Rafael Yuste's lab at Columbia University REF_hydra REF_hydra_bio"
       - "Adapted \\textbf{cell tracking models} (3DeeCellTracker and Ultrack) to extract \\textbf{whole-brain neural dynamics} from \\textbf{calcium imaging} of 118 NeuroPAL-strain roundworms across 5 labs. Work done in collaboration with the UCSF Foundations of Cognition Lab, NYU Neuroinformatics Lab, and UMass Chan Medical School REF_wormnd"
-      - "Benchmarked PointNet++, RandLA-Net, and PointTransformer \\textbf{point-cloud segmentation architectures} on our dataset of 4,476 spines sourced from electron microscopy of 70 dendrites, demonstrating \\textbf{zero-shot cross-species generalization} of our proposed Frenet-Serret \\textbf{equivariant geometric transform} on the mouse visual cortex ($94.1\\%$ Dice) and human frontal lobe ($81.8\\%$ Dice). Also wrote extensive pipelines for morphology processing and mesh visualization. Part of a project to improve \\textbf{segmentation on tree-like structures}; locating synapses in neurons and aneurysms in blood vessels. Collaborated with Shixuan Gu at the Harvard Visual Computing Group REF_freseg"
-      - "Analyzed \\textbf{blood vessel morphologies} in mouse, human, and macaque cortical samples using Kimimaro \\textbf{centerline extraction}. Evaluated the performance of the U-Net3D baseline model on the largest electron microscopy blood vessel dataset to date. Part of a project to develop a \\textbf{zero-shot 3D segmentation method} using \\textbf{Segment Anything Model}. In collaboration with Prof.\\,Jia Wan from Harbin Institute of Technology, China, the Harvard Visual Computing Group, and the Harvard Lichtman Lab REF_trisam"
-      - "Finetuned Cellpose, a \\textbf{{foundation model for cell segmentation}}, to automatically detect \\textasciitilde{}5 million neuronal vesicles in 20 volumes. Work done with Dr.\\,Xiaomeng Han from Prof.\\,Jeff Lichtman’s lab at Harvard to develop a novel microscopy technique incorporating fluorescent markers to facilitate \\textbf{identification of cell types and functions}. REF_xiaomeng"
+      - "Benchmarked PointNet++, RandLA-Net, and PointTransformer \\textbf{point-cloud segmentation architectures} on our dataset of 4,476 spines sourced from electron microscopy of 70 dendrites, demonstrating \\textbf{zero-shot cross-species generalization} of our proposed Frenet-Serret \\textbf{equivariant geometric transform} on the mouse visual cortex ($94.1\\%$ Dice) and human frontal lobe ($81.8\\%$ Dice). Part of a project to improve \\textbf{segmentation on tree-like structures}; locating synapses in neurons and aneurysms in blood vessels. Collaborated with Shixuan Gu at the Harvard Visual Computing Group REF_freseg" # Also wrote extensive pipelines for morphology processing and mesh visualization. 
+      - "Analyzed \\textbf{blood vessel morphologies} in mouse, human, and macaque cortical samples using Kimimaro \\textbf{centerline extraction} on the largest electron microscopy blood vessel dataset to date. Part of a project to develop a \\textbf{zero-shot 3D segmentation method} using \\textbf{Segment Anything Model}. In collaboration with Prof.\\,Jia Wan from Harbin Institute of Technology, China, the Harvard Visual Computing Group, and the Harvard Lichtman Lab REF_trisam"
+      - "Finetuned Cellpose, a \\textbf{{foundation model for cell segmentation}}, to detect \\textasciitilde{}5 million neuronal vesicles in 20 volumes. Work done with Dr.\\,Xiaomeng Han from the Harvard Lichtman Lab to develop a novel microscopy technique incorporating fluorescent markers to facilitate \\textbf{identification of cell types and functions} REF_xiaomeng"
       # - "Prototyped methods to correct deformed \\textbf{spinal vertebrae mesh predictions} using Probreg \\textbf{point-cloud registration} for Dr.\\,Zongwei Zhou at JHU"
       # - "Maintained \\textbf{Docker evaluation containers} for the ISBI 2013 SNEMI3D neuron segmentation challenge, MICCAI 2021 AxonEM axon segmentation challenge, and the ISBI 2023 RNR-EXM expansion microscopy image registration challenge on the \\textbf{Grand Challenge} platform, to simplify benchmark evaluation for 320+ participants"
       # - "Developed the ChunkPipeline package to perform distributed volumetric computations on the \\textbf{Boston College Linux Cluster}, contributed bugfixes to the Princeton Seung Lab's suite of tools for connectomics, onboarded research interns onto the PyTorch Connectomics ecosystem"
@@ -60,8 +66,8 @@ research:
     start_date: May 2023
     end_date: Aug 2023
     misc:
-      - "Orchestrated pipelines integrating the STU-Net \\textbf{medical image segmentation foundation model} with our \\textbf{geometrically-constrained neural implicit fields} to generate anatomically accurate heart structures from our aggregated dataset of 140 \\textbf{MRI scans}. Contributed to the Heart Augmented Reality Training System, in collaboration with Swiss medical imaging company ADIS and the Cardiology Division of Lausanne University Hospital REF_imheart"
-      - "Evaluated \\textbf{voxel/point-cloud segmentation} models (PointNet/PointNet++, DGCNN, PointCNN, nnU-Net) and \\textbf{centerline extraction} techniques (Kimimaro, L1-Medial Skeletonization) on our proposed dataset of 660 \\textbf{CT scans} and 15,466 individually annotated ribs. Implemented a Docker compatability wrapper for the L1-Medial Skeletonization codebase from 2016. Ongoing work to incorporate the \\textbf{mesh representations of ribcages} into the \\textbf{MedShapeNet2.0} dataset. In collaboration with radiologists at Huadong Hospital, China and Shixuan Gu at Harvard Visual Computing Group REF_ribseg"
+      - "Orchestrated pipelines augmenting STU-Net \\textbf{medical image segmentation foundation models} with \\textbf{geometrically-constrained neural implicit fields} to generate anatomically accurate heart structures from our aggregated dataset of 140 \\textbf{MRI scans}. Contributed to the Heart Augmented Reality Training System, in collaboration with Swiss medical imaging company ADIS and the Cardiology Division of Lausanne University Hospital REF_imheart"
+      - "Evaluated \\textbf{voxel/point-cloud segmentation} models (PointNet/PointNet++, DGCNN, PointCNN, nnU-Net) and \\textbf{centerline extraction} techniques (Kimimaro, L1-Medial Skeletonization) on collected dataset of 660 \\textbf{CT scans} and 15,466 individually annotated ribs. Ongoing work to incorporate the \\textbf{mesh representations of ribcages} into the \\textbf{MedShapeNet2.0} dataset. In collaboration with radiologists at Huadong Hospital, China and Shixuan Gu at Harvard Visual Computing Group REF_ribseg" #"Implemented a Docker compatability wrapper for the L1-Medial Skeletonization codebase from 2016. 
   # - name: Emmerich Research Center
   #   location: Jakarta, Indonesia
   #   position: Research Intern (advised by Dr.\,Eden Steven)
@@ -106,13 +112,13 @@ publications:
   - tag: trisam
     authors: Jia Wan, Wanhua Li, \textbf{Jason K. Adhinarta}, Atmadeep Banerjee, Evelina Sjostedt, Jingpeng Wu, Jeff Lichtman, Hanspeter Pfister, Donglai Wei
     name: "TriSAM: Tri-Plane SAM for zero-shot cortical blood vessel segmentation in VEM images"
-    url: "\\doi{10.1109/JBHI.2025.3577625} \\pubmed{40489282}"
+    url: "\\doi{10.1109/JBHI.2025.3577625}" # \\pubmed{40489282}"
     venue: IEEE Journal of Biomedical and Health Informatics 2025
   - tag: xiaomeng
     authors: Xiaomeng Han, Xiaotang Lu, Peter H. Li, Shuohong Wang, Richard Schalek, Yaron Meirovitch, Zudi Lin, \textbf{Jason K. Adhinarta}, Daniel Berger, Yuelong Wu, Tao Fang, Elif S. Meral, Shadnan Asraf, Hidde Ploegh, Hanspeter Pfister, Donglai Wei, Viren Jain, James S. Trimmer, Jeff W. Lichtman
     name: Multiplexed Volumetric CLEM enabled by antibody derivatives provides new insights into the cytology of the mouse cerebellar cortex
     venue: Nature Communications 2024
-    url: \doi{10.1038/s41467-024-50411-z} \pubmed{39103318}
+    url: \doi{10.1038/s41467-024-50411-z} # \pubmed{39103318}
   - tag: imheart
     authors: Jiancheng Yang, Ekaterina Sedykh, \textbf{Jason K. Adhinarta}, Hieu Le, Pascal Fua
     name: Generating Anatomically Accurate Heart Structures via Neural Implicit Fields
@@ -122,7 +128,7 @@ publications:
     authors: Liang Jin*, Shixuan Gu*, Donglai Wei, \textbf{Jason K. Adhinarta}, Kaiming Kuang, Yongjie J. Zhang, Hanspeter Pfister, Bingbing Ni, Jiancheng Yang, Ming Li
     name: "RibSeg v2: A Large-scale Benchmark for Rib Labeling and Anatomical Centerline Extraction"
     venue: IEEE Transactions on Medical Imaging 2023
-    url: \doi{10.1109/TMI.2023.3313627} \pubmed{37695967}
+    url: \doi{10.1109/TMI.2023.3313627} # \pubmed{37695967}
   # - tag: phosphor
   #   authors: \textbf{Jason K. Adhinarta}, Eric Jobiliong, Muhandis Shiddiq, Henri P. Uranus and Eden Steven
   #   name: Light storage and thermal-assisted switching of SrAl\textsubscript{2}O\textsubscript{4}:Eu\textsuperscript{2+}, Dy\textsuperscript{3+}
@@ -144,58 +150,58 @@ teaching:
     # instructor: "Prof.\\,Elisenda Grigsby"
     college_year: Spring 2023
 
-activities_skip:
-  - name: Boston College Machine Intelligence Group
-    location: Chestnut Hill, MA
-    position: President
-    start_date: Sep 2022
-    end_date: Present
-    misc:
-      - \textbf{Organized weekly seminars} for an undergraduate audience, hosting industry experts from Meta, Google, Red Hat
-      - Equipped members with concrete engineering skills, connecting students with CS/math labs on campus
-      - Developed workshops on landmark ML methods in collaboration with Boston College Computer Science Society
-  - name: Boston College Experimental Math and Machine Learning Lab
-    location: Chestnut Hill, MA
-    position: Member
-    start_date: Mar 2023
-    end_date: Present
-    misc:
-      - Engaged with faculty and graduate students to explore the intersection of mathematics and machine learning
-      - Gave a talk titled ``\textbf{A Whirlwind Tour of Deep Learning}'' Summer 2023, covering universal function approximation, loss landscape visualization, Sharpness Aware Minimization, Rich Sutton's Bitter Lesson, and everything in between
-      - Held a \textbf{tutorial on CLI tools} for the lab's biweekly seminar series Fall 2024, illustrated using a toy project minimizing repulsion forces for electrons on a sphere, received funding from a \textbf{Teaching-Advising-Mentoring grant} Summer 2024
-  - name: Applied Science Academy at Sekolah Pelita Harapan Lippo Village
+activities:
+  - name: Applied Science Academy at SPH Lippo Village
     location: Tangerang, Indonesia
     position: Mentor
     start_date: Aug 2023
     end_date: Present
     misc:
-      - \textbf{Remotely mentored} and \textbf{designed lesson plans} for 3 high school students with varying experience levels with the Python deep learning ecosystem, to broaden their skillsets and \textbf{diversify educational and career opportunities}
-      - "\\textit{Ongoing}: Guiding a junior in developing 4D interactive segmentation pipelines for C.\\ elegans neural activity extraction"
-      - "\\textit{Ongoing}: Guiding a sophomore in building a \\textbf{remote-controlled car} using a Raspberry Pi and a camera module, feeding images into \\textbf{Nerfstudio} to generate novel views for navigation, with a Flask server for remote control"
-      - "\\textit{Ongoing}: Assisting a junior in using a \\textbf{U-Net architecture} to demonstrate how audio recordings can be used to reconstruct typing inputs, in a project to raise awareness on \\textbf{audio-based keystroke sniffing attacks}"
+      - Remotely mentored and designed lessons for high school students, with a focus on hands-on deep learning projects
+      - "\\textit{Ongoing}: Guiding a junior in developing \\textbf{4D interactive segmentation} pipelines for \\textit{C.\\ elegans} neural activity extraction"
+      - "Aided a sophomore in building a remote-controlled car, feeding imagery into \\textbf{Nerfstudio} for novel navigation views"
+      - "Assisted a junior in using U-Nets to demonstrate how audio recordings can be used to reconstruct typing inputs, in a project to demonstrate the viability of \\textbf{audio-based keystroke sniffing attacks}"
       - Helped a junior develop a CNN to \textbf{classify mosquito species using audio recordings} from the HumBugDB dataset
-  - name: Citylife Presbyterian Church
-    location: Boston, MA
-    position: Community Group Co-leader
-    start_date: Aug 2024
-    end_date: Present
-    misc:
-      - Facilitated weekly student-led meetings involving praise, prayer, and sermon discussions at Boston College
-  - name: Brighton High School, Haley House, The City
-    location: Boston, MA
-    position: Volunteer
-    start_date: May 2022
-    end_date: May 2023
-    misc:
-      - "Summer 2022: Served as a \\textbf{teaching assistant} at Brighton High School for math classes; aided in \\textbf{sorting and distribution of clothing donations} at Haley House; interviewed families of COVID victims for The City, a NYC-based news organization, \\textbf{wrote an obituary} for publication"
-      - "Fall 2022 -- Spring 2023: Co-ran the Threads campaign at Boston College, organizing a \\textbf{clothing drive} and panel discussion with activists from St. Francis House, Cradles to Crayons, and Haley House to raise awareness on \\textbf{clothing insecurity}"
-  - name: Boston College Competitive Programming Team
-    location: Chestnut Hill, MA
-    position: Competitor
-    start_date: Sep 2022
-    end_date: Dec 2023
-    misc:
-      - Represented Boston College at the 2022 and 2023 ICPC Northeast North America Regional Contests
+  # - name: Boston College Machine Intelligence Group
+  #   location: Chestnut Hill, MA
+  #   position: President
+  #   start_date: Sep 2022
+  #   end_date: Present
+  #   misc:
+  #     - \textbf{Organized weekly seminars} for an undergraduate audience, hosting industry experts from Meta, Google, Red Hat
+  #     - Equipped members with concrete engineering skills, connecting students with CS/math labs on campus
+  #     - Developed workshops on landmark ML methods in collaboration with Boston College Computer Science Society
+  # - name: Boston College Experimental Math and Machine Learning Lab
+  #   location: Chestnut Hill, MA
+  #   position: Member
+  #   start_date: Mar 2023
+  #   end_date: Present
+  #   misc:
+  #     - Engaged with faculty and graduate students to explore the intersection of mathematics and machine learning
+  #     - Gave a talk titled ``\textbf{A Whirlwind Tour of Deep Learning}'' Summer 2023, covering universal function approximation, loss landscape visualization, Sharpness Aware Minimization, Rich Sutton's Bitter Lesson, and everything in between
+  #     - Held a \textbf{tutorial on CLI tools} for the lab's biweekly seminar series Fall 2024, illustrated using a toy project minimizing repulsion forces for electrons on a sphere, received funding from a \textbf{Teaching-Advising-Mentoring grant} Summer 2024
+  # - name: Citylife Presbyterian Church
+  #   location: Boston, MA
+  #   position: Community Group Co-leader
+  #   start_date: Aug 2024
+  #   end_date: Present
+  #   misc:
+  #     - Facilitated weekly student-led meetings involving praise, prayer, and sermon discussions at Boston College
+  # - name: Brighton High School, Haley House, The City
+  #   location: Boston, MA
+  #   position: Volunteer
+  #   start_date: May 2022
+  #   end_date: May 2023
+  #   misc:
+  #     - "Summer 2022: Served as a \\textbf{teaching assistant} at Brighton High School for math classes; aided in \\textbf{sorting and distribution of clothing donations} at Haley House; interviewed families of COVID victims for The City, a NYC-based news organization, \\textbf{wrote an obituary} for publication"
+  #     - "Fall 2022 -- Spring 2023: Co-ran the Threads campaign at Boston College, organizing a \\textbf{clothing drive} and panel discussion with activists from St. Francis House, Cradles to Crayons, and Haley House to raise awareness on \\textbf{clothing insecurity}"
+  # - name: Boston College Competitive Programming Team
+  #   location: Chestnut Hill, MA
+  #   position: Competitor
+  #   start_date: Sep 2022
+  #   end_date: Dec 2023
+  #   misc:
+  #     - Represented Boston College at the 2022 and 2023 ICPC Northeast North America Regional Contests
 
 awards:
   - name: NSF Graduate Research Fellowship
