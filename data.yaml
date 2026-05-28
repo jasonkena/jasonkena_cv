@@ -93,7 +93,7 @@ publications:
     authors: \textbf{Jason K. Adhinarta}*, Yutian Fan*, Adam Gohain*, Michael Lin*, Paige Nurkin*, Richard Ren*, Micaela Roth*, Shulin Zhang*, Ayal Yakobe, Rafael Yuste, Donglai Wei
     name: "VesiclePy: A Machine Learning Vesicle Analysis Toolbox for Volume Electron Microscopy"
     venue: PLOS Computational Biology 2026
-    url: "\\biorxiv{10.1101/2025.09.08.674799v1}"
+    url: "\\doi{10.1371/journal.pcbi.1013499}"
   - tag: hydra_bio
     authors: Shulin Zhang, Netanel Ofer, Christophe Dupre, Xueying Wang, Richard Schalek, Yuelong Wu, Michael Lin, Micaela Roth, \textbf{Jason K. Adhinarta}, Adam Gohain, Yutian Fan, Wenjie Yin, Donglai Wei, Jeff Lichtman, Rafael Yuste
     name: "Ultrastructural reconstruction of the endodermal nerve net of \\textit{Hydra vulgaris}"
