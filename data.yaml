@@ -6,7 +6,7 @@ location: Cambridge, MA
 baselinestretch: 0.94
 # baselinestretch: 1
 
-interests: My research develops principled methods for aligning large language models using human and verifiable feedback, aiming to make them robust to \textbf{flawed reward signals} and efficient learners from \textbf{richer forms of feedback}. Previously, I worked on image analysis methods for reconstructing neural circuitry from microscopy.
+interests: My research develops principled methods for aligning large language models using human and verifiable feedback, aiming to make them robust to \textbf{flawed reward signals} and efficient learners from \textbf{rich textual feedback}. Previously, I worked on image analysis methods for reconstructing neural circuitry from microscopy.
 
 
 # My research focuses on developing \textbf{multimodal representation learning} and \textbf{geometric deep learning} methods to enable scalable analyses of \textbf{biomedical imaging} data and electronic health records, with particular applications in neuroscience and clinical diagnostic settings.
@@ -204,6 +204,8 @@ activities:
   #     - Represented Boston College at the 2022 and 2023 ICPC Northeast North America Regional Contests
 
 awards:
+  - name: Siebel Scholar
+    venue_date: Fall 2026
   - name: NSF Graduate Research Fellowship
     venue_date: Fall 2025
   - name: David and Randi Fett Fellowship, \textnormal{MIT}
